@@ -16,11 +16,11 @@ if($_COOKIE['connected']=="false"){
         echo "1";
 }else{
         $array = array();
-        $company = new Company($array);
+        /*$company = new Company($array);
         $companymanager = new CompaniesManager($bdd);
         $company = $companymanager->getById($user->getDefaultCompany());
         
-        setcookie('company', $company->getNameData() , time() + 365*24*3600, '/');
+        setcookie('company', $company->getNameData() , time() + 365*24*3600, '/');*/
 
         header('Location: '.URLHOST."/accueil");
         echo "2";
