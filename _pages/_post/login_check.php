@@ -10,10 +10,10 @@ session_start();
 
 		$user = $userManager->connectUser($_POST['username'],$_POST['password']);
 //}
-echo $user->getName();
 
 if($_COOKIE['connected']=="false"){
-        header('Location: '.URLHOST.'connexion/false');    
+        header('Location: '.URLHOST.'connexion/false');
+        echo "1";
 }else{
         $array = array();
         $company = new Company($array);
@@ -23,6 +23,7 @@ if($_COOKIE['connected']=="false"){
         setcookie('company', $company->getNameData() , time() + 365*24*3600, '/');
 
         header('Location: '.URLHOST."/accueil");
+        echo "2";
 }
 
 ?>
