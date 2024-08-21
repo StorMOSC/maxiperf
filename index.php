@@ -1,4 +1,5 @@
 <?php 
+echo $path = $_SERVER['DOCUMENT_ROOT'];
 //session_start();
 
 /*include '_cfg/cfg.php';
