@@ -30,7 +30,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <title>MaxiPerf - App</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta content="" name="MaxiPerf - App" />
+        <meta content="" name="MaxiPerf - App " />
         <meta content="" name="MaxiPerf" />
         <?php include '_ressources/_inc/css.php'; ?>
         <script src="<?php echo URLHOST.'_ressources/_inc/global/plugins/jquery.min.js'?>"></script>
