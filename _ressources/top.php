@@ -11,8 +11,8 @@ $userlogged = $usermanagerlog->get($username);
 ?>
 <!-- BEGIN LOGO -->
 <div class="page-logo">
-    <a href="<?php echo URLHOST.$_COOKIE['company'].'/accueil'; ?>">
-        <img src="<?php echo URLHOST; ?>images/logo.png" alt="logo" class="logo-default" style="width: 50px; margin: 13px 75px 0; " /> </a>
+    <a href="<?php echo URLHOST'accueil'; ?>">
+        <img src="<?php echo URLHOST; ?>images/logo_transparent_blc.png" alt="logo" class="logo-default" style="width: 50px; margin: 13px 75px 0; " /> </a>
     <div class="menu-toggler sidebar-toggler">
         <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
     </div>
@@ -24,7 +24,7 @@ $userlogged = $usermanagerlog->get($username);
 <!-- BEGIN PAGE ACTIONS -->
 <!-- DOC: Remove "hide" class to enable the page header actions -->
 <?php
-$company = array();
+/*$company = array();
 $company = new Company ($company);
 $companymanager = new CompaniesManager($bdd);
 if($_COOKIE["credential"] != "A")
@@ -58,7 +58,7 @@ if(count($companymanager)>1){
         </ul>
     </div>
 </div>
-<?php } ?>
+<?php } */?>
 <!-- END PAGE ACTIONS -->
 <!-- BEGIN PAGE TOP -->
 <div class="page-top">
@@ -78,12 +78,6 @@ if(count($companymanager)>1){
     <!-- BEGIN TOP NAVIGATION MENU -->
     <div class="top-menu">
         <ul class="nav navbar-nav pull-right">
-            <li class="dropdown dropdown-user dropdown-dark">
-                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" style="padding: 16px 10px 18px !important;">
-                    <span class="username"> <img src="<?php echo URLHOST; ?>images/societe/<?php echo $_COOKIE['company']; ?>.jpg" alt="<?php echo $_COOKIE['company']; ?>" class="logo-default" style="max-height: 40px;" /> </span>
-                    <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
-                    </a>
-            </li>
             <li class="separator hide"> </li>
             <!-- BEGIN USER LOGIN DROPDOWN -->
             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
