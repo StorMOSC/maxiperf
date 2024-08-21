@@ -1,8 +1,8 @@
 Header set Access-Control-Allow-Origin "*"
-AuthName "Reserve aux utilisateurs de StM-Compta"
+AuthName "Reserve aux utilisateurs de MaxiPerf"
 AuthType Basic
 
-AuthUserFile "/var/www/vhosts/clineo.nc/stm-compta.nc/.htpasswd"
+AuthUserFile "/var/www/vhosts/bitwin.nc/maxiperf.bitwin.nc/.htpasswd"
 Require valid-user
 #Options +FollowSymlinks
 Options -Multiviews
@@ -10,7 +10,7 @@ Options -Multiviews
 RewriteEngine On
 #RewriteCond %{HTTPS} !on [OR]
 #RewriteCond %{HTTP_HOST} ^www\. [NC]
-#RewriteRule ^ https://dev.bitwin.nc%{REQUEST_URI} [R=301,L]
+#RewriteRule ^ https://maxiperf.bitwin.nc%{REQUEST_URI} [R=301,L]
 #RewriteCond %{HTTPS} on
 RewriteCond %{HTTPS} !on [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
