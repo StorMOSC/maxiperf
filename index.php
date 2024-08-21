@@ -1,12 +1,10 @@
 <?php 
-echo $_SERVER['HTTP_HOST']." - ";
 session_start();
 
 include '_cfg/cfg.php';
 include '_cfg/fonctions.php';
 $retour = $_GET['souscat'];
 
-echo URLHOST;
 ?>
 <!DOCTYPE html>
 <!-- 
