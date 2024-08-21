@@ -37,6 +37,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <?php include '_ressources/_inc/css.php'; ?>
         <script src="<?php echo URLHOST.'_ressources/_inc/global/plugins/jquery.min.js'?>"></script>
         <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="<?php echo URLHOST;?>images/favicon/favicon.ico?v=2" type="image/x-icon">
         <link rel="apple-touch-icon" sizes="57x57"href="<?php echo URLHOST;?>images/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60"href="<?php echo URLHOST;?>images/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72"href="<?php echo URLHOST;?>images/favicon/apple-icon-72x72.png">
