@@ -2,10 +2,10 @@
 
 ?>
 <body class=" login">
-        <div class="loginfond" style="background: url('<?php echo URLHOST; ?>images/fond.jpg') !important;"></div>
+        <div class="loginfond" style="background: url('<?php echo URLHOST; ?>images/fond.jpg'); background-size:cover;"></div>
         <!-- BEGIN LOGO -->
         <div class="logo">
-            <img style="max-width: 200px;" src="../images/logo_mp.jpg" alt="" />
+            <img style="max-width: 200px;" src="../images/logo_transparent_blc.png" alt="" />
         </div>
         <!-- END LOGO -->
         <!-- BEGIN LOGIN -->
