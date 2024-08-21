@@ -1,5 +1,6 @@
 <?php 
-echo $path = $_SERVER['DOCUMENT_ROOT'];
+echo $path = $_SERVER['DOCUMENT_ROOT']." - ";
+echo URLHOST;
 //session_start();
 
 /*include '_cfg/cfg.php';
