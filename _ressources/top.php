@@ -88,7 +88,7 @@ if(count($companymanager)>1){
                     <i style="font-size: 35px;" class="fas fa-user-circle img-circle"></i> </a>
                 <ul class="dropdown-menu dropdown-menu-default">
                     <li>
-                        <a href="<?php echo URLHOST . $_COOKIE['company'] . '/user/modifier/preferences/'.$_COOKIE["username"]; ?>">
+                        <a href="<?php echo URLHOST . 'user/modifier/preferences/'.$_COOKIE["username"]; ?>">
                                 <i class="icon-user"></i> Profil </a>
                     </li>
                     <li class="divider"></li>
