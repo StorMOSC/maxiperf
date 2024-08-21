@@ -22,7 +22,7 @@ if($_COOKIE['connected']=="false"){
         
         setcookie('company', $company->getNameData() , time() + 365*24*3600, '/');*/
 
-        header('Location: '.URLHOST."/accueil");
+        header('Location: '.URLHOST."accueil");
         echo "2";
 }
 
