@@ -1,5 +1,5 @@
 <?php 
-echo $path = $_SERVER['DOCUMENT_ROOT']." - ";
+echo $_SERVER['HTTP_HOST']." - ";
 echo URLHOST;
 //session_start();
 
