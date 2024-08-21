@@ -26,20 +26,20 @@
                 <div class="form-group">
                     <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
                     <label class="control-label visible-ie8 visible-ie9">Login</label>
-                    <div class="input-icon">
+                    <div class="input-icon" style="border-left:2px solid #2f353b !important;">
                         <i class="fa fa-user"></i>
                         <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Login" name="username" id="username" /> </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label visible-ie8 visible-ie9">Mot de passe</label>
-                    <div class="input-icon">
+                    <div class="input-icon" style="border-left:2px solid #2f353b !important;">
                         <i class="fa fa-lock"></i>
                         <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Mot de passe" name="password" id="password" /> </div>
                 </div>
                 <div class="form-actions">
                     <label class="checkbox">
                         <input type="checkbox" name="remember" value="1" /> Rester connecté </label>
-                    <button type="submit" class="btn green pull-right" id="valider" name="valider" value="valider"> Connexion </button>
+                    <button type="submit" class="btn dark pull-right" id="valider" name="valider" value="valider"> Connexion </button>
                 </div>
                 <div class="forget-password">
                     <h4>Mot de passe oublié ?</h4>
