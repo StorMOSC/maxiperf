@@ -21,7 +21,7 @@
 <link href="<?php echo URLHOST;?>_ressources/_inc/pages/css/login.min.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo URLHOST;?>_ressources/_inc/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo URLHOST;?>_ressources/_inc/global/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
-<?php }elseif($_GET['section']=="connexion"){ ?>
+<?php }elseif($_GET['cat']=="connexion"){ ?>
 <link href="<?php echo URLHOST;?>_ressources/_inc/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo URLHOST;?>_ressources/_inc/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
 <?php } ?>
