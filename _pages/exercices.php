@@ -25,7 +25,7 @@
             </div>
             <div class="portlet-body form">
                 <!-- BEGIN FORM-->
-                <form action="index.html" class="form-horizontal form-row-seperated">
+                <form action="index.html" class="form-horizontal form-inline form-row-seperated">
                     <div class="form-body">
                         <div class="form-group">
                             <label class="control-label col-md-3">Choix de l'exercice</label>
@@ -36,6 +36,7 @@
                                     <option value="3">Soulevé de terre</option>
                                     <option value="4">Etirage dos</option>
                                 </select>
+                                <button type="submit" class="btn green">Transfer cash</button>
                             </div>
                         </div>
                     </div>
