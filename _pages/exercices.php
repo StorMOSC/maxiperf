@@ -8,8 +8,8 @@
         <div class="portlet light form-fit ">
             <div class="portlet-title">
                 <div class="caption">
-                    <i class="icon-social-dribbble font-green"></i>
-                    <span class="caption-subject font-green bold uppercase">Bootstrap Select</span>
+                <i class="fas fa-dumbbell"></i>
+                    <span class="caption-subject font-dark bold uppercase">Sélection des exercices</span>
                 </div>
                 <div class="actions">
                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
