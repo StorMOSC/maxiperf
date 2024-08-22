@@ -36,6 +36,8 @@
                                     <option value="3">Soulevé de terre</option>
                                     <option value="4">Etirage dos</option>
                                 </select>
+                            </div>
+                            <div class="col-md-4">
                                 <button type="submit" class="btn green">Transfer cash</button>
                             </div>
                         </div>
