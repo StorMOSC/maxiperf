@@ -44,15 +44,6 @@
     </li>
         
     <?php 
-            }else{
-    ?>
-        <i class="fa fa-angle-right" style="color: #aaa; font-size: 15px !important;"></i>
-        
-    </li>
-    <li>
-        <span class="active" style="color: #523a5f; font-weight: 800;"><?php print ucwords($_GET['cat5']); ?> A3</span>
-    </li>
-    <?php
             }
     ?>
 </ul>
