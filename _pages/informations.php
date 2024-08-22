@@ -78,7 +78,7 @@
                                             <label class="control-label">Mail</label>
                                             <input type="text" placeholder="<?php echo $mail; ?>" class="form-control"> </div>
                                         <div class="margiv-top-10">
-                                            <a href="javascript:;" class="btn green"> Valider </a>
+                                            <a href="javascript:;" class="btn dark"> Valider </a>
                                             <a href="javascript:;" class="btn default"> Annuler </a>
                                         </div>
                                     </form>
@@ -103,7 +103,7 @@
                                             </div>
                                         </div>
                                         <div class="margin-top-10">
-                                            <a href="javascript:;" class="btn green"> Valider </a>
+                                            <a href="javascript:;" class="btn dark"> Valider </a>
                                             <a href="javascript:;" class="btn default"> Annuler </a>
                                         </div>
                                     </form>
@@ -122,7 +122,7 @@
                                             <label class="control-label">Confirmer le nouveau mot de passe</label>
                                             <input type="password" class="form-control"> </div>
                                         <div class="margin-top-10">
-                                            <a href="javascript:;" class="btn green"> Change Password </a>
+                                            <a href="javascript:;" class="btn dark"> Modifier </a>
                                             <a href="javascript:;" class="btn default"> Cancel </a>
                                         </div>
                                     </form>
@@ -139,7 +139,7 @@
                                             <input type="text" maxlength="3" placeholder="<?php echo $poids; ?> kg" class="form-control"> </div>
                                         <!--end profile-settings-->
                                         <div class="margin-top-10">
-                                            <a href="javascript:;" class="btn red"> Valider </a>
+                                            <a href="javascript:;" class="btn dark"> Valider </a>
                                             <a href="javascript:;" class="btn default"> Annuler </a>
                                         </div>
                                     </form>
