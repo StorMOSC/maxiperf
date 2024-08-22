@@ -61,7 +61,7 @@
                                 <span class="caption-subject font-blue-ebonyclay bold uppercase">Mes tops</span>
                             </div>
                         </div>
-                        <div class="portlet-body">
+                        <div class="portlet-body" style="min-height: 135px;">
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <div class="dashboard-stat grey-gallery">
                                     <div class="visual">
@@ -101,7 +101,7 @@
                                     </div>
                                     <div class="details">
                                         <div class="number">
-                                            <span data-counter="counterup" data-value="1349">70 kg</span>
+                                            <span data-counter="counterup" data-value="1349">80 kg</span>
                                         </div>
                                         <div class="desc"> Squat </div>
                                     </div>
