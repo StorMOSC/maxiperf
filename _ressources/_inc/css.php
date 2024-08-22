@@ -31,6 +31,7 @@
 <link href="<?php echo URLHOST;?>_ressources/_inc/global/css/plugins.css" rel="stylesheet" type="text/css" />
 <!-- END THEME GLOBAL STYLES -->
 <!-- BEGIN PAGE LEVEL STYLES -->
+<link href="<?php echo URLHOST;?>_ressources/_inc/pages/css/profile.min.css" rel="stylesheet" type="text/css">
 <?php if($_GET['cat']=="connexion"){ ?>
 <link href="<?php echo URLHOST;?>_ressources/_inc/pages/css/login-3.min.css" rel="stylesheet" type="text/css" />
 <!-- END PAGE LEVEL STYLES -->
