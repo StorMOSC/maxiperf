@@ -82,7 +82,7 @@
                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                     <div class="dashboard-stat grey-gallery">
                                         <div class="visual">
-                                        <i class="fas fa-dumbbell"></i>
+                                        <i class="fas fa-dumbbell" style="color:#ffffff;"></i>
                                         </div>
                                         <div class="details">
                                             <div class="number">
