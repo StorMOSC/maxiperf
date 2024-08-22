@@ -16,233 +16,47 @@
     </li>
     <li class="nav-item  ">
         <a href="javascript:;" class="nav-link nav-toggle">
-            <i class="fas fa-user-tie"></i>
-            <span class="title">Clients</span>
-        </a>
-        <ul class="sub-menu">
-        <?php
-            if($_COOKIE["credential"] == "A" || $_COOKIE["credential"] == "C") {
-        ?>
-           <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/client/creer'; ?>" class="nav-link ">
-                        <span class="title"><i class="far fa-plus-square"></i> Créer</span>
-                    </a>
-           </li>
-        <?php
-            }
-        ?>
-           <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/client/afficher'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> Listing</span>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li class="nav-item  ">
-        <a href="javascript:;" class="nav-link nav-toggle">
-            <i class="fas fa-user-tag"></i>
-            <span class="title">Fournisseurs</span>
-            
-        </a>
-        <ul class="sub-menu">
-        <?php
-            if($_COOKIE["credential"] == "A" || $_COOKIE["credential"] == "C") {
-        ?>
-            <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/fournisseur/creer'; ?>" class="nav-link ">
-                        <span class="title"><i class="far fa-plus-square"></i> Créer</span>
-                    </a>
-            </li>
-            <?php
-            }
-        ?>
-            <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/fournisseur/afficher'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> Listing</span>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li class="nav-item  ">
-        <a href="javascript:;" class="nav-link nav-toggle">
-            <i class="fas fa-folder-open"></i>
-            <span class="title">Dossier</span>
-            
-        </a>
-        <ul class="sub-menu">
-            <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/dossier/creer'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-plus-square"></i> Créer</span>
-                </a>
-            </li>
-            <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/dossier/afficher'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> Listing</span>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li class="nav-item  ">
-        <a href="javascript:;" class="nav-link nav-toggle">
-            <i class="fas fa-file-invoice"></i>
-            <span class="title">Devis</span>
-            
-        </a>
-        <ul class="sub-menu">
-            <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/devis/creer'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-plus-square"></i> Créer</span>
-                </a>
-            </li>
-            <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/devis/afficher/cours'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> En cours</span>
-                </a>
-            </li>
-            <!--<li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/devis/afficher/eclates'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> Eclatés</span>
-                </a>
-            </li>-->
-            <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/devis/afficher/partiels'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> Partiels</span>
-                </a>
-            </li>
-            <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/devis/afficher/valides'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> Validés</span>
-                </a>
-            </li>
-            <?php
-                if($_COOKIE["credential"] == "A" || $_COOKIE["credential"] == "C") {
-            ?>
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST.$_COOKIE['company'].'/devis/afficher/archives'; ?>" class="nav-link ">
-                        <span class="title"><i class="far fa-list-alt"></i> Archivés</span>
-                    </a>
-                </li>
-            <?php
-                }
-            ?>
-            <!--<li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/devis/afficher/archives'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> Archivés</span>
-                </a>
-            </li>-->
-        </ul>
-    </li>
-    <li class="nav-item  ">
-        <a href="<?php echo URLHOST.$_COOKIE['company'].'/proforma/afficher/cours'; ?>" class="nav-link nav-toggle">
-            <i class="fas fa-file-alt"></i>
-            <span class="title">Proformas</span>
+            <i class="fas fa-address-card"></i>
+            <span class="title">Mes informations</span>
         </a>
     </li>
     <li class="nav-item  ">
         <a href="javascript:;" class="nav-link nav-toggle">
-            <i class="fas fa-file-invoice-dollar"></i>
-            <span class="title">Factures</span>
+            <i class="fas fa-dumbbell"></i>
+            <span class="title">Exercices</span>
             
         </a>
-        <ul class="sub-menu">
-            <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/facture/afficher/cours'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> En cours</span>
-                </a>
-            </li>
-            <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/facture/afficher/partiels'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> Partiels</span>
-                </a>
-            </li>
-            <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/facture/afficher/valides'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> Validées</span>
-                </a>
-            </li>
-        </ul>
     </li>
     <li class="nav-item  ">
-        <a href="<?php echo URLHOST.$_COOKIE['company'].'/avoir/afficher'; ?>" class="nav-link nav-toggle">
-            <i class="fas fa-file-prescription"></i>
-            <span class="title">Avoirs</span>
+        <a href="javascript:;" class="nav-link nav-toggle">
+            <i class="fas fa-chart-line"></i>
+            <span class="title">Performances</span>
+            
         </a>
     </li>
     <?php
     if($_COOKIE["credential"] == "A"){
 
         ?>
-        <li class="nav-item  ">
-            <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="fas fa-user-shield"></i>
-                <span class="title">Sécurité</span>
-                
-            </a>
-            <ul class="sub-menu">
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/user/creer'; ?>" class="nav-link ">
-                        <span class="title"><i class="far fa-plus-square"></i> Créer</span>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/user/afficher'; ?>" class="nav-link ">
-                        <span class="title"><i class="far fa-list-alt"></i> Listing</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item  ">
-            <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="fas fa-building"></i>
-                <span class="title">Société</span>
-                
-            </a>
-            <ul class="sub-menu">
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/societe/creer'; ?>" class="nav-link ">
-                        <span class="title"><i class="far fa-plus-square"></i> Créer</span>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/societe/afficher'; ?>" class="nav-link ">
-                        <span class="title"><i class="far fa-list-alt"></i> Listing</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item  ">
-            <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="fas fa-percent"></i>
-                <span class="title">Taxes</span>
-                
-            </a>
-            <ul class="sub-menu">
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/taxe/creer'; ?>" class="nav-link ">
-                        <span class="title"><i class="far fa-plus-square"></i> Créer</span>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/taxe/afficher'; ?>" class="nav-link ">
-                        <span class="title"><i class="far fa-list-alt"></i> Listing</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item  ">
-            <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="fas fa-exclamation-triangle"></i>
-                <span class="title">Erreurs</span>
-            </a>
-        </li>
-        <li class="nav-item  ">
-            <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="far fa-question-circle"></i>
-                <span class="title">FAQ</span>
-            </a>
-        </li>
-        <?php
-    }
-    ?>
+    <li class="nav-item  ">
+        <a href="javascript:;" class="nav-link nav-toggle">
+            <i class="fas fa-file-users"></i>
+            <span class="title">Membres</span>
+            
+        </a>
+    </li>
+    <li class="nav-item  ">
+        <a href="<?php echo URLHOST.$_COOKIE['company'].'/proforma/afficher/cours'; ?>" class="nav-link nav-toggle">
+            <i class="fas fa-contract"></i>
+            <span class="title">Abonnements</span>
+        </a>
+    </li>
+    <li class="nav-item  ">
+        <a href="javascript:;" class="nav-link nav-toggle">
+            <i class="fas fa-coins"></i>
+            <span class="title">Paiements</span>    
+        </a>
+    </li>
+    <?php } ?>
 </ul>
 <!-- END SIDEBAR MENU -->
