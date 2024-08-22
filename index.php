@@ -93,7 +93,7 @@ if($_GET['section']=="connexion" || $_GET['cat']=="connexion"){
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
 
-                <div class="page-content" style="padding-top: 0px !important;">
+                <div class="page-content" style="padding-top: 0px !important; min-height: 815px;">
                     <?php if($retour == "errormodif") { ?>
                         <div class="alert alert-danger">
                             <button class="close" data-close="alert"></button> Une erreur est survenue, les préférences n'ont donc pas pu être modifiées !</div>
@@ -127,7 +127,7 @@ if($_GET['section']=="connexion" || $_GET['cat']=="connexion"){
         <!-- END CONTAINER -->
         <!-- BEGIN FOOTER -->
         <div class="page-footer">
-            <div class="page-footer-inner"> 2019 &copy; StM-Compta - CMG
+            <div class="page-footer-inner"> 2024 &copy; MaxiPerf
             </div>
             <div class="scroll-to-top">
                 <i class="icon-arrow-up"></i>
