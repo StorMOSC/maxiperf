@@ -1,6 +1,3 @@
-<h3 class="page-title"> New User Profile | Account
-<small>user account page</small>
-</h3>
 <!-- END PAGE HEADER-->
 <div class="row">
     <div class="col-md-12">
@@ -64,16 +61,16 @@
                             </div>
                             <ul class="nav nav-tabs">
                                 <li class="active">
-                                    <a href="#tab_1_1" data-toggle="tab">Personal Info</a>
+                                    <a href="#tab_1_1" data-toggle="tab">Info Personnelle</a>
                                 </li>
                                 <li>
-                                    <a href="#tab_1_2" data-toggle="tab">Change Avatar</a>
+                                    <a href="#tab_1_2" data-toggle="tab">Image de profil</a>
                                 </li>
                                 <li>
-                                    <a href="#tab_1_3" data-toggle="tab">Change Password</a>
+                                    <a href="#tab_1_3" data-toggle="tab">Réinit. Mot de passe</a>
                                 </li>
                                 <li>
-                                    <a href="#tab_1_4" data-toggle="tab">Privacy Settings</a>
+                                    <a href="#tab_1_4" data-toggle="tab">Santé</a>
                                 </li>
                             </ul>
                         </div>
@@ -83,16 +80,16 @@
                                 <div class="tab-pane active" id="tab_1_1">
                                     <form role="form" action="#">
                                         <div class="form-group">
-                                            <label class="control-label">First Name</label>
+                                            <label class="control-label">Nom</label>
                                             <input type="text" placeholder="John" class="form-control"> </div>
                                         <div class="form-group">
-                                            <label class="control-label">Last Name</label>
+                                            <label class="control-label">Prénom</label>
                                             <input type="text" placeholder="Doe" class="form-control"> </div>
                                         <div class="form-group">
-                                            <label class="control-label">Mobile Number</label>
+                                            <label class="control-label">Téléphone</label>
                                             <input type="text" placeholder="+1 646 580 DEMO (6284)" class="form-control"> </div>
                                         <div class="form-group">
-                                            <label class="control-label">Interests</label>
+                                            <label class="control-label">Mail</label>
                                             <input type="text" placeholder="Design, Web etc." class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Occupation</label>
@@ -105,8 +102,8 @@
                                             <label class="control-label">Website Url</label>
                                             <input type="text" placeholder="http://www.mywebsite.com" class="form-control"> </div>
                                         <div class="margiv-top-10">
-                                            <a href="javascript:;" class="btn green"> Save Changes </a>
-                                            <a href="javascript:;" class="btn default"> Cancel </a>
+                                            <a href="javascript:;" class="btn green"> Valider </a>
+                                            <a href="javascript:;" class="btn default"> Annuler </a>
                                         </div>
                                     </form>
                                 </div>
@@ -135,8 +132,8 @@
                                             </div>
                                         </div>
                                         <div class="margin-top-10">
-                                            <a href="javascript:;" class="btn green"> Submit </a>
-                                            <a href="javascript:;" class="btn default"> Cancel </a>
+                                            <a href="javascript:;" class="btn green"> Valider </a>
+                                            <a href="javascript:;" class="btn default"> Annuler </a>
                                         </div>
                                     </form>
                                 </div>
@@ -145,13 +142,13 @@
                                 <div class="tab-pane" id="tab_1_3">
                                     <form action="#">
                                         <div class="form-group">
-                                            <label class="control-label">Current Password</label>
+                                            <label class="control-label">Mot de passe actuel</label>
                                             <input type="password" class="form-control"> </div>
                                         <div class="form-group">
-                                            <label class="control-label">New Password</label>
+                                            <label class="control-label">Nouveau mot de passe</label>
                                             <input type="password" class="form-control"> </div>
                                         <div class="form-group">
-                                            <label class="control-label">Re-type New Password</label>
+                                            <label class="control-label">Confirmer le nouveau mot de passe</label>
                                             <input type="password" class="form-control"> </div>
                                         <div class="margin-top-10">
                                             <a href="javascript:;" class="btn green"> Change Password </a>
@@ -163,42 +160,16 @@
                                 <!-- PRIVACY SETTINGS TAB -->
                                 <div class="tab-pane" id="tab_1_4">
                                     <form action="#">
-                                        <table class="table table-light table-hover">
-                                            <tbody><tr>
-                                                <td> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus.. </td>
-                                                <td>
-                                                    <label class="uniform-inline">
-                                                        <div class="radio"><span><input type="radio" name="optionsRadios1" value="option1"></span></div> Yes </label>
-                                                    <label class="uniform-inline">
-                                                        <div class="radio"><span class="checked"><input type="radio" name="optionsRadios1" value="option2" checked=""></span></div> No </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> Enim eiusmod high life accusamus terry richardson ad squid wolf moon </td>
-                                                <td>
-                                                    <label class="uniform-inline">
-                                                        <div class="checker"><span><input type="checkbox" value=""></span></div> Yes </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> Enim eiusmod high life accusamus terry richardson ad squid wolf moon </td>
-                                                <td>
-                                                    <label class="uniform-inline">
-                                                        <div class="checker"><span><input type="checkbox" value=""></span></div> Yes </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> Enim eiusmod high life accusamus terry richardson ad squid wolf moon </td>
-                                                <td>
-                                                    <label class="uniform-inline">
-                                                        <div class="checker"><span><input type="checkbox" value=""></span></div> Yes </label>
-                                                </td>
-                                            </tr>
-                                        </tbody></table>
+                                        <div class="form-group">
+                                            <label class="control-label">Taille (m)</label>
+                                            <input type="text" maxlength="4" placeholder="Web Developer" class="form-control"> </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Poids (kg)</label>
+                                            <input type="text" maxlength="3" placeholder="Web Developer" class="form-control"> </div>
                                         <!--end profile-settings-->
                                         <div class="margin-top-10">
-                                            <a href="javascript:;" class="btn red"> Save Changes </a>
-                                            <a href="javascript:;" class="btn default"> Cancel </a>
+                                            <a href="javascript:;" class="btn red"> Valider </a>
+                                            <a href="javascript:;" class="btn default"> Annuler </a>
                                         </div>
                                     </form>
                                 </div>
