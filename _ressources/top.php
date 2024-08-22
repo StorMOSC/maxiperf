@@ -1,19 +1,18 @@
 <?php
-/*$nom = $_COOKIE['nom'];
+$nom = $_COOKIE['nom'];
 $prenom = $_COOKIE['prenom'];
 $username = $_COOKIE['username'];
 
-echo "2";
-/*$arraylog = array();
+$arraylog = array();
 $userlogged = new Users($arraylog);
 $usermanagerlog = new UsersManager($bdd);
-$userlogged = $usermanagerlog->get($username);*/
+$userlogged = $usermanagerlog->get($username);
 
 ?>
 <!-- BEGIN LOGO -->
 <div class="page-logo">
-    <a href="<?php echo URLHOST'accueil'; ?>">
-        <img src="<?php //echo URLHOST; ?>images/logo_transparent_blc.png" alt="logo" class="logo-default" style="width: 50px; margin: 13px 75px 0; " /> </a>
+    <a href="<?php echo URLHOST.'accueil'; ?>">
+        <img src="<?php echo URLHOST; ?>images/logo_transparent_blc.png" alt="logo" class="logo-default" style="width: 50px; margin: 13px 75px 0; " /> </a>
     <div class="menu-toggler sidebar-toggler">
         <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
     </div>
@@ -84,17 +83,17 @@ if(count($companymanager)>1){
             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
             <li class="dropdown dropdown-user dropdown-dark">
                 <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                    <span class="username username-hide-on-mobile"> <?php// echo $nom.' '.$prenom; ?> </span>
+                    <span class="username username-hide-on-mobile"> <?php echo $nom.' '.$prenom; ?> </span>
                     <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
                     <i style="font-size: 35px;" class="fas fa-user-circle img-circle"></i> </a>
                 <ul class="dropdown-menu dropdown-menu-default">
                     <li>
-                        <a href="<?php //echo URLHOST . 'user/modifier/preferences/'.$_COOKIE["username"]; ?>">
+                        <a href="<?php echo URLHOST . 'user/modifier/preferences/'.$_COOKIE["username"]; ?>">
                                 <i class="icon-user"></i> Profil </a>
                     </li>
                     <li class="divider"></li>
                     <li>
-                        <a href="<?php //echo URLHOST; ?>_pages/_post/deconnexion.php">
+                        <a href="<?php echo URLHOST; ?>_pages/_post/deconnexion.php">
                             <i class="icon-logout"></i> Déconnexion </a>
                     </li>
                 </ul>
