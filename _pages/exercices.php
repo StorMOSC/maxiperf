@@ -24,27 +24,26 @@
                 </div>
             </div>
             <div class="portlet-body form">
-                <!-- BEGIN FORM-->
-                <form action="index.html" class="form-horizontal form-inline form-row-seperated">
-                    <div class="form-body">
-                        <div class="form-group col-md-12">
-                            <label class="control-label col-md-3">Choix de l'exercice</label>
-                            <div class="col-md-4">
-                                <select class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
-                                    <option value="1">Développé couché (barre)</option>
-                                    <option value="2">Squat</option>
-                                    <option value="3">Soulevé de terre</option>
-                                    <option value="4">Etirage dos</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <button type="submit" class="btn green">Ajouter</button>
+                    <!-- BEGIN FORM-->
+                    <form action="index.html" class="form-horizontal form-inline form-row-seperated">
+                        <div class="form-body">
+                            <div class="form-group col-md-12">
+                                <label class="control-label col-md-3">Choix de l'exercice</label>
+                                <div class="col-md-4">
+                                    <select class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
+                                        <option value="1">Développé couché (barre)</option>
+                                        <option value="2">Squat</option>
+                                        <option value="3">Soulevé de terre</option>
+                                        <option value="4">Etirage dos</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit" class="btn green">Ajouter</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
-                <!-- END FORM-->
-                </div>
+                    </form>
+                    <!-- END FORM-->
             </div>
         </div>
         <!-- END PORTLET-->
