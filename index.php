@@ -62,7 +62,7 @@ if($_GET['section']=="connexion" || $_GET['cat']=="connexion"){
     </body>
 </html>
 <?php }else{ ?>
-    <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo page-sidebar-fixed">
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
         <!-- BEGIN HEADER -->
         <div class="page-header navbar navbar-fixed-top" style="background:#2f353b; !important">
             <!-- BEGIN HEADER INNER -->
