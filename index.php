@@ -67,7 +67,7 @@ if($_GET['section']=="connexion" || $_GET['cat']=="connexion"){
         <div class="page-header navbar navbar-fixed-top">
             <!-- BEGIN HEADER INNER -->
             <div class="page-header-inner ">
-                <?php //include '_ressources/top.php'; ?>
+                <?php include '_ressources/top.php'; ?>
                 <!-- END PAGE TOP -->
             </div>
             <!-- END HEADER INNER -->

@@ -1,8 +1,10 @@
 <?php
+echo "1";
 $nom = $_COOKIE['nom'];
 $prenom = $_COOKIE['prenom'];
 $username = $_COOKIE['username'];
 
+echo "2";
 /*$arraylog = array();
 $userlogged = new Users($arraylog);
 $usermanagerlog = new UsersManager($bdd);
