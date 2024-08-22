@@ -68,11 +68,15 @@
 
     <?php 
         if($_GET['cat']!="connexion"){
-    ?>²
+    ?>
             .svg-inline--fa{
                 font-size: 24px !important;
             }
      <?php } ?>
     
 </style>
-<script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
+<?php 
+    if($_GET['cat']!="connexion"){
+?>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
+<?php } ?>
