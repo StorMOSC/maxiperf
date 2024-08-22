@@ -12,7 +12,7 @@ $userlogged = $usermanagerlog->get($username);*/
 <!-- BEGIN LOGO -->
 <div class="page-logo">
     <a href="<?php echo URLHOST.'accueil'; ?>">
-        <img src="<?php echo URLHOST; ?>images/logo_transparent_blc.png" alt="logo" class="logo-default" style="width: 50px; margin: 13px 75px 0; " /> </a>
+        <img src="<?php echo URLHOST; ?>images/logo_transparent_blc.png" alt="logo" class="logo-default" style="height: 45px; margin: 13px 35px 0; " /> </a>
     <div class="menu-toggler sidebar-toggler">
         <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
     </div>
