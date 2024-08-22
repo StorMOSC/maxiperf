@@ -31,7 +31,7 @@
         
     </li>
     <li>
-        <span class="active" style="color: #523a5f; font-weight: 800;"><?php print ucwords($_GET['cat']); ?></span>
+        <span class="active" style="color: #523a5f; font-weight: 800;"><?php print ucwords($_GET['cat']); ?> A1</span>
     </li>
     <?php 
             }elseif (isset($_GET['cat']) AND (isset($_GET['souscat'])) AND $_GET['soussouscat']!="contact") {
@@ -40,7 +40,7 @@
         
     </li>
     <li>
-        <span class="active" style="color: #523a5f;"><?php print ucwords($_GET['souscat']); ?></span>
+        <span class="active" style="color: #523a5f;"><?php print ucwords($_GET['souscat']); ?> A2</span>
     </li>
         
     <?php 
@@ -50,7 +50,7 @@
         
     </li>
     <li>
-        <span class="active" style="color: #523a5f; font-weight: 800;"><?php print ucwords($_GET['cat5']); ?></span>
+        <span class="active" style="color: #523a5f; font-weight: 800;"><?php print ucwords($_GET['cat5']); ?> A3</span>
     </li>
     <?php
             }
