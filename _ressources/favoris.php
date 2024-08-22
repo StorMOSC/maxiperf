@@ -8,7 +8,7 @@
             <div class="portlet light profile-sidebar-portlet ">
                 <!-- SIDEBAR USERPIC -->
                 <div class="profile-userpic">
-                    <img src="<?php echo URLHOST; ?>images/logo_mp.png" class="img-responsive" alt=""> </div>
+                    <img src="<?php echo URLHOST; ?>images/logo_mp.jpg" class="img-responsive" alt=""> </div>
                 <!-- END SIDEBAR USERPIC -->
                 <!-- SIDEBAR USER TITLE -->
                 <div class="profile-usertitle">
