@@ -72,6 +72,12 @@
             .svg-inline--fa{
                 font-size: 24px !important;
             }
+
+            .breadcrumb>li+li:before {
+                content: "" !important;
+                padding: 0 5px;
+                color: #ccc;
+            }
      <?php } ?>
     
 </style>
