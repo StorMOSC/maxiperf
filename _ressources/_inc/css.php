@@ -80,10 +80,10 @@
             }
 
             .dropdown-menu > li > a > [class^="fa-"], .dropdown-menu > li > a > [class*=" fa-"] {
-            color: #888;
-            visibility: hidden;
-        }
-    
+                color: #888;
+                visibility: hidden;
+            }
+    <?php } ?>
 </style>
 <?php 
     if($_GET['cat']!="connexion"){
