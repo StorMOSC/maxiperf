@@ -78,6 +78,11 @@
                 padding: 0 5px;
                 color: #ccc;
             }
+     <?php }elseif($_GET['cat']!="exercices"){ ?>
+        .dropdown-menu > li > a > [class^="fa-"], .dropdown-menu > li > a > [class*=" fa-"] {
+            color: #888;
+            visibility: hidden;
+        }
      <?php } ?>
     
 </style>
