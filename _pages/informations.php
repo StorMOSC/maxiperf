@@ -15,20 +15,6 @@
                     <div class="profile-usertitle-job"> Abo : 3x /semaine </div>
                 </div>
                 <!-- END SIDEBAR USER TITLE -->
-                <!-- SIDEBAR MENU -->
-                <div class="profile-usermenu">
-                    <ul class="nav">
-                        <li>
-                            <a href="javascript;">
-                                <i class="icon-envelope"></i> mail@mail.nc </a>
-                        </li>
-                        <li class="active">
-                            <a href="page_user_profile_1_account.html">
-                                <i class="icon-screen-smartphone"></i> xx.xx.xx </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END MENU -->
             </div>
             <!-- END PORTLET MAIN -->
             <!-- PORTLET MAIN -->
