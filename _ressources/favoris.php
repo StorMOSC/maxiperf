@@ -8,7 +8,7 @@
             <div class="portlet light profile-sidebar-portlet ">
                 <!-- SIDEBAR USERPIC -->
                 <div class="profile-userpic">
-                    <img src="../assets/pages/media/profile/profile_user.jpg" class="img-responsive" alt=""> </div>
+                    <img src="<?php echo URLHOST; ?>images/logo_mp.png" class="img-responsive" alt=""> </div>
                 <!-- END SIDEBAR USERPIC -->
                 <!-- SIDEBAR USER TITLE -->
                 <div class="profile-usertitle">
@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="portlet light ">
-                        <div class="portlet-title tabbable-line">
+                        <div class="portlet-title">
                             <div class="caption caption-md">
                                 <i class="icon-globe theme-font hide"></i>
                                 <span class="caption-subject font-blue-ebonyclay bold uppercase">Mes tops</span>
