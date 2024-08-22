@@ -8,7 +8,7 @@
         <div class="portlet light form-fit ">
             <div class="portlet-title">
                 <div class="caption">
-                <i class="fas fa-dumbbell"></i>
+                <i class="fas fa-dumbbell font-dark"></i>
                     <span class="caption-subject font-dark bold uppercase">Sélection des exercices</span>
                 </div>
                 <div class="actions">
