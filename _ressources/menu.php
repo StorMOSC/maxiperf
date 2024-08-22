@@ -40,14 +40,14 @@
         ?>
     <li class="nav-item  ">
         <a href="javascript:;" class="nav-link nav-toggle">
-            <i class="fas fa-file-users"></i>
+            <i class="fas fa-users"></i>
             <span class="title">Membres</span>
             
         </a>
     </li>
     <li class="nav-item  ">
         <a href="<?php echo URLHOST.$_COOKIE['company'].'/proforma/afficher/cours'; ?>" class="nav-link nav-toggle">
-            <i class="fas fa-contract"></i>
+            <i class="fas fa-file-signature"></i>
             <span class="title">Abonnements</span>
         </a>
     </li>

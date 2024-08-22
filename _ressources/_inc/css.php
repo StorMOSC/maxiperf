@@ -61,6 +61,9 @@
        -o-background-size: cover; /* pour Opera */
        background-size: cover; /* version standardis�e */
     }
+    .svg-inline--fa{
+        font-size: 24px !important;
+    }
     
 </style>
 <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
