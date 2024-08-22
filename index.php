@@ -109,7 +109,7 @@ if($_GET['section']=="connexion" || $_GET['cat']=="connexion"){
                     <!-- BEGIN PAGE BASE CONTENT -->
                     <?php if($_GET['cat']=='accueil'){ ?>
                     <div class="row">
-                        <?php include '_ressources/favoris.php'; ?>
+                        <?php include '_ressources/accueil.php'; ?>
                     </div>
                     <?php } ?>
                         <?php

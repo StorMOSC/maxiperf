@@ -15,20 +15,20 @@
         </a>
     </li>
     <li class="nav-item  ">
-        <a href="javascript:;" class="nav-link nav-toggle">
+        <a href="<?php echo URLHOST.'informations'; ?>" class="nav-link nav-toggle">
             <i class="fas fa-address-card"></i>
             <span class="title">Mes informations</span>
         </a>
     </li>
     <li class="nav-item  ">
-        <a href="javascript:;" class="nav-link nav-toggle">
+        <a href="<?php echo URLHOST.'exercices'; ?>" class="nav-link nav-toggle">
             <i class="fas fa-dumbbell"></i>
             <span class="title">Exercices</span>
             
         </a>
     </li>
     <li class="nav-item  ">
-        <a href="javascript:;" class="nav-link nav-toggle">
+        <a href="<?php echo URLHOST.'performances'; ?>" class="nav-link nav-toggle">
             <i class="fas fa-chart-line"></i>
             <span class="title">Performances</span>
             
@@ -39,20 +39,20 @@
 
         ?>
     <li class="nav-item  ">
-        <a href="javascript:;" class="nav-link nav-toggle">
+        <a href="<?php echo URLHOST.'membres'; ?>" class="nav-link nav-toggle">
             <i class="fas fa-users"></i>
             <span class="title">Membres</span>
             
         </a>
     </li>
     <li class="nav-item  ">
-        <a href="<?php echo URLHOST.$_COOKIE['company'].'/proforma/afficher/cours'; ?>" class="nav-link nav-toggle">
+        <a href="<?php echo URLHOST.'abonnement'; ?>" class="nav-link nav-toggle">
             <i class="fas fa-file-signature"></i>
             <span class="title">Abonnements</span>
         </a>
     </li>
     <li class="nav-item  ">
-        <a href="javascript:;" class="nav-link nav-toggle">
+        <a href="<?php echo URLHOST.'paiement'; ?>" class="nav-link nav-toggle">
             <i class="fas fa-coins"></i>
             <span class="title">Paiements</span>    
         </a>
