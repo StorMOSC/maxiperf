@@ -14,14 +14,10 @@
             
         </a>
     </li>
-    <li class="heading">
-        <h3 class="uppercase"><i class="fas fa-users"></i> Relations</h3>
-    </li>
     <li class="nav-item  ">
         <a href="javascript:;" class="nav-link nav-toggle">
             <i class="fas fa-user-tie"></i>
             <span class="title">Clients</span>
-            <span class="arrow"></span>
         </a>
         <ul class="sub-menu">
         <?php
@@ -46,7 +42,7 @@
         <a href="javascript:;" class="nav-link nav-toggle">
             <i class="fas fa-user-tag"></i>
             <span class="title">Fournisseurs</span>
-            <span class="arrow"></span>
+            
         </a>
         <ul class="sub-menu">
         <?php
@@ -67,14 +63,11 @@
             </li>
         </ul>
     </li>
-    <li class="heading">
-        <h3 class="uppercase"><i class="fas fa-wallet"></i> Documents</h3>
-    </li>
     <li class="nav-item  ">
         <a href="javascript:;" class="nav-link nav-toggle">
             <i class="fas fa-folder-open"></i>
             <span class="title">Dossier</span>
-            <span class="arrow"></span>
+            
         </a>
         <ul class="sub-menu">
             <li class="nav-item  ">
@@ -93,7 +86,7 @@
         <a href="javascript:;" class="nav-link nav-toggle">
             <i class="fas fa-file-invoice"></i>
             <span class="title">Devis</span>
-            <span class="arrow"></span>
+            
         </a>
         <ul class="sub-menu">
             <li class="nav-item  ">
@@ -149,7 +142,7 @@
         <a href="javascript:;" class="nav-link nav-toggle">
             <i class="fas fa-file-invoice-dollar"></i>
             <span class="title">Factures</span>
-            <span class="arrow"></span>
+            
         </a>
         <ul class="sub-menu">
             <li class="nav-item  ">
@@ -176,83 +169,6 @@
         </a>
     </li>
     <?php
-        if($_COOKIE["credential"] == "A" || $_COOKIE["credential"] == "F" || $_COOKIE["credential"] == "C") {
-    ?>
-        <li class="heading">
-            <h3 class="uppercase"><i class="fas fa-calculator"></i> Analyses</h3>
-        </li>
-        <li class="nav-item  ">
-            <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="fas fa-chart-line"></i>
-                <span class="title">Palmares</span>
-                <span class="arrow"></span>
-            </a>
-            <ul class="sub-menu">
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/palmares/devis/creer'; ?>" class="nav-link">
-                        <span class="title"><i class="fas fa-chart-pie"></i> Devis</span>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/palmares/proforma/creer'; ?>" class="nav-link ">
-                        <span class="title"><i class="fas fa-chart-area"></i> Proformas</span>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/palmares/facture/creer'; ?>" class="nav-link ">
-                        <span class="title"><i class="fas fa-chart-line"></i> Factures</span>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/palmares/avoir/creer'; ?>" class="nav-link "
-                       target="_blank">
-                        <span class="title"><i class="fas fa-chart-bar"></i> Avoirs</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item  ">
-            <a href="<?php echo URLHOST . $_COOKIE['company'] . '/cout/creer'; ?>" class="nav-link nav-toggle">
-                <i class="fas fa-chart-bar"></i>
-                <span class="title">Analyse des coûts</span>
-            </a>
-        </li>
-        <li class="nav-item  ">
-            <a href="<?php echo URLHOST . $_COOKIE['company'] . '/export/creer'; ?>" class="nav-link nav-toggle">
-                <i class="fas fa-file-export"></i>
-                <span class="title">Exports</span>
-            </a>
-        </li>
-        <?php
-    }
-    if($_COOKIE["credential"] == "A" || $_COOKIE["credential"] == "C"){
-
-        ?>
-        <li class="heading">
-            <h3 class="uppercase"><i class="fas fa-toolbox"></i> Administration</h3>
-        </li>
-        <li class="nav-item  ">
-            <a href="javascript:;" class="nav-link nav-toggle">
-                    <i class="fas fa-sort-numeric-down"></i>
-                    <span class="title">Compteurs</span>
-                    <span class="arrow"></span>
-            </a>
-            <ul class="sub-menu">
-                <li class="nav-item  ">
-                    <a href="<?php echo URLHOST . $_COOKIE['company'] . '/compteurs/creer'; ?>" class="nav-link "
-                            target="_blank">
-                        <span class="title"><i class="fas fa-undo-alt"></i> Réinitilisation</span>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                <a href="<?php echo URLHOST.$_COOKIE['company'].'/compteurs/afficher'; ?>" class="nav-link ">
-                    <span class="title"><i class="far fa-list-alt"></i> Listing</span>
-                </a>
-            </li>
-            </ul>
-        </li>
-        <?php
-    }
     if($_COOKIE["credential"] == "A"){
 
         ?>
@@ -260,7 +176,7 @@
             <a href="javascript:;" class="nav-link nav-toggle">
                 <i class="fas fa-user-shield"></i>
                 <span class="title">Sécurité</span>
-                <span class="arrow"></span>
+                
             </a>
             <ul class="sub-menu">
                 <li class="nav-item  ">
@@ -279,7 +195,7 @@
             <a href="javascript:;" class="nav-link nav-toggle">
                 <i class="fas fa-building"></i>
                 <span class="title">Société</span>
-                <span class="arrow"></span>
+                
             </a>
             <ul class="sub-menu">
                 <li class="nav-item  ">
@@ -298,7 +214,7 @@
             <a href="javascript:;" class="nav-link nav-toggle">
                 <i class="fas fa-percent"></i>
                 <span class="title">Taxes</span>
-                <span class="arrow"></span>
+                
             </a>
             <ul class="sub-menu">
                 <li class="nav-item  ">

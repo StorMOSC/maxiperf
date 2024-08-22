@@ -61,12 +61,12 @@ if(count($companymanager)>1){
 <?php } */?>
 <!-- END PAGE ACTIONS -->
 <!-- BEGIN PAGE TOP -->
-<div class="page-top">
+<div class="page-top" style="background:#2f353b !important;">
     <!-- BEGIN HEADER SEARCH BOX -->
     <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
     <!-- END HEADER SEARCH BOX -->
     <!-- BEGIN TOP NAVIGATION MENU -->
-    <div class="top-menu" style="background:#2f353b !important;">
+    <div class="top-menu">
         <ul class="nav navbar-nav pull-right">
             <li class="separator hide"> </li>
             <!-- BEGIN USER LOGIN DROPDOWN -->
