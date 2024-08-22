@@ -61,53 +61,55 @@
                                 <span class="caption-subject font-blue-ebonyclay bold uppercase">Mes tops</span>
                             </div>
                         </div>
-                        <div class="portlet-body" style="min-height: 135px;">
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <div class="dashboard-stat grey-gallery">
-                                    <div class="visual">
-                                        <i class="fas fa-trophy" style="color:#ffffff;"></i>
-                                    </div>
-                                    <div class="details">
-                                        <div class="number">
-                                            <span data-counter="counterup" data-value="1349">70 kg</span>
+                        <div class="portlet-body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="dashboard-stat grey-gallery">
+                                        <div class="visual">
+                                            <i class="fas fa-trophy" style="color:#ffffff;"></i>
                                         </div>
-                                        <div class="desc"> Développé couché </div>
+                                        <div class="details">
+                                            <div class="number">
+                                                <span data-counter="counterup" data-value="1349">70 kg</span>
+                                            </div>
+                                            <div class="desc"> Développé couché </div>
+                                        </div>
+                                        <a class="more" href="javascript:;"> Modifier
+                                            <i class="m-icon-swapright m-icon-white"></i>
+                                        </a>
                                     </div>
-                                    <a class="more" href="javascript:;"> Modifier
-                                        <i class="m-icon-swapright m-icon-white"></i>
-                                    </a>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <div class="dashboard-stat grey-gallery">
-                                    <div class="visual">
-                                    <i class="fas fa-dumbbell" style="color:#ffffff;"></i>
-                                    </div>
-                                    <div class="details">
-                                        <div class="number">
-                                            <span data-counter="counterup" data-value="1349">125 kg</span>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="dashboard-stat grey-gallery">
+                                        <div class="visual">
+                                        <i class="fas fa-dumbbell" style="color:#ffffff;"></i>
                                         </div>
-                                        <div class="desc"> Soulevé de terre </div>
+                                        <div class="details">
+                                            <div class="number">
+                                                <span data-counter="counterup" data-value="1349">125 kg</span>
+                                            </div>
+                                            <div class="desc"> Soulevé de terre </div>
+                                        </div>
+                                        <a class="more" href="javascript:;"> Modifier
+                                            <i class="m-icon-swapright m-icon-white"></i>
+                                        </a>
                                     </div>
-                                    <a class="more" href="javascript:;"> Modifier
-                                        <i class="m-icon-swapright m-icon-white"></i>
-                                    </a>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <div class="dashboard-stat grey-gallery">
-                                    <div class="visual">
-                                    <i class="fas fa-running" style="color:#ffffff;"></i>
-                                    </div>
-                                    <div class="details">
-                                        <div class="number">
-                                            <span data-counter="counterup" data-value="1349">80 kg</span>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="dashboard-stat grey-gallery">
+                                        <div class="visual">
+                                        <i class="fas fa-running" style="color:#ffffff;"></i>
                                         </div>
-                                        <div class="desc"> Squat </div>
+                                        <div class="details">
+                                            <div class="number">
+                                                <span data-counter="counterup" data-value="1349">80 kg</span>
+                                            </div>
+                                            <div class="desc"> Squat </div>
+                                        </div>
+                                        <a class="more" href="javascript:;"> Modifier
+                                            <i class="m-icon-swapright m-icon-white"></i>
+                                        </a>
                                     </div>
-                                    <a class="more" href="javascript:;"> Modifier
-                                        <i class="m-icon-swapright m-icon-white"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
