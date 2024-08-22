@@ -63,3 +63,4 @@
     }
     
 </style>
+<script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
