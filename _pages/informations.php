@@ -152,10 +152,10 @@
                                     <form action="#">
                                         <div class="form-group">
                                             <label class="control-label">Taille (m)</label>
-                                            <input type="text" maxlength="4" placeholder="Web Developer" class="form-control"> </div>
+                                            <input type="text" maxlength="4" placeholder="<?php echo $taille; ?> m" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Poids (kg)</label>
-                                            <input type="text" maxlength="3" placeholder="Web Developer" class="form-control"> </div>
+                                            <input type="text" maxlength="3" placeholder="<?php echo $poids; ?> kg" class="form-control"> </div>
                                         <!--end profile-settings-->
                                         <div class="margin-top-10">
                                             <a href="javascript:;" class="btn red"> Valider </a>
