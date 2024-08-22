@@ -25,7 +25,7 @@
     <li>
         <a href="<?php echo URLHOST ?>" style="font-weight: 800;">Accueil</a>
         <?php
-            if(isset($_GET['cat']) && empty($_GET['souscat']) && $_GET["cat"] !="successmodif" && $_GET["cat"] !="errormodif" ){
+            if(isset($_GET['cat']) && empty($_GET['souscat']) && $_GET["cat"] !="accueil" && $_GET["cat"] !="successmodif" && $_GET["cat"] !="errormodif" ){
         ?>
         <i class="fa fa-angle-right" style="color: #aaa; font-size: 15px !important;"></i>
         
