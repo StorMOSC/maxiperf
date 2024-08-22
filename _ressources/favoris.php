@@ -1,6 +1,6 @@
 <h3 class="page-title"> </h3>
 <!-- END PAGE HEADER-->
-<div class="row">
+<div class="row" style="padding-left: 15px;">
     <div class="col-md-12">
         <!-- BEGIN PROFILE SIDEBAR -->
         <div class="profile-sidebar">
