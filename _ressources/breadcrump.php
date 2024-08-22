@@ -19,6 +19,9 @@
 <!-- END PAGE HEAD-->
 <!-- BEGIN PAGE BREADCRUMB -->
 <ul class="page-breadcrumb breadcrumb" style="background-color: white; padding-left: 25px; margin-bottom: 15px;">
+    <?php 
+        if(!empty($_GET['cat'])){
+    ?>
     <li>
         <a href="<?php echo URLHOST ?>" style="font-weight: 800;">Accueil</a>
         <?php
@@ -51,6 +54,7 @@
     </li>
     <?php
             }
+        }
     ?>
 </ul>
 <!-- END PAGE BREADCRUMB -->
