@@ -92,7 +92,7 @@ if($_GET['section']=="connexion" || $_GET['cat']=="connexion"){
             <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
-                <div class="page-content" style="padding-top: 0px !important; min-height: 815px;">
+                <div class="page-content" style="padding-top: 0px !important; min-height: 815px; padding-right: 35px;">
                     <?php if($retour == "errormodif") { ?>
                         <div class="alert alert-danger">
                             <button class="close" data-close="alert"></button> Une erreur est survenue, les préférences n'ont donc pas pu être modifiées !</div>
