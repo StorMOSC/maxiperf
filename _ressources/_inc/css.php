@@ -33,12 +33,16 @@
 <!-- BEGIN PAGE LEVEL STYLES -->
 <?php if($_GET['cat']=="connexion"){ ?>
 <link href="<?php echo URLHOST;?>_ressources/_inc/pages/css/login-3.min.css" rel="stylesheet" type="text/css" />
-<?php } ?>
 <!-- END PAGE LEVEL STYLES -->
 <!-- BEGIN THEME LAYOUT STYLES -->
 <link href="<?php echo URLHOST;?>_ressources/_inc/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo URLHOST;?>_ressources/_inc/layouts/layout4/css/themes/light.min.css" rel="stylesheet" type="text/css" id="style_color" />
 <link href="<?php echo URLHOST;?>_ressources/_inc/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
+<?php }else{ ?>
+<link href="<?php echo URLHOST;?>_ressources/_inc/layouts/layout2/css/layout.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo URLHOST;?>_ressources/_inc/layouts/layout2/css/themes/light.min.css" rel="stylesheet" type="text/css" id="style_color" />
+<link href="<?php echo URLHOST;?>_ressources/_inc/layouts/layout2/css/custom.min.css" rel="stylesheet" type="text/css" />
+<?php } ?>
 <!-- END THEME LAYOUT STYLES -->
 <style type="text/css">
     .loginfond {
@@ -61,9 +65,14 @@
        -o-background-size: cover; /* pour Opera */
        background-size: cover; /* version standardis�e */
     }
-    .svg-inline--fa{
-        font-size: 24px !important;
-    }
+
+    <?php 
+        if($_GET['cat']=="connexion"){
+    ?>²
+            .svg-inline--fa{
+                font-size: 24px !important;
+            }
+     <?php } ?>
     
 </style>
 <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
