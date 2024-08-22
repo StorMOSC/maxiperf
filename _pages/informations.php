@@ -43,7 +43,7 @@
                         <div class="portlet-title tabbable-line">
                             <div class="caption caption-md">
                                 <i class="icon-globe theme-font hide"></i>
-                                <span class="caption-subject font-blue-madison bold uppercase">Profile Account</span>
+                                <span class="caption-subject font-blue-madison bold uppercase">Mon Profil</span>
                             </div>
                             <ul class="nav nav-tabs">
                                 <li class="active">
@@ -86,8 +86,7 @@
                                 <!-- END PERSONAL INFO TAB -->
                                 <!-- CHANGE AVATAR TAB -->
                                 <div class="tab-pane" id="tab_1_2">
-                                    <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                                        eiusmod. </p>
+                                    <p>Choisissez votre photo de profile. Ou laissez l'image de profile par défaut.</p>
                                     <form action="#" role="form">
                                         <div class="form-group">
                                             <div class="fileinput fileinput-new" data-provides="fileinput">
@@ -96,15 +95,11 @@
                                                 <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
                                                 <div>
                                                     <span class="btn default btn-file">
-                                                        <span class="fileinput-new"> Select image </span>
-                                                        <span class="fileinput-exists"> Change </span>
+                                                        <span class="fileinput-new"> Choisir image </span>
+                                                        <span class="fileinput-exists"> Changer </span>
                                                         <input type="file" name="..."> </span>
-                                                    <a href="javascript:;" class="btn default fileinput-exists" data-dismiss="fileinput"> Remove </a>
+                                                    <a href="javascript:;" class="btn default fileinput-exists" data-dismiss="fileinput"> Retirer </a>
                                                 </div>
-                                            </div>
-                                            <div class="clearfix margin-top-10">
-                                                <span class="label label-danger">NOTE! </span>
-                                                <span>Attached image thumbnail is supported in Latest Firefox, Chrome, Opera, Safari and Internet Explorer 10 only </span>
                                             </div>
                                         </div>
                                         <div class="margin-top-10">
