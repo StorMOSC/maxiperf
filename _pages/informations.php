@@ -2,7 +2,7 @@
 <small>user account page</small>
 </h3>
 <!-- END PAGE HEADER-->
-<div class="row" style="padding-left: 15px; padding-right:15px;">
+<div class="row">
     <div class="col-md-12">
         <!-- BEGIN PROFILE SIDEBAR -->
         <div class="profile-sidebar">
