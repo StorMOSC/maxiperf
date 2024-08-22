@@ -31,7 +31,7 @@
         
     </li>
     <li>
-        <span class="active" style="color: #523a5f; font-weight: 800;"><?php print ucwords($_GET['souscat']); ?></span>
+        <span class="active" style="color: #523a5f; font-weight: 800;"><?php print ucwords($_GET['cat']); ?></span>
     </li>
     <?php 
             }elseif (isset($_GET['cat']) AND (isset($_GET['souscat'])) AND $_GET['soussouscat']!="contact") {
