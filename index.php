@@ -92,7 +92,6 @@ if($_GET['section']=="connexion" || $_GET['cat']=="connexion"){
             <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
-
                 <div class="page-content" style="padding-top: 0px !important; min-height: 815px;">
                     <?php if($retour == "errormodif") { ?>
                         <div class="alert alert-danger">
