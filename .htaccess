@@ -1,9 +1,6 @@
 Header set Access-Control-Allow-Origin "*"
 AuthName "Reserve aux utilisateurs de MaxiPerf"
-AuthType Basic
 
-AuthUserFile "/var/www/vhosts/bitwin.nc/maxiperf.bitwin.nc/.htpasswd"
-Require valid-user
 #Options +FollowSymlinks
 Options -Multiviews
 
