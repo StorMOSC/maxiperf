@@ -67,7 +67,7 @@
     }
 
     <?php 
-        if($_GET['cat']=="connexion"){
+        if($_GET['cat']!="connexion"){
     ?>²
             .svg-inline--fa{
                 font-size: 24px !important;
