@@ -20,7 +20,7 @@
 <!-- BEGIN PAGE BREADCRUMB -->
 <ul class="page-breadcrumb breadcrumb" style="background-color: white; padding-left: 25px; margin-bottom: 15px;">
     <li>
-        <a href="<?php echo URLHOST.$_COOKIE['company'].'/accueil'; ?>" style="font-weight: 800;">Accueil</a>
+        <a href="<?php echo URLHOST ?>" style="font-weight: 800;">Accueil</a>
         <?php
             if(isset($_GET['souscat']) && empty($_GET['soussouscat']) && $_GET["souscat"] !="successmodif" && $_GET["souscat"] !="errormodif" ){
         ?>
