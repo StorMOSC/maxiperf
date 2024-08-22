@@ -27,7 +27,7 @@
                 <!-- BEGIN FORM-->
                 <form action="index.html" class="form-horizontal form-inline form-row-seperated">
                     <div class="form-body">
-                        <div class="form-group">
+                        <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Choix de l'exercice</label>
                             <div class="col-md-4">
                                 <select class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
@@ -38,7 +38,7 @@
                                 </select>
                             </div>
                             <div class="col-md-4">
-                                <button type="submit" class="btn green">Transfer cash</button>
+                                <button type="submit" class="btn green">Ajouter</button>
                             </div>
                         </div>
                     </div>
