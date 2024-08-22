@@ -7,7 +7,7 @@
 <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
 <ul class="page-sidebar-menu   " data-keep-expanded="true" data-auto-scroll="true" data-slide-speed="200">
     <li class="nav-item start">
-        <a href="<?php echo URLHOST.$_COOKIE['company'].'/accueil'; ?>" class="nav-link nav-toggle">
+        <a href="<?php echo URLHOST.'accueil'; ?>" class="nav-link nav-toggle">
             <i class="icon-home"></i>
             <span class="title">Accueil</span>
             <span class="selected"></span>
