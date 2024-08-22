@@ -24,7 +24,7 @@
         <?php
             if(isset($_GET['souscat']) && empty($_GET['soussouscat']) && $_GET["souscat"] !="successmodif" && $_GET["souscat"] !="errormodif" ){
         ?>
-        <i class="fa fa-angle-right" style="color: #aa134f;"></i>
+        <i class="fa fa-angle-right" style="color: #aaa; font-size: 15px !important;"></i>
         
     </li>
     <li>
@@ -33,7 +33,7 @@
     <?php 
             }elseif (isset($_GET['souscat']) AND (isset($_GET['soussouscat'])) AND $_GET['soussoussouscat']!="contact") {
     ?>
-        <i class="fa fa-angle-right" style="color: #aa134f;"></i>
+        <i class="fa fa-angle-right" style="color: #aaa; font-size: 15px !important;"></i>
         
     </li>
     <li>
@@ -43,7 +43,7 @@
     <?php 
             }else{
     ?>
-        <i class="fa fa-angle-right" style="color: #aa134f;"></i>
+        <i class="fa fa-angle-right" style="color: #aaa; font-size: 15px !important;"></i>
         
     </li>
     <li>
