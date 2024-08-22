@@ -1,5 +1,4 @@
 <?php
-echo "1";
 /*$nom = $_COOKIE['nom'];
 $prenom = $_COOKIE['prenom'];
 $username = $_COOKIE['username'];
@@ -13,7 +12,7 @@ $userlogged = $usermanagerlog->get($username);*/
 ?>
 <!-- BEGIN LOGO -->
 <div class="page-logo">
-    <a href="<?php //echo URLHOST'accueil'; ?>">
+    <a href="<?php echo URLHOST'accueil'; ?>">
         <img src="<?php //echo URLHOST; ?>images/logo_transparent_blc.png" alt="logo" class="logo-default" style="width: 50px; margin: 13px 75px 0; " /> </a>
     <div class="menu-toggler sidebar-toggler">
         <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
