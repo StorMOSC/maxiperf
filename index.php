@@ -64,7 +64,7 @@ if($_GET['section']=="connexion" || $_GET['cat']=="connexion"){
 <?php }else{ ?>
     <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo page-sidebar-fixed">
         <!-- BEGIN HEADER -->
-        <div class="page-header navbar navbar-fixed-top">
+        <div class="page-header navbar navbar-fixed-top" style="background:#2f353b; !important">
             <!-- BEGIN HEADER INNER -->
             <div class="page-header-inner ">
                 <?php include '_ressources/top.php'; ?>
@@ -83,7 +83,7 @@ if($_GET['section']=="connexion" || $_GET['cat']=="connexion"){
                 <!-- BEGIN SIDEBAR -->
                 <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
                 <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
-                <div class="page-sidebar navbar-collapse collapse">
+                <div class="page-sidebar navbar-collapse collapse" style="background:#2f353b; !important">
                     <?php include '_ressources/menu.php'; ?>
                 </div>
                 <!-- END SIDEBAR -->
