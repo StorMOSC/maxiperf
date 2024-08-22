@@ -1,107 +1,122 @@
-<?php
-/**
- * @author Amaury DEWYNTER
- * @copyright 2019
- */
-include '../_cfg/cfg.php';
-$array = array();
-$companyNameData = $_GET["section"];
-$username = $_COOKIE['username'];
-
-$company = new Company($array);
-$companymanager = new CompaniesManager($bdd);
-$folder = new Folder($array);
-$foldermanager = new FoldersManager($bdd);
-$user = new Users($array);
-$usermanager = new UsersManager($bdd);
-$customer = new Customers($array);
-$customermanager = new CustomersManager($bdd);
-$quotations = new Quotation($array);
-$quotationmanager = new QuotationManager($bdd);
-$company = $companymanager->getByNameData($companyNameData);
-
-$foldermanager = $foldermanager->getListByUser($username, $company->getIdcompany());
-$quotations = $quotationmanager->getListQuotationByFilteredFolders($foldermanager, $folder);
-
-?>
-
-
-<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="dashboard-stat blue">
-        <div class="visual">
-            <i class="fas fa-folder-plus"></i>
-        </div>
-        <div class="details">
-            <div class="number">
-                +</span>
+<div class="page-content" style="min-height:975px">
+    <h3 class="page-title"> </h3>
+    <!-- END PAGE HEADER-->
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN PROFILE SIDEBAR -->
+            <div class="profile-sidebar">
+                <!-- PORTLET MAIN -->
+                <div class="portlet light profile-sidebar-portlet ">
+                    <!-- SIDEBAR USERPIC -->
+                    <div class="profile-userpic">
+                        <img src="../assets/pages/media/profile/profile_user.jpg" class="img-responsive" alt=""> </div>
+                    <!-- END SIDEBAR USERPIC -->
+                    <!-- SIDEBAR USER TITLE -->
+                    <div class="profile-usertitle">
+                        <div class="profile-usertitle-name"> <?php echo $nom." ".$prenom; ?> </div>
+                        <div class="profile-usertitle-job"> Abo : 3x /semaine </div>
+                    </div>
+                    <!-- END SIDEBAR USER TITLE -->
+                    <!-- SIDEBAR MENU -->
+                    <div class="profile-usermenu">
+                        <ul class="nav">
+                            <li>
+                                <a href="javascript;">
+                                    <i class="icon-envelope"></i> mail@mail.nc </a>
+                            </li>
+                            <li class="active">
+                                <a href="page_user_profile_1_account.html">
+                                    <i class="icon-smartphone"></i> xx.xx.xx </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END MENU -->
+                </div>
+                <!-- END PORTLET MAIN -->
+                <!-- PORTLET MAIN -->
+                <div class="portlet light ">
+                    <!-- STAT -->
+                    <div class="row list-separated profile-stat">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="uppercase profile-stat-title"> 37 </div>
+                            <div class="uppercase profile-stat-text"> Scéances </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="uppercase profile-stat-title"> 51 </div>
+                            <div class="uppercase profile-stat-text"> Excercices </div>
+                        </div>
+                    </div>
+                    <!-- END STAT -->
+                </div>
+                <!-- END PORTLET MAIN -->
             </div>
-            <div class="desc"> Nouveau dossier </div>
-        </div>
-        <a class="more" href="<?php echo URLHOST.$_COOKIE['company'];?>/dossier/creer"> Créer un dossier
-            <i class="m-icon-swapright m-icon-white"></i>
-        </a>
-    </div>
-</div>
-<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="dashboard-stat red">
-        <div class="visual">
-            <i class="fas fa-file-medical"></i>
-        </div>
-        <div class="details">
-            <div class="number">
-                + </div>
-            <div class="desc"> Nouveau devis </div>
-        </div>
-        <a class="more" href="<?php echo URLHOST.$_COOKIE['company'];?>/devis/creer"> Créer un devis
-            <i class="m-icon-swapright m-icon-white"></i>
-        </a>
-    </div>
-</div>
-<!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="dashboard-stat green">
-        <div class="visual">
-            <i class="fas fa-file-contract"></i>
-        </div>
-        <div class="details">
-            <div class="number">
-                <i class="fas fa-search"></i></span>
+            <!-- END BEGIN PROFILE SIDEBAR -->
+            <!-- BEGIN PROFILE CONTENT -->
+            <div class="profile-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light ">
+                            <div class="portlet-title tabbable-line">
+                                <div class="caption caption-md">
+                                    <i class="icon-globe theme-font hide"></i>
+                                    <span class="caption-subject font-blue-ebonyclay bold uppercase">Mes tops</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="dashboard-stat grey-gallery">
+                                        <div class="visual">
+                                            <i class="fas fa-trophy"></i>
+                                        </div>
+                                        <div class="details">
+                                            <div class="number">
+                                                <span data-counter="counterup" data-value="1349">70 kg</span>
+                                            </div>
+                                            <div class="desc"> Développé couché </div>
+                                        </div>
+                                        <a class="more" href="javascript:;"> Modifier
+                                            <i class="m-icon-swapright m-icon-white"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="dashboard-stat grey-gallery">
+                                        <div class="visual">
+                                        <i class="fas fa-dumbbell"></i>
+                                        </div>
+                                        <div class="details">
+                                            <div class="number">
+                                                <span data-counter="counterup" data-value="1349">125 kg</span>
+                                            </div>
+                                            <div class="desc"> Soulevé de terre </div>
+                                        </div>
+                                        <a class="more" href="javascript:;"> Modifier
+                                            <i class="m-icon-swapright m-icon-white"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="dashboard-stat grey-gallery">
+                                        <div class="visual">
+                                        <i class="fas fa-running"></i>
+                                        </div>
+                                        <div class="details">
+                                            <div class="number">
+                                                <span data-counter="counterup" data-value="1349">70 kg</span>
+                                            </div>
+                                            <div class="desc"> Squat </div>
+                                        </div>
+                                        <a class="more" href="javascript:;"> Modifier
+                                            <i class="m-icon-swapright m-icon-white"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="desc"> Voir </div>
+            <!-- END PROFILE CONTENT -->
         </div>
-        <a class="more" href="<?php echo URLHOST.$_COOKIE['company'];?>/devis/afficher"> Afficher la liste des devis
-            <i class="m-icon-swapright m-icon-white"></i>
-        </a>
-    </div>
-</div>-->
-<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="dashboard-stat green">
-        <div class="visual">
-            <i class="fas fa-file-contract"></i>
-        </div>
-        <div class="details">
-            <div class="number">
-                <i class="fas fa-search"></i></span>
-            </div>
-            <div class="desc"> Voir mes <?php echo count($quotations);?> devis en cours</div>
-        </div>
-        <a class="more" href="<?php echo URLHOST.$_COOKIE['company'].'/devis/afficher/cours'; ?>"> Afficher mes devis en cours
-            <i class="m-icon-swapright m-icon-white"></i>
-        </a>
-    </div>
-</div>
-
-<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="dashboard-stat purple">
-        <div class="visual">
-            <i class="fas fa-folder-open"></i>
-        </div>
-        <div class="details">
-            <div class="number">
-                <i class="fas fa-search"></i></span></div>
-            <div class="desc"> Voir </div>
-        </div>
-        <a class="more" href="<?php echo URLHOST.$_COOKIE['company'];?>/dossier/afficher"> Afficher la liste des dossiers
-            <i class="m-icon-swapright m-icon-white"></i>
-        </a>
     </div>
 </div>
