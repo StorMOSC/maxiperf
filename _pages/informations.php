@@ -81,26 +81,16 @@
                                     <form role="form" action="#">
                                         <div class="form-group">
                                             <label class="control-label">Nom</label>
-                                            <input type="text" placeholder="John" class="form-control"> </div>
+                                            <input type="text" placeholder="<?php echo $nom; ?>" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Prénom</label>
-                                            <input type="text" placeholder="Doe" class="form-control"> </div>
+                                            <input type="text" placeholder="<?php echo $prenom; ?>" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Téléphone</label>
-                                            <input type="text" placeholder="+1 646 580 DEMO (6284)" class="form-control"> </div>
+                                            <input type="text" placeholder="<?php echo $tel; ?>" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Mail</label>
-                                            <input type="text" placeholder="Design, Web etc." class="form-control"> </div>
-                                        <div class="form-group">
-                                            <label class="control-label">Occupation</label>
-                                            <input type="text" placeholder="Web Developer" class="form-control"> </div>
-                                        <div class="form-group">
-                                            <label class="control-label">About</label>
-                                            <textarea class="form-control" rows="3" placeholder="We are KeenThemes!!!"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label">Website Url</label>
-                                            <input type="text" placeholder="http://www.mywebsite.com" class="form-control"> </div>
+                                            <input type="text" placeholder="<?php echo $mail; ?>" class="form-control"> </div>
                                         <div class="margiv-top-10">
                                             <a href="javascript:;" class="btn green"> Valider </a>
                                             <a href="javascript:;" class="btn default"> Annuler </a>
