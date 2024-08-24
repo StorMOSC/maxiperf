@@ -48,5 +48,38 @@
             </div>
         </div>
         <!-- END PORTLET-->
+        <div class="portlet light form-fit ">
+            <div class="portlet-title">
+                <div class="caption">
+                <i class="fas fa-running font-dark"></i>
+                    <span class="caption-subject font-dark bold uppercase">Le parcours</span>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                        <i class="icon-cloud-upload"></i>
+                    </a>
+                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                        <i class="icon-wrench"></i>
+                    </a>
+                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                        <i class="icon-trash"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <div class="row">
+                    <!-- BEGIN FORM-->
+                    <form action="index.html" class="form-horizontal form-inline form-row-seperated">
+                        <div class="form-body">
+                            <div class="form-group col-md-12">
+                                
+                            </div>
+                        </div>
+                    </form>
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </div>
+        <!-- END PORTLET-->
     </div>
 </div>
