@@ -34,7 +34,7 @@
                                     <option value="1">Développé couché (barre)</option>
                                     <option value="2">Squat</option>
                                     <option value="3">Soulevé de terre</option>
-                                    <option value="4">Etirage dos</option>
+                                    <option value="4">Tirage dos</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
