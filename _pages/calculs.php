@@ -126,6 +126,7 @@ alert('Poids : '+poids+' - Répéts :'+repetitions);
 
         }
         html_table += `</table>`;
+        alert('Table : '+html_table);
         //html_table += `<button id="down__btn" class="down__btn">Télécharger le rapport</button>`;
         setTimeout(function() {
             $("#content_resultat_1rm").html(html_table);
