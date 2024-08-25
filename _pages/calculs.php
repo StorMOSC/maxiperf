@@ -10,7 +10,9 @@
             </div>
             <div class="portlet-body form">
                 <div class="row">
-                    <p>L’indice de masse corporelle (IMC) permet d’évaluer rapidement votre corpulence simplement avec votre poids corporel et votre taille, quel que soit votre sexe.</p>
+                    <div class="col-md-12" style="padding-left: 35px;padding-right: 35px;">
+                        <p>L’indice de masse corporelle (IMC) permet d’évaluer rapidement votre corpulence simplement avec votre poids corporel et votre taille, quel que soit votre sexe.</p>
+                    </div>
                     <!-- BEGIN FORM-->
                     <form action="" class="form-horizontal form-inline form-row-seperated">
                         <div class="form-body">
@@ -19,7 +21,7 @@
                                 <div class="input-icon">
                                     <input type="number" class="form-control" id="poids" placeholder="Mon poids">
                                     <input type="number" class="form-control" id="taille" placeholder="Ma taille">
-                                    <button id="imc" type="submit" class="btn dark" >Calculer</button>
+                                    <button id="imc" class="btn dark" >Calculer</button>
                                 </div>
                             </div>
                         </div>
@@ -47,8 +49,10 @@
             </div>
             <div class="portlet-body form">
                 <div class="row">
-                <p>Le 1RM (ou 1 réptition maximale) est le poids que l'on peut soulever une seule fois avec une technique correcte lors d'un exercice de musculation. Il sert à déterminer le niveau de force maximale d'un individu sur cet exercice. Connaître son 1RM permet d'adapter son programme de musculation en fonction de ses objectifs, en choisissant des charges et des séries adaptées à son niveau.</p>
-                <p>Il est également utile pour suivre son évolution au fil du temps, car il permet de mesurer précisément les progrès réalisés en termes de force. De plus, il offre la possibilité de comparer ses performances avec celles d'autres athlètes et d'établir des objectifs personnels.</p>
+                    <div class="col-md-12" style="padding-left: 35px;padding-right: 35px;">
+                        <p>Le 1RM (ou 1 réptition maximale) est le poids que l'on peut soulever une seule fois avec une technique correcte lors d'un exercice de musculation. Il sert à déterminer le niveau de force maximale d'un individu sur cet exercice. Connaître son 1RM permet d'adapter son programme de musculation en fonction de ses objectifs, en choisissant des charges et des séries adaptées à son niveau.</p>
+                        <p>Il est également utile pour suivre son évolution au fil du temps, car il permet de mesurer précisément les progrès réalisés en termes de force. De plus, il offre la possibilité de comparer ses performances avec celles d'autres athlètes et d'établir des objectifs personnels.</p>
+                    </div>
                     <!-- BEGIN FORM-->
                     <form action="" class="form-horizontal form-inline form-row-seperated">
                         <div class="form-body">
@@ -98,7 +102,7 @@ $('form').submit(function(e) {
 
 /* Calcul IMC */
 $(document).ready((function() {
-    $("#rm").on("click", (function(t) {
+    $("#imc").on("click", (function(t) {
         $("#content_resultat_imc").html('<div class="lds-ripple"><div></div><div></div></div>');
         if ($("#poids").val() > 0) {
             $("#poids").removeClass("invalid");
