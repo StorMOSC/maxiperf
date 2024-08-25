@@ -44,23 +44,15 @@
                         </div>
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Série 1</label>
-                            <div class="input-icon col-md-6">
-                                <div class="input-icon col-md-3">
-                                    <input type="number" class="form-control" id="repet_1" placeholder="Répétition">
-                                </div>
-                                <div class="input-icon col-md-3">
-                                    <input type="number" class="form-control" id="poids_1" placeholder="Poids">
-                                </div>
-                                <div class="input-icon col-md-3">
-                                    <select id="type_1" class="form-control input-xsmall" style="padding-left: 0px !important;">
-                                        <option value="1">Kg</option>
-                                        <option value="2">Minutes</option>
-                                        <option value="3">-</option>
-                                    </select>
-                                </div>
-                                <div class="input-icon col-md-3">
-                                    <button id="ajout_1" type="submit" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
-                                </div>
+                            <div class="input-icon">
+                                <input type="number" class="form-control" id="repet_1" placeholder="Répétition">
+                                <input type="number" class="form-control" id="poids_1" placeholder="Poids">
+                                <select id="type_1" class="form-control input-xsmall" style="padding-left: 0px !important;">
+                                    <option value="1">Kg</option>
+                                    <option value="2">Minutes</option>
+                                    <option value="3">-</option>
+                                </select>
+                                <button id="ajout_1" type="submit" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
                             </div>
                         </div>
                     </div>
