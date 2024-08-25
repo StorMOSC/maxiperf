@@ -1,4 +1,5 @@
 <?php
+$array = array();
 $nom = $_COOKIE['nom'];
 $prenom = $_COOKIE['prenom'];
 $username = $_COOKIE['username'];
