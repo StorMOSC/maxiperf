@@ -17,7 +17,7 @@
 
 <link href="<?php echo URLHOST;?>_ressources/_inc/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo URLHOST;?>_ressources/_inc/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo URLHOST;?>_ressources/_inc/pages/css/login.min.css" rel="stylesheet" type="text/css" />
+<!-- <link href="<?php /*echo URLHOST;*/?>_ressources/_inc/pages/css/login.min.css" rel="stylesheet" type="text/css" />-->
 <link href="<?php echo URLHOST;?>_ressources/_inc/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo URLHOST;?>_ressources/_inc/global/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
 <?php if($_GET['cat']=="connexion"){ ?>
