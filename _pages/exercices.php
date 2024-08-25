@@ -44,12 +44,16 @@
 
                             <div class="form-group col-md-12">
                                 <label class="control-label col-md-3">Série 1</label>
-                                <div class="input-icon col-md-3">
-                                    <input type="number " class="form-control" id="repet_1" placeholder="Répétition"> 
+                                <div class="input-icon">
+                                    <input type="number" class="form-control" id="repet_1" placeholder="Répétition"> 
                                 </div>
+                            </div>
+                            <div class="form-group">
                                 <div class="input-icon col-md-3">
                                     <input type="number" class="form-control" id="poids_1" placeholder="Poids"> 
                                 </div>
+                            </div>
+                            <div class="form-group">
                                 <div class="col-md-3">
                                     <select class="bs-select form-control bs-select-hidden">
                                         <option value="1">Kg</option>
@@ -57,12 +61,6 @@
                                         <option value="3">-</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                
-                            </div>
-                            <div class="form-group">
-                                
                             </div>
 
                     </div>
