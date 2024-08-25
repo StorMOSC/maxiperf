@@ -1,3 +1,15 @@
+<?php
+
+include("../../_cfg/cfg.php");
+
+$array = array();
+
+$user = new Users($array);
+$usermanager = new UsersManager($bdd);
+
+$user = $usermanager->get($username);
+
+?>
 <h3 class="page-title"> </h3>
 <!-- END PAGE HEADER-->
 <div class="row" style="padding-left: 15px; padding-right:15px;">
