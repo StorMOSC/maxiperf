@@ -86,6 +86,10 @@
     </div>
 </div>
 <script>
+$('form').submit(function(e) {
+    e.preventDefault();
+});
+
 $(document).ready((function() {
     $("#rm").on("click", (function(t) {
         $("#content_resultat_1rm").html('<div class="lds-ripple"><div></div><div></div></div>');
@@ -109,7 +113,7 @@ alert('Poids : '+poids+' - Répéts :'+repetitions);
         var persetange = 100;
         var repet_n = 1;
 
-        var html_table = `<h2>FORMULE DE BRZYCKI</h2><table>
+        var html_table = `<h2>FORMULE DE BRZYCKI</h2><table class="table table-striped table-bordered table-hover">
 	            <tr>
 	                <th>%RM</th>
 	                <th>Poids</th>
