@@ -117,10 +117,10 @@ $(document).ready((function() {
         }
         var taille = parseFloat($("#taille").val());
         var poids_imc = parseFloat($("#poids").val());
-
+alert('Poids : '+poids_imc+' - Taille : '+taille);
         var imc = Math.round(poids_imc / (taille*taille));
 
-        var html_table_imc = `<h2 style="font-weight: 600;">Votre IMC est : </h2>`+imc;
+        var html_table_imc = `<h2 style="font-weight: 600;">Votre IMC est : </h2><b>`+imc+`</b>`;
         
         html_table_imc += `<table class="table table-striped table-bordered table-hover">
 	            <tr>
