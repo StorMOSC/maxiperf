@@ -38,9 +38,6 @@
                                     <option value="4">Tirage dos</option>
                                 </select>
                             </div>
-                            <div class="col-md-4">
-                                <button type="submit" class="btn green">Ajouter</button>
-                            </div>
                         </div>
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Série 1</label>
@@ -53,8 +50,14 @@
                                         <option value="2">Minutes</option>
                                         <option value="3">-</option>
                                     </select>
-                                    <button id="ajout_1" type="submit" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
+                                    <button id="ajout_1" title="Ajouter une série" type="submit" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="control-label col-md-3"></label>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn green">Ajouter</button>
                             </div>
                         </div>
                     </div>
