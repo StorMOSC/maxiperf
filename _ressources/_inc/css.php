@@ -71,6 +71,15 @@
         color: #fff;
         font-weight: 800;
     }
+    .page-header.navbar .top-menu .navbar-nav>li.dropdown .dropdown-toggle:hover {
+        background: none;
+        color: #fff;
+        font-weight: 800;
+    }
+
+    .navbar-nav>li>a {
+        color: #fff;
+    }
 
     <?php 
         if($_GET['cat']!="connexion"){
