@@ -46,7 +46,7 @@
                             <div class="input-icon">
                                 <input type="number" class="form-control" id="repet_1" placeholder="Répétition">
                                 <input type="number" class="form-control" id="poids_1" placeholder="Poids">
-                                <select class="form-control input-xsmall">
+                                <select class="form-control input-xsmall" style="padding-left: 0px !important;">
                                     <option value="1">Kg</option>
                                     <option value="2">Minutes</option>
                                     <option value="3">-</option>
