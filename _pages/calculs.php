@@ -60,7 +60,6 @@
                     <!-- END FORM-->
                 </div>
                 <div class="row">
-                    Résultat : <span id="rm"></span>
                     <div id="resultat_1rm">
                         <div id="content_resultat_1rm">
 
