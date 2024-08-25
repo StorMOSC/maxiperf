@@ -10,7 +10,7 @@
             </div>
             <div class="portlet-body form">
                 <div class="row">
-                    <div class="col-md-12" style="padding-left: 35px;padding-right: 35px;">
+                    <div class="col-md-12" style="padding-left: 35px; padding-right: 35px; padding-top:10px;">
                         <p>L’indice de masse corporelle (IMC) permet d’évaluer rapidement votre corpulence simplement avec votre poids corporel et votre taille, quel que soit votre sexe.</p>
                     </div>
                     <!-- BEGIN FORM-->
@@ -49,7 +49,7 @@
             </div>
             <div class="portlet-body form">
                 <div class="row">
-                    <div class="col-md-12" style="padding-left: 35px;padding-right: 35px;">
+                    <div class="col-md-12" style="padding-left: 35px; padding-right: 35px; padding-top:10px;">
                         <p>Le 1RM (ou 1 réptition maximale) est le poids que l'on peut soulever une seule fois avec une technique correcte lors d'un exercice de musculation. Il sert à déterminer le niveau de force maximale d'un individu sur cet exercice. Connaître son 1RM permet d'adapter son programme de musculation en fonction de ses objectifs, en choisissant des charges et des séries adaptées à son niveau.</p>
                         <p>Il est également utile pour suivre son évolution au fil du temps, car il permet de mesurer précisément les progrès réalisés en termes de force. De plus, il offre la possibilité de comparer ses performances avec celles d'autres athlètes et d'établir des objectifs personnels.</p>
                     </div>
@@ -156,10 +156,7 @@ $(document).ready((function() {
         $("#content_resultat_imc").html(html_table_imc);
         
     }));
-}));
 
-/* Calcul du 1 RM */
-$(document).ready((function() {
     $("#rm").on("click", (function(t) {
         $("#content_resultat_1rm").html('<div class="lds-ripple"><div></div><div></div></div>');
         if ($("#poids_rm").val() > 0) {
@@ -201,5 +198,10 @@ $(document).ready((function() {
         $("#content_resultat_1rm").html(html_table);
         
     }));
+}));
+
+/* Calcul du 1 RM */
+$(document).ready((function() {
+    
 }));
 </script>
