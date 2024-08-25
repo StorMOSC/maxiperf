@@ -24,7 +24,7 @@ $user = $usermanager->get($username);
                 <!-- END SIDEBAR USERPIC -->
                 <!-- SIDEBAR USER TITLE -->
                 <div class="profile-usertitle">
-                    <div class="profile-usertitle-name"> <?php echo $nom." ".$prenom; ?> </div>
+                    <div class="profile-usertitle-name"> <?php $user->getName()." ".$user->getFirstName(); ?> </div>
                     <div class="profile-usertitle-job"> Abo : 3x /semaine </div>
                 </div>
                 <!-- END SIDEBAR USER TITLE -->
@@ -37,7 +37,7 @@ $user = $usermanager->get($username);
                         </li>
                         <li class="active">
                             <a href="page_user_profile_1_account.html">
-                                <i class="icon-screen-smartphone"></i> <?php //echo $user->getPhoneNumber(); ?> </a>
+                                <i class="icon-screen-smartphone"></i> <?php echo $user->getPhoneNumber(); ?> </a>
                         </li>
                     </ul>
                 </div>
