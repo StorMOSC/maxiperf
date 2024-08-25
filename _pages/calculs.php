@@ -103,7 +103,60 @@ $('form').submit(function(e) {
 
 /* Calcul IMC */
 $(document).ready((function() {
+    $("#imc").on("click", (function(t) {
+        $("#content_resultat_imc").html('<div class="lds-ripple"><div></div><div></div></div>');
+        if ($("#poids").val() > 0) {
+            $("#poids").removeClass("invalid");
+            
+        } else {
+            $("#poids").addClass("invalid");
+            $("#resultat").addClass("no__form");
 
+            $("#content_resultat_imc").html('');
+            return;
+        }
+        var taille = parseFloat($("#taille").val());
+        var poids_imc = parseFloat($("#poids").val());
+
+        var imc = Math.round(poids_imc / (taille*taille));
+
+        var html_table_imc = `<h2 style="font-weight: 600;">Votre IMC est : </h2>`+imc;
+        
+        html_table_imc += `<table class="table table-striped table-bordered table-hover">
+	            <tr>
+	                <th>IMC</th>
+	                <th>Interprétation OMS</th>
+	            </tr>`;
+        html_table_imc += `<tr>
+	                <td>Moins de 18,5</td>
+	                <td>Insuffisance pondérale (amigreur)</td>
+	            </tr>
+                <tr>
+	                <td>18,5 à 25</td>
+	                <td>Corpulance normale</td>
+	            </tr>
+                <tr>
+	                <td>25 à 30</td>
+	                <td>Surpoids</td>
+	            </tr>
+                <tr>
+	                <td>30 à 35</td>
+	                <td>Obésité modérée</td>
+	            </tr>
+                <tr>
+	                <td>35 à 40</td>
+	                <td>Obésité sévère</td>
+	            </tr>
+                <tr>
+	                <td>Plus de 40</td>
+	                <td>Obésité mobide ou massive</td>
+	            </tr>`;
+        html_table_imc += `</table>`;
+        
+        //$("#resultat_1rm").removeClass("no__form");
+        $("#content_resultat_imc").html(html_table_imc);
+        
+    }));
 
     $("#rm").on("click", (function(t) {
         $("#content_resultat_1rm").html('<div class="lds-ripple"><div></div><div></div></div>');
