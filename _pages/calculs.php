@@ -75,6 +75,7 @@
 <script>
 $(document).ready((function() {
     $("#rm").on("click", (function(t) {
+        alert("Coucou");
         $("#content_resultat_1rm").html('<div class="lds-ripple"><div></div><div></div></div>');
         if ($("#poids_rm").val() > 0) {
             $("#poids_rm").removeClass("invalid");
