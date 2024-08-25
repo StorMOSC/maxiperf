@@ -117,12 +117,13 @@ $(document).ready((function() {
         }
         var taille = parseFloat($("#taille").val());
         var poids_imc = parseFloat($("#poids").val());
-alert('Poids : '+poids_imc+' - Taille : '+taille);
+
         var imc = (poids_imc / (taille*taille))*100;
+        alert('Poids : '+imc);
 
         var html_table_imc = `<div class="col-md-4"><h2 style="font-weight: 600;">Votre IMC est : `+imc.toFixed(1)+`</h2></div>`;
         
-        html_table_imc += `<div class="col-md-6>"<table class="table table-striped table-bordered table-hover">
+        html_table_imc += `<div class="col-md-6"><table class="table table-striped table-bordered table-hover">
 	            <tr>
 	                <th>IMC</th>
 	                <th>Interprétation OMS</th>
