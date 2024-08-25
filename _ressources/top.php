@@ -1,4 +1,7 @@
 <?php
+
+include("../../_cfg/cfg.php");
+
 $array = array();
 $nom = $_COOKIE['nom'];
 $prenom = $_COOKIE['prenom'];
