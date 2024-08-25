@@ -120,9 +120,9 @@ $(document).ready((function() {
 alert('Poids : '+poids_imc+' - Taille : '+taille);
         var imc = (poids_imc / (taille*taille))*100;
 
-        var html_table_imc = `<h2 style="font-weight: 600;">Votre IMC est : </h2><b>`+imc.toFixed(1)+`</b>`;
+        var html_table_imc = `<div class="col-md-4"><h2 style="font-weight: 600;">Votre IMC est : `+imc.toFixed(1)+`</h2></div>`;
         
-        html_table_imc += `<table class="table table-striped table-bordered table-hover">
+        html_table_imc += `<div class="col-md-6>"<table class="table table-striped table-bordered table-hover">
 	            <tr>
 	                <th>IMC</th>
 	                <th>Interprétation OMS</th>
@@ -151,7 +151,7 @@ alert('Poids : '+poids_imc+' - Taille : '+taille);
 	                <td>Plus de 40</td>
 	                <td>Obésité mobide ou massive</td>
 	            </tr>`;
-        html_table_imc += `</table>`;
+        html_table_imc += `</table></div>`;
         
         //$("#resultat_1rm").removeClass("no__form");
         $("#content_resultat_imc").html(html_table_imc);
