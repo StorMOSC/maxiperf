@@ -94,7 +94,7 @@ class UsersManager
      */
     public function get($username)
     {
-        $username = (string) $username;
+        /*$username = (string) $username;
         $q=$this->_db->query('SELECT * FROM users WHERE username ="'.$username.'"');
         $donnees = $q->fetch(PDO::FETCH_ASSOC);
 
@@ -109,7 +109,7 @@ class UsersManager
                 'firstname' => "Supprimé"
             );
             return new Users($array);
-        }
+        }*/
     }
 
     /**
