@@ -30,7 +30,7 @@
                     <!-- END FORM-->
                 </div>
                 <div class="row">
-                    Résultat : <span id="rm"></span>
+                    
                 </div>
             </div>
         </div>
