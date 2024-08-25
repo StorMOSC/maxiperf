@@ -33,7 +33,7 @@ $user = $usermanager->get($username);
                     <ul class="nav">
                         <li>
                             <a href="javascript;">
-                                <i class="icon-envelope"></i> <?php //echo $user->getEmailAddress(); ?> </a>
+                                <i class="icon-envelope"></i> <?php echo $user->getEmailAddress(); ?> </a>
                         </li>
                         <li class="active">
                             <a href="page_user_profile_1_account.html">
