@@ -67,7 +67,7 @@
             </div>
         </div>
         <!-- END PORTLET-->
-        <div class="portlet light form-fit ">
+        <div class="portlet light ">
             <div class="portlet-title">
                 <div class="caption">
                 <i class="fas fa-running font-dark"></i>
@@ -85,7 +85,7 @@
                     </a>
                 </div>
             </div>
-            <div class="portlet-body form">
+            <div class="portlet-body">
                 <div class="row">
                     <!-- BEGIN FORM-->
                     <form action="index.html" class="form-horizontal form-inline form-row-seperated">
