@@ -21,11 +21,11 @@
                     <ul class="nav">
                         <li>
                             <a href="javascript;">
-                                <i class="icon-envelope"></i> mail@mail.nc </a>
+                                <i class="icon-envelope"></i> <?php echo $user->getEmailAddress(); ?> </a>
                         </li>
                         <li class="active">
                             <a href="page_user_profile_1_account.html">
-                                <i class="icon-screen-smartphone"></i> xx.xx.xx </a>
+                                <i class="icon-screen-smartphone"></i> <?php echo $user->getPhoneNumber(); ?> </a>
                         </li>
                     </ul>
                 </div>

@@ -11,7 +11,7 @@
                 <!-- END SIDEBAR USERPIC -->
                 <!-- SIDEBAR USER TITLE -->
                 <div class="profile-usertitle">
-                    <div class="profile-usertitle-name"> <?php echo $nom." ".$prenom; ?> </div>
+                    <div class="profile-usertitle-name"> <?php echo $user->getName()." ".$user->getFirstName(); ?> </div>
                     <div class="profile-usertitle-job"> Abo : 3x /semaine </div>
                 </div>
                 <!-- END SIDEBAR USER TITLE -->
@@ -67,16 +67,16 @@
                                     <form role="form" action="#">
                                         <div class="form-group">
                                             <label class="control-label">Nom</label>
-                                            <input type="text" value="<?php echo $nom; ?>" placeholder="Nom" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $user->getName(); ?>" placeholder="Nom" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Prénom</label>
-                                            <input type="text" value="<?php echo $prenom; ?>" placeholder="Prénom" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $user->getFirstName(); ?>" placeholder="Prénom" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Téléphone</label>
-                                            <input type="text" value="<?php echo $tel; ?>" placeholder="Téléphone" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $user->getPhoneNumber(); ?>" placeholder="Téléphone" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Mail</label>
-                                            <input type="text" value="<?php echo $mail; ?>" placeholder="E-mail" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $user->getEmailAddress(); ?>" placeholder="E-mail" class="form-control"> </div>
                                         <div class="margiv-top-10">
                                             <a href="javascript:;" class="btn dark"> Valider </a>
                                             <a href="javascript:;" class="btn default"> Annuler </a>

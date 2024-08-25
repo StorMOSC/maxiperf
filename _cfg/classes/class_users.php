@@ -7,11 +7,13 @@
     private $password;
     private $emailAddress;
     private $phoneNumber;
+    private $image;
+    private $abonnement;
     private $credential;
-    private $isSeller;
+    private $taille;
+    private $poids;
     private $isActive;
-    private $defaultCompany;
-    private $companyName;
+
 
 
       /**
@@ -153,17 +155,17 @@
       /**
        * @return mixed
        */
-      public function getIsSeller()
+      public function getImage()
       {
-          return $this->isSeller;
+          return $this->image;
       }
 
       /**
-       * @param mixed $isSeller
+       * @param mixed $image
        */
-      public function setIsSeller($isSeller)
+      public function setImage($image)
       {
-          $this->isSeller = $isSeller;
+          $this->image = $image;
       }
 
       /**
@@ -185,36 +187,50 @@
       /**
        * @return mixed
        */
-      public function getDefaultCompany()
+      public function getAbonnement()
       {
-          return $this->defaultCompany;
+          return $this->abonnement;
       }
 
       /**
-       * @param mixed $defaultCompany
+       * @param mixed $abonnement
        */
-      public function setDefaultCompany($defaultCompany): void
+      public function setAbonnement($abonnement): void
       {
-          $this->defaultCompany = $defaultCompany;
+          $this->abonnement = $abonnement;
       }
 
       /**
        * @return mixed
        */
-      public function getCompanyName()
+      public function getTaille()
       {
-          return $this->companyName;
+          return $this->taille;
       }
 
       /**
-       * @param mixed $companyName
+       * @param mixed $taille
        */
-      public function setCompanyName($companyName): void
+      public function setTaille($taille): void
       {
-          $this->companyName = $companyName;
+          $this->taille = $taille;
       }
 
+      /**
+       * @return mixed
+       */
+      public function getPoids()
+      {
+          return $this->poids;
+      }
 
+      /**
+       * @param mixed $poids
+       */
+      public function setPoids($poids): void
+      {
+          $this->poids = $poids;
+      }
 
   }
 ?>

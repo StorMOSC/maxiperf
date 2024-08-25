@@ -3,10 +3,10 @@ $nom = $_COOKIE['nom'];
 $prenom = $_COOKIE['prenom'];
 $username = $_COOKIE['username'];
 
-/*$arraylog = array();
-$userlogged = new Users($arraylog);
-$usermanagerlog = new UsersManager($bdd);
-$userlogged = $usermanagerlog->get($username);*/
+$user = new Users($array);
+$usermanager = new UsersManager($bdd);
+
+$user = $usermanager->get($username);
 
 ?>
 <!-- BEGIN LOGO -->
