@@ -65,7 +65,7 @@
                                         <option value="11">11</option>
                                         <option value="12">12</option>
                                     </select>
-                                    <button id="rm" type="submit" class="btn dark" >Calculer</button>
+                                    <button id="rm" class="btn dark" >Calculer</button>
                                 </div>
                             </div>
                         </div>
