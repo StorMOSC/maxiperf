@@ -66,6 +66,12 @@
        background-size: cover; /* version standardis�e */
     }
 
+    .page-header.navbar .top-menu .navbar-nav>li.dropdown-user .open{
+        background: none;
+        color: black;
+        font-weight: 600;
+    }
+
     <?php 
         if($_GET['cat']!="connexion"){
     ?>
