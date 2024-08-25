@@ -67,16 +67,16 @@
                                     <form role="form" action="#">
                                         <div class="form-group">
                                             <label class="control-label">Nom</label>
-                                            <input type="text" placeholder="<?php echo $nom; ?>" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $nom; ?>" placeholder="Nom" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Prénom</label>
-                                            <input type="text" placeholder="<?php echo $prenom; ?>" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $prenom; ?>" placeholder="Prénom" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Téléphone</label>
-                                            <input type="text" placeholder="<?php echo $tel; ?>" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $tel; ?>" placeholder="Téléphone" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Mail</label>
-                                            <input type="text" placeholder="<?php echo $mail; ?>" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $mail; ?>" placeholder="E-mail" class="form-control"> </div>
                                         <div class="margiv-top-10">
                                             <a href="javascript:;" class="btn dark"> Valider </a>
                                             <a href="javascript:;" class="btn default"> Annuler </a>
@@ -133,10 +133,10 @@
                                     <form action="#">
                                         <div class="form-group">
                                             <label class="control-label">Taille (m)</label>
-                                            <input type="text" maxlength="4" placeholder="<?php echo $taille; ?> m" class="form-control"> </div>
+                                            <input type="text" maxlength="4" value="<?php echo $taille; ?>" placeholder="Mètre" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Poids (kg)</label>
-                                            <input type="text" maxlength="3" placeholder="<?php echo $poids; ?> kg" class="form-control"> </div>
+                                            <input type="text" maxlength="3" value="<?php echo $poids; ?>" placeholder="Kilos" class="form-control"> </div>
                                         <!--end profile-settings-->
                                         <div class="margin-top-10">
                                             <a href="javascript:;" class="btn dark"> Valider </a>

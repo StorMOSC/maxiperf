@@ -28,6 +28,13 @@
         </a>
     </li>
     <li class="nav-item  ">
+        <a href="<?php echo URLHOST.'calculs'; ?>" class="nav-link nav-toggle">
+            <i class="fas fa-calculator"></i>
+            <span class="title">Calculs</span>
+            
+        </a>
+    </li>
+    <li class="nav-item  ">
         <a href="<?php echo URLHOST.'performances'; ?>" class="nav-link nav-toggle">
             <i class="fas fa-chart-line"></i>
             <span class="title">Performances</span>

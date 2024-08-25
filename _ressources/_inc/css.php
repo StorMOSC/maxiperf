@@ -81,6 +81,10 @@
         color: #fff;
     }
 
+    .no__form{
+        display: none !important;
+    }
+
     <?php 
         if($_GET['cat']!="connexion"){
     ?>
