@@ -41,32 +41,21 @@
                                 <button type="submit" class="btn green">Ajouter</button>
                             </div>
                         </div>
-
-                            <div class="form-group col-md-12">
-                                <label class="control-label col-md-3">Série 1</label>
-                                <div class="input-icon">
-                                    <input type="number" class="form-control" id="repet_1" placeholder="Répétition"> 
-                                </div>
+                        <div class="form-group col-md-12">
+                            <label class="control-label col-md-3">Série 1</label>
+                            <div class="input-icon">
+                                <input type="number" class="form-control" id="repet_1" placeholder="Répétition">
+                                <input type="number" class="form-control" id="poids_1" placeholder="Poids">
+                                <select class="form-control input-xsmall">
+                                    <option value="1">Kg</option>
+                                    <option value="2">Minutes</option>
+                                    <option value="3">-</option>
+                                </select>
                             </div>
-                            <div class="form-group">
-                                <div class="input-icon col-md-3">
-                                    <input type="number" class="form-control" id="poids_1" placeholder="Poids"> 
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-3">
-                                    <select class="form-control input-xsmall">
-                                        <option value="1">Kg</option>
-                                        <option value="2">Minutes</option>
-                                        <option value="3">-</option>
-                                    </select>
-                                </div>
-                            </div>
-
+                        </div>
                     </div>
                 </form>
                 <!-- END FORM-->
-                </div>
             </div>
         </div>
         <!-- END PORTLET-->
