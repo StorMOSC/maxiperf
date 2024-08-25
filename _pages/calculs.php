@@ -51,7 +51,20 @@
                                 <label class="control-label col-md-3">1 RM</label>
                                 <div class="input-icon">
                                     <input type="number" class="form-control" id="poids_rm" placeholder="Poids">
-                                    <input type="number" class="form-control" id="repetitions" placeholder="Répétitions">
+                                    <select id="repetitions" class="form-control input-xsmall" style="padding-left: 0px !important;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
                                     <button id="rm" type="submit" class="btn dark" >Calculer</button>
                                 </div>
                             </div>
@@ -60,7 +73,7 @@
                     <!-- END FORM-->
                 </div>
                 <div class="row">
-                    <div id="resultat_1rm">
+                    <div id="resultat_1rm" class="no__form">
                         <div id="content_resultat_1rm">
 
 
