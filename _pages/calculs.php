@@ -109,7 +109,7 @@ alert('Poids : '+poids+' - Répéts :'+repetitions);
         var persetange = 100;
         var repet_n = 1;
 
-        var html_table = `<h2>FORMULE DE BRZYCKI</h2><table class="table table-striped table-bordered table-hover">
+        var html_table = `<h2>FORMULE DE BRZYCKI</h2><table>
 	            <tr>
 	                <th>%RM</th>
 	                <th>Poids</th>
@@ -126,7 +126,6 @@ alert('Poids : '+poids+' - Répéts :'+repetitions);
 
         }
         html_table += `</table>`;
-        alert('Table : '+html_table);
         
         //$("#resultat_1rm").removeClass("no__form");
         $("#content_resultat_1rm").html(html_table);
