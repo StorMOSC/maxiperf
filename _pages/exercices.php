@@ -41,25 +41,27 @@
                                 <button type="submit" class="btn green">Ajouter</button>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label id="serie_1" for="inputEmail1" class="col-md-2 control-label">Série 1</label>
-                            <div class="input-icon">
+                        <div class="form-group col-md-12">
+                            <label id="serie_1" for="repet_1" class="col-md-2 control-label">Série 1</label>
+                            <div class="input-icon col-md-3">
                                 <input type="number" class="form-control" id="repet_1" placeholder="Répétition"> 
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-icon">
-                                <input type="number" class="form-control" id="repet_1" placeholder="Répétition"> 
+                            <div class="input-icon col-md-3">
+                                <input type="number" class="form-control" id="poids_1" placeholder="Poids"> 
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-4">
-                                <select class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
+                            <div class="col-md-2">
+                                <select class="bs-select form-control bs-select-hidden">
                                     <option value="1">Kg</option>
                                     <option value="2">Minutes</option>
                                     <option value="3">-</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            
+                        </div>
+                        <div class="form-group">
+                            
                         </div>
                     </div>
                 </form>
