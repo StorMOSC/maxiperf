@@ -24,6 +24,7 @@
                 </div>
             </div>
             <div class="portlet-body form">
+                <div class="row">
                 <!-- BEGIN FORM-->
                 <form action="index.html" class="form-horizontal form-inline form-row-seperated">
                     <div class="form-body">
@@ -58,6 +59,7 @@
                     </div>
                 </form>
                 <!-- END FORM-->
+                </div>
             </div>
         </div>
         <!-- END PORTLET-->
