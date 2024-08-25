@@ -52,7 +52,7 @@
                                     <option value="2">Minutes</option>
                                     <option value="3">-</option>
                                 </select>
-                                <button type="submit" class="btn green"><i class="fas fa-plus-circle"></i></button>
+                                <button type="submit" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
                                 <!-- <a id="ajout_1" class="green" href="javascript;"></a>-->
                             </div>
                         </div>
