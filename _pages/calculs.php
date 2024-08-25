@@ -128,12 +128,9 @@ alert('Poids : '+poids+' - Répéts :'+repetitions);
         html_table += `</table>`;
         alert('Table : '+html_table);
         
-        $("#content_resultat_1rm").html(html_table);
         $("#resultat_1rm").removeClass("no__form");
-
-        setTimeout(function() {
-            
-        }, 200);
+        $("#content_resultat_1rm").html(html_table);
+        
     }));
 }));
 </script>
