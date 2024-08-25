@@ -73,7 +73,7 @@ if(count($companymanager)>1){
             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
             <li class="dropdown dropdown-user dropdown-dark">
                 <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                    <span class="username username-hide-on-mobile"> <?php echo $nom.' '.$prenom; ?> </span>
+                    <span class="username username-hide-on-mobile" style="color:#fff"> <?php echo $nom.' '.$prenom; ?> </span>
                     <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
                     <i style="font-size: 35px;" class="fas fa-user-circle img-circle"></i> </a>
                 <ul class="dropdown-menu dropdown-menu-default">

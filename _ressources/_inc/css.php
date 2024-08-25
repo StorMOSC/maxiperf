@@ -68,8 +68,8 @@
 
     .page-header.navbar .top-menu .navbar-nav>li.dropdown.open .dropdown-toggle {
         background: none;
-        color: black;
-        font-weight: 600;
+        color: #fff;
+        font-weight: 800;
     }
 
     <?php 
