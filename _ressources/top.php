@@ -1,17 +1,7 @@
 <?php
-
-include("../../_cfg/cfg.php");
-
-$array = array();
 $nom = $_COOKIE['nom'];
 $prenom = $_COOKIE['prenom'];
 $username = $_COOKIE['username'];
-
-$user = new Users($array);
-$usermanager = new UsersManager($bdd);
-
-$user = $usermanager->get($username);
-
 ?>
 <!-- BEGIN LOGO -->
 <div class="page-logo" style="background:#2f353b !important;">
