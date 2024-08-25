@@ -128,12 +128,11 @@ $(document).ready((function() {
 	                <th>IMC</th>
 	                <th>Interprétation OMS</th>
 	            </tr>`;
-        if(imc<18,5){
+        if(imc<18.5){
             html_table_imc += `<tr style="font-weight: 800; background-color: grey; color: #fff;">
 	                <td>Moins de 18,5</td>
 	                <td>Insuffisance pondérale (amigreur)</td>
 	            </tr>`;
-            
         }else{
             html_table_imc += `<tr>
 	                <td>Moins de 18,5</td>
