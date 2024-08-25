@@ -9,25 +9,21 @@
                 </div>
             </div>
             <div class="portlet-body">
-                <div class="row">
-                    <div class="col-md-12" style="padding-left: 35px; padding-right: 35px; padding-top:10px;">
-                        <p>L’indice de masse corporelle (IMC) permet d’évaluer rapidement votre corpulence simplement avec votre poids corporel et votre taille, quel que soit votre sexe.</p>
-                    </div>
-                    <!-- BEGIN FORM-->
-                    <form action="" class="form-horizontal form-inline form-row-seperated">
-                        <div class="form-body">
-                            <div class="form-group col-md-12">
-                                <label class="control-label col-md-3">IMC</label>
-                                <div class="input-icon">
-                                    <input type="number" class="form-control" id="poids" placeholder="Mon poids">
-                                    <input type="number" class="form-control" id="taille" placeholder="Ma taille en cm">
-                                    <button id="imc" class="btn dark" >Calculer</button>
-                                </div>
+                <div class="col-md-12" style="padding-left: 35px; padding-right: 35px; padding-top:10px;">
+                    <p>L’indice de masse corporelle (IMC) permet d’évaluer rapidement votre corpulence simplement avec votre poids corporel et votre taille, quel que soit votre sexe.</p>
+                </div>
+                <form action="" class="form-horizontal form-inline form-row-seperated">
+                    <div class="form-body">
+                        <div class="form-group col-md-12">
+                            <label class="control-label col-md-3">IMC</label>
+                            <div class="input-icon">
+                                <input type="number" class="form-control" id="poids" placeholder="Mon poids">
+                                <input type="number" class="form-control" id="taille" placeholder="Ma taille en cm">
+                                <button id="imc" class="btn dark" >Calculer</button>
                             </div>
                         </div>
-                    </form>
-                    <!-- END FORM-->
-                </div>
+                    </div>
+                </form>
                 <div class="row">
                 <div id="resultat_imc" class="col-md-12">
                         <div id="content_resultat_imc" style="padding-left: 20px; padding-right: 20px;">
@@ -48,40 +44,36 @@
                 </div>
             </div>
             <div class="portlet-body">
-                <div class="row">
-                    <div class="col-md-12" style="padding-left: 35px; padding-right: 35px; padding-top:10px;">
-                        <p>Le 1RM (ou 1 réptition maximale) est le poids que l'on peut soulever une seule fois avec une technique correcte lors d'un exercice de musculation. Il sert à déterminer le niveau de force maximale d'un individu sur cet exercice. Connaître son 1RM permet d'adapter son programme de musculation en fonction de ses objectifs, en choisissant des charges et des séries adaptées à son niveau.</p>
-                        <p>Il est également utile pour suivre son évolution au fil du temps, car il permet de mesurer précisément les progrès réalisés en termes de force. De plus, il offre la possibilité de comparer ses performances avec celles d'autres athlètes et d'établir des objectifs personnels.</p>
-                        <p>Pour connaître votre 1 RM, remplissez le <b>poids</b> et le <b>nombre de répétitions</b> ci-dessous :</p>
-                    </div>
-                    <!-- BEGIN FORM-->
-                    <form action="" class="form-horizontal form-inline form-row-seperated">
-                        <div class="form-body">
-                            <div class="form-group col-md-12">
-                                <label class="control-label col-md-3">1 RM</label>
-                                <div class="input-icon">
-                                    <input type="number" class="form-control" id="poids_rm" placeholder="Poids">
-                                    <select id="repetitions" title="Répétitions" class="form-control input-xsmall" style="padding-left: 0px !important;">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                    </select>
-                                    <button id="rm" class="btn dark" >Calculer</button>
-                                </div>
+                <div class="col-md-12" style="padding-left: 35px; padding-right: 35px; padding-top:10px;">
+                    <p>Le 1RM (ou 1 réptition maximale) est le poids que l'on peut soulever une seule fois avec une technique correcte lors d'un exercice de musculation. Il sert à déterminer le niveau de force maximale d'un individu sur cet exercice. Connaître son 1RM permet d'adapter son programme de musculation en fonction de ses objectifs, en choisissant des charges et des séries adaptées à son niveau.</p>
+                    <p>Il est également utile pour suivre son évolution au fil du temps, car il permet de mesurer précisément les progrès réalisés en termes de force. De plus, il offre la possibilité de comparer ses performances avec celles d'autres athlètes et d'établir des objectifs personnels.</p>
+                    <p>Pour connaître votre 1 RM, remplissez le <b>poids</b> et le <b>nombre de répétitions</b> ci-dessous :</p>
+                </div>
+                <form action="" class="form-horizontal form-inline form-row-seperated">
+                    <div class="form-body">
+                        <div class="form-group col-md-12">
+                            <label class="control-label col-md-3">1 RM</label>
+                            <div class="input-icon">
+                                <input type="number" class="form-control" id="poids_rm" placeholder="Poids">
+                                <select id="repetitions" title="Répétitions" class="form-control input-xsmall" style="padding-left: 0px !important;">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <button id="rm" class="btn dark" >Calculer</button>
                             </div>
                         </div>
-                    </form>
-                    <!-- END FORM-->
-                </div>
+                    </div>
+                </form>
                 <div class="row">
                     <div id="resultat_1rm" class="col-md-12">
                         <div id="content_resultat_1rm" style="padding-left: 20px; padding-right: 20px;">
