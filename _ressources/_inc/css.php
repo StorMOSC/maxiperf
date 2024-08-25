@@ -66,7 +66,7 @@
        background-size: cover; /* version standardis�e */
     }
 
-    .page-header.navbar .top-menu .navbar-nav>li.dropdown-user .open{
+    .page-header.navbar .top-menu .navbar-nav>li.dropdown-user .dropdown-toggle {
         background: none;
         color: black;
         font-weight: 600;
