@@ -119,7 +119,6 @@ $(document).ready((function() {
         var poids_imc = parseFloat($("#poids").val());
 
         var imc = (poids_imc / (taille*taille))*10000;
-        alert('Poids : '+imc);
 
         var html_table_imc = `<div class="col-md-4"><h2 style="font-weight: 600;">Votre IMC est : `+imc.toFixed(1)+`</h2></div>`;
         
@@ -140,7 +139,7 @@ $(document).ready((function() {
 	            </tr>`;
         }
 
-        if(imc>=18,5 && imc<=25){
+        if(imc>=18.5 && imc<=25){
             html_table_imc += `<tr style="font-weight: 800; background-color: grey; color: #fff;">
 	                <td>18,5 à 25</td>
 	                <td>Corpulance normale</td>
