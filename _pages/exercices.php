@@ -41,9 +41,9 @@
                                 <button type="submit" class="btn green">Ajouter</button>
                             </div>
                         </div>
-                        <div class="portlet-body">
-                            <h4>Série 1</h4>
-                            <div class="form-group">
+
+                            <div class="form-group col-md-12">
+                                <label class="control-label col-md-3">Série 1</label>
                                 <div class="input-icon">
                                     <input type="number" class="form-control" id="repet_1" placeholder="Répétition"> 
                                 </div>
@@ -62,7 +62,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
+
                     </div>
                 </form>
                 <!-- END FORM-->
