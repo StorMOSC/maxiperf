@@ -73,7 +73,7 @@
                     <!-- END FORM-->
                 </div>
                 <div class="row">
-                    <div id="resultat_1rm" class="no__form">
+                    <div id="resultat_1rm">
                         <div id="content_resultat_1rm">
 
 
@@ -128,7 +128,7 @@ alert('Poids : '+poids+' - Répéts :'+repetitions);
         html_table += `</table>`;
         alert('Table : '+html_table);
         
-        $("#resultat_1rm").removeClass("no__form");
+        //$("#resultat_1rm").removeClass("no__form");
         $("#content_resultat_1rm").html(html_table);
         
     }));
