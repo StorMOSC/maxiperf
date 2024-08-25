@@ -75,15 +75,15 @@
 <script>
 $(document).ready((function() {
     $("#rm").on("click", (function(t) {
-        alert("Coucou");
         $("#content_resultat_1rm").html('<div class="lds-ripple"><div></div><div></div></div>');
+        alert("Coucou");
         if ($("#poids_rm").val() > 0) {
             $("#poids_rm").removeClass("invalid");
-
+            alert("Ici");
         } else {
             $("#poids_rm").addClass("invalid");
             $("#resultat_1rm").addClass("no__form");
-
+            alert("Là");
 
             $("#content_resultat_1rm").html('');
             return;
