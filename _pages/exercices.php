@@ -43,7 +43,7 @@
                         </div>
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Série 1</label>
-                            < class="input-icon">
+                            <div class="input-icon">
                                 <input type="number" class="form-control" id="repet_1" placeholder="Répétition">
                                 <input type="number" class="form-control" id="poids_1" placeholder="Poids">
                                 <select id="type_1" class="form-control input-xsmall" style="padding-left: 0px !important;">
