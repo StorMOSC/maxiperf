@@ -30,7 +30,7 @@
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Choix de l'exercice</label>
                             <div class="col-md-4">
-                                <select class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
+                                <select id="exo_1" class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
                                     <option value="1">Développé couché (barre)</option>
                                     <option value="2">Squat</option>
                                     <option value="3">Soulevé de terre</option>
@@ -43,14 +43,15 @@
                         </div>
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Série 1</label>
-                            <div class="input-icon">
+                            < class="input-icon">
                                 <input type="number" class="form-control" id="repet_1" placeholder="Répétition">
                                 <input type="number" class="form-control" id="poids_1" placeholder="Poids">
-                                <select class="form-control input-xsmall" style="padding-left: 0px !important;">
+                                <select id="type_1" class="form-control input-xsmall" style="padding-left: 0px !important;">
                                     <option value="1">Kg</option>
                                     <option value="2">Minutes</option>
                                     <option value="3">-</option>
                                 </select>
+                                <a id="ajout_1" class="green" href="javascript;"><i class="fas fa-plus-circle"></i></a>
                             </div>
                         </div>
                     </div>
