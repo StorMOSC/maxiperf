@@ -89,7 +89,6 @@
 $(document).ready((function() {
     $("#rm").on("click", (function(t) {
         $("#content_resultat_1rm").html('<div class="lds-ripple"><div></div><div></div></div>');
-        alert("Coucou");
         if ($("#poids_rm").val() > 0) {
             $("#poids_rm").removeClass("invalid");
             alert("Ici");
@@ -103,6 +102,8 @@ $(document).ready((function() {
         }
         var repetitions = parseFloat($("#repetitions").val());
         var poids = parseFloat($("#poids_rm").val());
+
+alert('Poids : '+poids+' - Répéts :'+repetitions);
 
         var maxRep = Math.round(poids / (1.0278 - (0.0278 * repetitions)));
         var persetange = 100;
