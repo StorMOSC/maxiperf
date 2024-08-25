@@ -123,35 +123,84 @@ $(document).ready((function() {
 
         var html_table_imc = `<div class="col-md-4"><h2 style="font-weight: 600;">Votre IMC est : `+imc.toFixed(1)+`</h2></div>`;
         
-        html_table_imc += `<div class="col-md-6" stype="padding-top:10px;"><table class="table table-striped table-bordered table-hover">
+        html_table_imc += `<div class="col-md-6"><table class="table table-striped table-bordered table-hover" style="margin-top: 20px;">
 	            <tr>
 	                <th>IMC</th>
 	                <th>Interprétation OMS</th>
 	            </tr>`;
-        html_table_imc += `<tr>
+        if(imc<18,5){
+            html_table_imc += `<tr style="font-weight: 800; background-color: grey; color: #fff;">
 	                <td>Moins de 18,5</td>
 	                <td>Insuffisance pondérale (amigreur)</td>
-	            </tr>
-                <tr>
+	            </tr>`;
+            
+        }else{
+            html_table_imc += `<tr>
+	                <td>Moins de 18,5</td>
+	                <td>Insuffisance pondérale (amigreur)</td>
+	            </tr>`;
+        }
+
+        if(imc>=18,5 && imc<=25){
+            html_table_imc += `<tr style="font-weight: 800; background-color: grey; color: #fff;">
 	                <td>18,5 à 25</td>
 	                <td>Corpulance normale</td>
-	            </tr>
-                <tr>
+	            </tr>`;
+        }else{
+            html_table_imc += `<tr>
+	                <td>18,5 à 25</td>
+	                <td>Corpulance normale</td>
+	            </tr>`;
+        }
+
+        if(imc>=25 && imc<=30){
+            html_table_imc += `<tr style="font-weight: 800; background-color: grey; color: #fff;">
 	                <td>25 à 30</td>
 	                <td>Surpoids</td>
-	            </tr>
-                <tr>
+	            </tr>`;
+        }else{
+            html_table_imc += `<tr>
+	                <td>25 à 30</td>
+	                <td>Surpoids</td>
+	            </tr>`;
+        }
+
+        if(imc>=30 && imc<=35){
+            html_table_imc += `<tr style="font-weight: 800; background-color: grey; color: #fff;">
 	                <td>30 à 35</td>
 	                <td>Obésité modérée</td>
-	            </tr>
-                <tr>
+	            </tr>`;
+        }else{
+            html_table_imc += `<tr>
+	                <td>30 à 35</td>
+	                <td>Obésité modérée</td>
+	            </tr>`;
+        }
+
+        if(imc>=35 && imc<=40){
+            html_table_imc += `<tr style="font-weight: 800; background-color: grey; color: #fff;">
 	                <td>35 à 40</td>
 	                <td>Obésité sévère</td>
-	            </tr>
-                <tr>
+	            </tr>`;
+        }else{
+            html_table_imc += `<tr>
+	                <td>35 à 40</td>
+	                <td>Obésité sévère</td>
+	            </tr>`;
+        }
+
+        if(imc>=40){
+            html_table_imc += `<tr style="font-weight: 800; background-color: grey; color: #fff;">
 	                <td>Plus de 40</td>
 	                <td>Obésité mobide ou massive</td>
 	            </tr>`;
+        }else{
+            html_table_imc += `<tr>
+	                <td>Plus de 40</td>
+	                <td>Obésité mobide ou massive</td>
+	            </tr>`;
+        }
+
         html_table_imc += `</table></div>`;
         
         //$("#resultat_1rm").removeClass("no__form");
@@ -178,7 +227,7 @@ $(document).ready((function() {
         var persetange = 100;
         var repet_n = 1;
 
-        var html_table = `<h2 style="font-weight: 600;">FORMULE DE BRZYCKI</h2><table class="table table-striped table-bordered table-hover">
+        var html_table = `<div class="col-md-4"><h2 style="font-weight: 600;">FORMULE DE BRZYCKI</h2></div><div class="col-md-6"><table class="table table-striped table-bordered table-hover" style="margin-top: 20px;">
 	            <tr>
 	                <th>%RM</th>
 	                <th>Poids</th>
@@ -194,7 +243,7 @@ $(document).ready((function() {
             if (repet_n == 1) { repet_n = 2 } else { repet_n += 2; }
 
         }
-        html_table += `</table>`;
+        html_table += `</table></div>`;
         
         //$("#resultat_1rm").removeClass("no__form");
         $("#content_resultat_1rm").html(html_table);
