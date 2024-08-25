@@ -110,6 +110,7 @@ class UsersManager
             );
             return new Users($array);
         }
+        print_r($array);
     }
 
     /**
