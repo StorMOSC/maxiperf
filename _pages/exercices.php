@@ -41,6 +41,26 @@
                                 <button type="submit" class="btn green">Ajouter</button>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label id="serie_1" for="inputEmail1" class="col-md-2 control-label">Série 1</label>
+                            <div class="input-icon">
+                                <input type="number" class="form-control" id="repet_1" placeholder="Répétition"> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon">
+                                <input type="number" class="form-control" id="repet_1" placeholder="Répétition"> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <select class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
+                                    <option value="1">Kg</option>
+                                    <option value="2">Minutes</option>
+                                    <option value="3">-</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </form>
                 <!-- END FORM-->
