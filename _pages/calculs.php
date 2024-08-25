@@ -19,8 +19,8 @@
                             <div class="form-group col-md-12">
                                 <label class="control-label col-md-3">IMC</label>
                                 <div class="input-icon">
-                                    <input type="number" maxlength="3" minlength="2" class="form-control" id="poids" placeholder="Mon poids">
-                                    <input type="number" maxlength="3" minlength="3" class="form-control" id="taille" placeholder="Ma taille en cm">
+                                    <input type="number" class="form-control" id="poids" placeholder="Mon poids">
+                                    <input type="number" class="form-control" id="taille" placeholder="Ma taille en cm">
                                     <button id="imc" class="btn dark" >Calculer</button>
                                 </div>
                             </div>
@@ -118,9 +118,9 @@ $(document).ready((function() {
         var taille = parseFloat($("#taille").val());
         var poids_imc = parseFloat($("#poids").val());
 alert('Poids : '+poids_imc+' - Taille : '+taille);
-        var imc = Math.round(poids_imc / (taille*taille));
+        var imc = (poids_imc / (taille*taille))*100;
 
-        var html_table_imc = `<h2 style="font-weight: 600;">Votre IMC est : </h2><b>`+imc+`</b>`;
+        var html_table_imc = `<h2 style="font-weight: 600;">Votre IMC est : </h2><b>`+imc.toFixed(1)+`</b>`;
         
         html_table_imc += `<table class="table table-striped table-bordered table-hover">
 	            <tr>
