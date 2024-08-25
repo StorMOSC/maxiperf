@@ -55,7 +55,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-md-3">
-                                    <select class="bs-select form-control bs-select-hidden">
+                                    <select class="form-control input-xsmall">
                                         <option value="1">Kg</option>
                                         <option value="2">Minutes</option>
                                         <option value="3">-</option>
