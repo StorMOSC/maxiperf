@@ -19,8 +19,8 @@
                             <div class="form-group col-md-12">
                                 <label class="control-label col-md-3">IMC</label>
                                 <div class="input-icon">
-                                    <input type="number" class="form-control" id="poids" placeholder="Mon poids">
-                                    <input type="number" class="form-control" id="taille" placeholder="Ma taille en cm">
+                                    <input type="number" maxlength="3" minlength="2" class="form-control" id="poids" placeholder="Mon poids">
+                                    <input type="number" maxlength="3" minlength="3" class="form-control" id="taille" placeholder="Ma taille en cm">
                                     <button id="imc" class="btn dark" >Calculer</button>
                                 </div>
                             </div>
