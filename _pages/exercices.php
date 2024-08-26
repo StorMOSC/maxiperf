@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <div class="form-group col-md-12">
-                            <div id="serie1">
+                            <div id="serie_1">
                                 <label class="control-label col-md-3">Série 1</label>
                                 <div class="col-md-8">
                                     <div class="input-icon">
