@@ -47,10 +47,16 @@ $exercicemanager = $exercicemanager->getList();
                             <label class="control-label col-md-3">Choix de l'exercice</label>
                             <div class="col-md-4">
                                 <select id="exo_1" class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
-                                    <option value="1">Développé couché (barre)</option>
-                                    <option value="2">Squat</option>
-                                    <option value="3">Soulevé de terre</option>
-                                    <option value="4">Tirage dos</option>
+                                <?php
+                                    foreach($exercicemanager as $exercice) {
+                                ?>
+                                    <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
+                                    <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
+                                    <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
+                                    <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
+                                <?php
+                                    }
+                                ?>
                                 </select>
                             </div>
                         </div>
