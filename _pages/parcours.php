@@ -67,7 +67,7 @@ $exercicemanager = $exercicemanager->getList();
                             foreach($exercicemanager as $exercice) {
                         ?>
                             <tr>
-                                <td><button id="ajout_<?php echo $exercie->getIdExercice(); ?>" title="Ajouter l'exercice" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button></td>
+                                <td><button id="ajout_<?php echo $exercice->getIdExercice(); ?>" title="Ajouter l'exercice" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button></td>
                                 <td><?php echo $exercice->getName(); ?></td>
                                 <td><a class="btn blue-steel" href="<?php echo URLHOST.'modifier_exercice/'.$exercice->getIdExercice(); ?>"><i class="fas fa-edit" alt="Editer"></i> Modifier</a></td>
                                 <?php
