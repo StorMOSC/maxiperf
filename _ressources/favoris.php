@@ -23,7 +23,7 @@ $user = $usermanager->get($username);
                     <img src="<?php echo URLHOST; ?>images/logo_mp.jpg" class="img-responsive" alt=""> </div>
                 <!-- END SIDEBAR USERPIC -->
                 <!-- SIDEBAR USER TITLE -->
-                <div class="profile-usertitle" style="padding-bottom:20px;">
+                <div class="profile-usertitle">
                     <div class="profile-usertitle-name"> <?php $user->getName()." ".$user->getFirstName(); ?> </div>
                     <div class="profile-usertitle-job"> Abo : 3x /semaine </div>
                 </div>
