@@ -48,9 +48,8 @@ class ExerciceManager extends Features
             $q->bindValue(':isActive', $exercice->getIsActive(), PDO::PARAM_INT);
     
             $q->execute();
-            $exerciceId = $this->_db->lastInsertId();
             
-            return $exerciceId;
+            return "ok";
         }
         catch(Exception $e){
             return null;
