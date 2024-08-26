@@ -1,4 +1,6 @@
 <?php
+require_once("_cfg/cfg.php");
+
 $retour = $_GET['souscat'];
 
 $array = array();

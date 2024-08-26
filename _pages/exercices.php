@@ -1,3 +1,18 @@
+<?php
+require_once("_cfg/cfg.php");
+
+$retour = $_GET['souscat'];
+
+$array = array();
+$exercice = new Exercice($array);
+$exercicemanager = new ExerciceManager($bdd);
+$parcours = new Company($array);
+$parcoursmanager = new CompaniesManager($bdd);
+
+/*récupération des objets en base*/
+$exercicemanager = $exercicemanager->getList();
+
+?>
 <div class="row">
     <div class="col-md-12">
         <div class="note note-success">
