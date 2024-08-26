@@ -6,8 +6,6 @@ if(isset($_POST['creer'])) {
     $name = $_POST['nom_exercice'];
     $is_active = 1;
 
-    echo $name;
-
     $array = array(
         'name' => $name,
         'isActive' => $is_active
