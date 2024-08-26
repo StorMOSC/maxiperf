@@ -66,7 +66,7 @@ $exercicemanager = $exercicemanager->getList();
                                             <option value="2">Minutes</option>
                                             <option value="3">-</option>
                                         </select>
-                                        <button id="ajout_serie" title="Ajouter une série" type="submit" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
+                                        <button id="ajout_serie" title="Ajouter une série" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
                                     </div>
                                 </div>
                                 <div id="divsupprSerie1" style="text-align: right;" class="col-md-1">
