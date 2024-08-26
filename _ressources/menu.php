@@ -43,8 +43,14 @@
     </li>
     <?php
     if($_COOKIE["credential"] == "A"){
-
-        ?>
+    ?>
+    <li class="nav-item  ">
+        <a href="<?php echo URLHOST.'parcours'; ?>" class="nav-link nav-toggle">
+        <i class="fas fa-stopwatch-20"></i>
+            <span class="title">Parcours</span>
+            
+        </a>
+    </li>
     <li class="nav-item  ">
         <a href="<?php echo URLHOST.'membres'; ?>" class="nav-link nav-toggle">
             <i class="fas fa-users"></i>
