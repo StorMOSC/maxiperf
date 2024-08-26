@@ -23,11 +23,11 @@ if(isset($_POST['creer'])) {
 print_r($exercice);
 }
 
-/*
+
 if(is_null($test)){
     header('Location: '.URLHOST."parcours/errormodif");
 }else{
     header('Location: '.URLHOST."parcours/successmodif");
 }
-*/
+
 ?>
