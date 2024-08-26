@@ -225,11 +225,11 @@ $(document).ready((function() {
 	            </tr>`;
         for (var i = 1; i < 12; i++) {
             html_table += `<tr>
-	                <td>` + /*persetange*/ + `%</td>
+	                <td>` + persetange + `%</td>
 	                <td>` + Math.round(maxRep * persetange / 100) + `</td>
 	                <td>` + repet_n + ` rép</td>
 	            </tr>`;
-            //persetange -= 2;
+            persetange -= 5;
             if (repet_n == 1) { repet_n = 2 } else { repet_n += 1; }
 
         }
