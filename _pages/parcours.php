@@ -14,10 +14,6 @@ $exercicemanager = $exercicemanager->getList();
 ?>
 <div class="row">
     <div class="col-md-12">
-        <div class="note note-success">
-            <h3>Résumé de la séance</h3>
-            <p> Préparation du parcours pour les prochaines séances</p>
-        </div>
         <!-- BEGIN PORTLET-->
         <div class="portlet light">
             <div class="portlet-title">
@@ -44,10 +40,10 @@ $exercicemanager = $exercicemanager->getList();
                     <div class="form-body">
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Créer un exercice</label>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="input-icon">
                                     <input type="text" class="form-control" id="nom_exercice" name="nom_exercice" placeholder="Ex : Développé couché">
-                                    <button id="creer" name="creer" title="Ajouter une série" type="submit" class="btn green" ><i class="fas fa-plus-circle"></i> Créer</button>
+                                    <button id="creer" name="creer" title="Ajouter une série" type="submit" class="btn green" > Créer</button>
                                 </div>
                             </div>
                         </div>  
@@ -55,7 +51,7 @@ $exercicemanager = $exercicemanager->getList();
                 </form>
                 <!-- END FORM-->
                 </div>
-                <div class="row">
+                <div class="row" style="padding-top: 20px; border-top: 2px solid #bbb; margin-top: 20px;">
                     <table class="table table-striped table-bordered table-hover dt-responsive sample_3" width="100%" cellspacing="0" width="100%">
                         <thead>
                             <tr>
