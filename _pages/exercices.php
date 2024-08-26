@@ -137,11 +137,11 @@ $exercicemanager = $exercicemanager->getList();
             var num = parseInt( $div.prop("id").match(/\d+/g), 10 ) +1;
 
             // Clone it and assign the new ID (i.e: from num 4 to ID "klon4")
-            var $klon = $div.clone(true).find(".help-block-error").text("").end().find(".has-error").removeClass("has-error").end().find('label[name^="serie"]:last').prop('name', 'serie['+num+']' ).text("Série "+num).end().find('input[name^="repet"]:last').prop('name', 'repet['+num+']' ).end().find('input[name^="poids"]:last').prop('name', 'poids['+num+']' ).end().find('select[name^="type"]:last').prop('name', 'type['+num+']' ).end().find('select[id^="type"]:last').prop('id', 'type'+num ).end().find('button[id^="supprSerie"]:last').prop('id', 'supprSerie'+num ).end().find('button[id^="supprSerie"]:last').attr('onclick', 'supprSerie('+num+')' ).end();
+            var $klon = $div.clone(true).find(".help-block-error").text("").end().find(".has-error").removeClass("has-error").end().find('label[name^="serie"]:last').prop('name', 'serie['+num+']' ).text("Série "+num).end().find('input[name^="repet"]:last').prop('name', 'repet['+num+']' ).end().find('input[name^="poids"]:last').prop('name', 'poids['+num+']' ).end().find('select[name^="type"]:last').prop('name', 'type['+num+']' ).end().find('select[id^="type"]:last').prop('id', 'type'+num ).end().find('button[id^="supprSerie"]:last').prop('id', 'supprSerie'+num ).end().find('button[id^="supprSerie"]:last').attr('onclick', 'supprSerie('+num+')' ).end().prop('id', 'ligneSerie'+num );
 
             // Finally insert $klon wherever you want
-            $("button[id*='supprSerie']").css('display','' );
-            $("button[id*='supprSerie']").css('display','block' );
+            /*$("div[id*='divsupprSerie']").css('display','' );
+            $("div[id*='divsupprSerie']").css('display','block' );*/
             $div.after( $klon.data( "arr", $.extend( [], $div.data( "arr" ) ) ) );
 
             $("#repet"+num).each(function(){
