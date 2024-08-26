@@ -42,9 +42,8 @@ class ExerciceManager extends Features
      */
     public function add(Exercice $exercice)
     {
-        echo "test 1 : ".$exercice->getIsActive();
         try{
-            $q = $this->_db->prepare('INSERT INTO exercices (name) VALUES (:name)');
+            $q = $this->_db->prepare('INSERT INTO exercices (name,isActive) VALUES (:name, :isActive)');
             $q->bindValue(':name', $exercice->getName(), PDO::PARAM_STR);
             $q->bindValue(':isActive', $exercice->getIsActive(), PDO::PARAM_INT);
     
