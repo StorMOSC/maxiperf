@@ -133,14 +133,15 @@
     }
 
     <?php 
-        if($_GET['cat']!="connexion"){
-          if($_GET['cat']=="parcours"){
-    ?>
-            button.btn .svg-inline--fa {
+        if($_GET['cat']=="parcours"){
+          ?>
+            .btn .svg-inline--fa {
                 font-size: 16px !important;
             }
     <?php
-          }else{
+        }
+
+        if($_GET['cat']!="connexion"){
     ?>
             .svg-inline--fa{
                 font-size: 24px !important;
@@ -156,7 +157,7 @@
                 color: #888;
                 visibility: hidden;
             }
-    <?php }} ?>
+    <?php } ?>
 </style>
 <?php 
     if($_GET['cat']!="connexion"){
