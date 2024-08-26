@@ -95,11 +95,11 @@ if($_GET['section']=="connexion" || $_GET['cat']=="connexion"){
                 <div class="page-content" style="padding-top: 0px !important; min-height: 815px; padding-right: 35px;">
                     <?php if($retour == "errormodif") { ?>
                         <div class="alert alert-danger">
-                            <button class="close" data-close="alert"></button> Une erreur est survenue, les préférences n'ont donc pas pu être modifiées !</div>
+                            <button class="close" data-close="alert"></button> Une erreur est survenue, les informations n'ont donc pas pu être modifiées !</div>
                     <?php }elseif($retour == "successmodif") { ?>
                         <div class="alert alert-success">
                             <button class="close" data-close="alert"></button>
-                            Les préférences utilisateurs ont bien été modifiées !
+                            Les informations utilisateurs ont bien été modifiées !
                         </div>
                         <?php
                     }
