@@ -20,7 +20,7 @@ if(isset($_POST['creer'])) {
     //echo "OK2 / ".$oldusername;
     $test = $exercicemanager->add($exercice);
     
-print_r($array);
+print_r($exercice);
 }
 
 /*
