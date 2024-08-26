@@ -71,7 +71,7 @@ $exercicemanager = $exercicemanager->getList();
                                 </div>
                                 <div id="divsupprSerie1" style="text-align: right;" class="col-md-1">
                                     <div class="form-group" style="margin-left: 0px !important; margin-right: 0px !important;">
-                                        <button type="button" title="Supprimer la ligne" id="supprSerie1" class="btn red" onclick="supprLigneSerie(1);"><i class="fas fa-minus-square"></i></button>
+                                        <button type="button" title="Supprimer la ligne" id="supprSerie1" class="btn red" onclick="supprSerie(1);"><i class="fas fa-minus-square"></i></button>
                                     </div>
                                 </div>
                             </div>
