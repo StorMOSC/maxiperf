@@ -10,14 +10,7 @@ if(isset($_POST['valider'])) {
     $name = $_POST['name'];
     $firstname = $_POST['firstname'];
     $email = $_POST['email'];
-    $phone = $_POST['phone_number'];
-
-    if (isset($_POST["is_seller"])) {
-        $is_seller = 1;
-    } else {
-        $is_seller = 0;
-    }
-    $is_active = 1;
+    $phone = $_POST['phone'];
     
     if(isset($_POST['password']) && !empty($_POST['password'])){
         $array = array(
