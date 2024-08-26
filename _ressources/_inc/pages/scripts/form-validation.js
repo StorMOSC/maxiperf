@@ -389,11 +389,7 @@ var FormValidation = function () {
                         required: true,
                         email: true
                     },
-                    'societe[]': {
-                        required: true,
-                        minlength: 1
-                    },
-                    credential: {
+                    phone: {
                         required: true
                     }
                 },

@@ -76,22 +76,28 @@ $user = $usermanager->get($username);
                             <div class="tab-content">
                                 <!-- PERSONAL INFO TAB -->
                                 <div class="tab-pane active" id="tab_1_1">
-                                    <form role="form" action="#">
+                                    <form role="form" action="#" id="modif_user">
                                         <div class="form-group">
                                             <label class="control-label">Nom</label>
-                                            <input type="text" value="<?php echo $user->getName(); ?>" placeholder="Nom" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $user->getName(); ?>" placeholder="Nom" class="form-control" id="name" name="name"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Prénom</label>
-                                            <input type="text" value="<?php echo $user->getFirstName(); ?>" placeholder="Prénom" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $user->getFirstName(); ?>" placeholder="Prénom" class="form-control" id="firstname" name="firstname"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Téléphone</label>
-                                            <input type="text" value="<?php echo $user->getPhoneNumber(); ?>" placeholder="Téléphone" class="form-control"> </div>
+                                            <input type="text" value="<?php echo $user->getPhoneNumber(); ?>" placeholder="Téléphone" class="form-control" id="phone" name="phone"> </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Mail</label>
+                                            <input type="mail" value="<?php echo $user->getEmailAddress(); ?>" placeholder="Email" class="form-control" id="email" name="email"> </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Utilisateur</label>
+                                            <input type="text" value="<?php echo $user->getUsername(); ?>" placeholder="Utilisateur" class="form-control" id="username" name="username"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Nouveau mot de passe</label>
-                                            <input type="password" id="password" name="password" class="form-control"> </div>
+                                            <input type="password" id="register_password" name="register_password" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Confirmer le nouveau mot de passe</label>
-                                            <input type="password" id="password_confirm" class="form-control"> </div>
+                                            <input type="password" id="rpassword" name="rpassword" class="form-control"> </div>
                                         <div class="margiv-top-10">
                                             <a href="javascript:;" class="btn dark"> Valider </a>
                                             <a href="javascript:;" class="btn default"> Annuler </a>
