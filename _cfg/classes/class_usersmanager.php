@@ -287,47 +287,31 @@ class UsersManager
      * Update users information
      * @param Users $user
      */
-    public function update(Users $user, array $companies, $oldusername)
+    public function update(Users $user, $oldusername)
     {
         try{
             $user->setName(strtoupper($user->getName()));
             if(!empty($user->getPassword())){
-                $q = $this->_db->prepare("UPDATE users SET username = :username, name = :name, firstname = :firstname, emailAddress = :emailAddress, password = :password, phoneNumber = :phoneNumber, credential = :credential, defaultCompany = :defaultCompany, isSeller = :isSeller, isActive = :isActive  WHERE username = '$oldusername'");
+                $q = $this->_db->prepare("UPDATE users SET username = :username, name = :name, firstname = :firstname, emailAddress = :emailAddress, password = :password, phoneNumber = :phoneNumber, isActive = :isActive  WHERE username = '$oldusername'");
                 $q->bindValue(':username', $user->getUsername(), PDO::PARAM_STR);
                 $q->bindValue(':name', $user->getName(), PDO::PARAM_STR);
                 $q->bindValue(':firstname', $user->getFirstName(), PDO::PARAM_STR);
                 $q->bindValue(':emailAddress', $user->getEmailAddress(), PDO::PARAM_STR);
                 $q->bindValue(':password', $user->getPassword(), PDO::PARAM_STR );
                 $q->bindValue(':phoneNumber', $user->getPhoneNumber(), PDO::PARAM_STR );
-                $q->bindValue(':credential', $user->getCredential(), PDO::PARAM_STR );
-                $q->bindValue(':defaultCompany', $user->getDefaultCompany(), PDO::PARAM_INT );
-                $q->bindValue(':isSeller', $user->getIsSeller(), PDO::PARAM_INT);
                 $q->bindValue(':isActive', $user->getIsActive(), PDO::PARAM_INT);
             }else{
-                $q = $this->_db->prepare("UPDATE users SET username = :username, name = :name, firstname = :firstname, emailAddress = :emailAddress, phoneNumber = :phoneNumber, credential = :credential, defaultCompany = :defaultCompany, isSeller = :isSeller, isActive = :isActive  WHERE username = '$oldusername'");
+                $q = $this->_db->prepare("UPDATE users SET username = :username, name = :name, firstname = :firstname, emailAddress = :emailAddress, phoneNumber = :phoneNumber, isActive = :isActive  WHERE username = '$oldusername'");
                 $q->bindValue(':username', $user->getUsername(), PDO::PARAM_STR);
                 $q->bindValue(':name', $user->getName(), PDO::PARAM_STR);
                 $q->bindValue(':firstname', $user->getFirstName(), PDO::PARAM_STR);
                 $q->bindValue(':emailAddress', $user->getEmailAddress(), PDO::PARAM_STR);
                 $q->bindValue(':phoneNumber', $user->getPhoneNumber(), PDO::PARAM_STR );
-                $q->bindValue(':credential', $user->getCredential(), PDO::PARAM_STR );
-                $q->bindValue(':defaultCompany', $user->getDefaultCompany(), PDO::PARAM_INT );
-                $q->bindValue(':isSeller', $user->getIsSeller(), PDO::PARAM_INT);
                 $q->bindValue(':isActive', $user->getIsActive(), PDO::PARAM_INT);
             }
     
             $q->execute();
             
-            $delete=$this->_db->query('DELETE FROM `link_company_users` WHERE users_username ="'.$oldusername.'"');
-            $delete->execute();
-            
-            for ($i=0;$i<count($companies);$i++)
-            {
-                $q2 = $this->_db->prepare('INSERT INTO link_company_users (users_username, company_idcompany) VALUES (:username, :id_company)');
-                $q2->bindValue(':username', $user->getUsername(), PDO::PARAM_STR);
-                $q2->bindValue(':id_company', $companies[$i], PDO::PARAM_INT);
-                $q2->execute();
-            }
         return "ok";
         }
         catch(Exception $e){
