@@ -60,8 +60,8 @@ $exercicemanager = $exercicemanager->getList();
                                 <div class="col-md-8">
                                     <div class="input-icon">
                                         <input type="number" class="form-control" id="repet1" name="repet[1]" placeholder="Répétition">
-                                        <input type="number" class="form-control" id="poids1" placeholder="Poids">
-                                        <select id="type1" class="form-control input-xsmall" style="padding-left: 0px !important;">
+                                        <input type="number" class="form-control" id="poids1" name="poids[1]" placeholder="Poids">
+                                        <select id="type1" name="type[1]" class="form-control input-xsmall" style="padding-left: 0px !important;">
                                             <option value="1">Kg</option>
                                             <option value="2">Minutes</option>
                                             <option value="3">-</option>
