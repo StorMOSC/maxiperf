@@ -61,7 +61,7 @@ $user = $usermanager->get($username);
                                 <li class="active">
                                     <a href="#tab_1_1" data-toggle="tab">Info Personnelle</a>
                                 </li>
-                                <li>
+                                <!--<li>
                                     <a href="#tab_1_2" data-toggle="tab">Image de profil</a>
                                 </li>
                                 <li>
@@ -69,7 +69,7 @@ $user = $usermanager->get($username);
                                 </li>
                                 <li>
                                     <a href="#tab_1_4" data-toggle="tab">Santé</a>
-                                </li>
+                                </li>-->
                             </ul>
                         </div>
                         <div class="portlet-body">
@@ -87,8 +87,14 @@ $user = $usermanager->get($username);
                                             <label class="control-label">Téléphone</label>
                                             <input type="text" value="<?php echo $user->getPhoneNumber(); ?>" placeholder="Téléphone" class="form-control"> </div>
                                         <div class="form-group">
-                                            <label class="control-label">Mail</label>
-                                            <input type="text" value="<?php echo $user->getEmailAddress(); ?>" placeholder="E-mail" class="form-control"> </div>
+                                            <label class="control-label">Mot de passe actuel</label>
+                                            <input type="password" class="form-control"> </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Nouveau mot de passe</label>
+                                            <input type="password" class="form-control"> </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Confirmer le nouveau mot de passe</label>
+                                            <input type="password" class="form-control"> </div>
                                         <div class="margiv-top-10">
                                             <a href="javascript:;" class="btn dark"> Valider </a>
                                             <a href="javascript:;" class="btn default"> Annuler </a>
@@ -97,6 +103,7 @@ $user = $usermanager->get($username);
                                 </div>
                                 <!-- END PERSONAL INFO TAB -->
                                 <!-- CHANGE AVATAR TAB -->
+                                <!--
                                 <div class="tab-pane" id="tab_1_2">
                                     <p>Choisissez votre photo de profile. Ou laissez l'image de profile par défaut.</p>
                                     <form action="#" role="form">
@@ -119,9 +126,10 @@ $user = $usermanager->get($username);
                                             <a href="javascript:;" class="btn default"> Annuler </a>
                                         </div>
                                     </form>
-                                </div>
+                                </div> -->
                                 <!-- END CHANGE AVATAR TAB -->
                                 <!-- CHANGE PASSWORD TAB -->
+                                <!--
                                 <div class="tab-pane" id="tab_1_3">
                                     <form action="#">
                                         <div class="form-group">
@@ -138,9 +146,10 @@ $user = $usermanager->get($username);
                                             <a href="javascript:;" class="btn default"> Cancel </a>
                                         </div>
                                     </form>
-                                </div>
+                                </div>-->
                                 <!-- END CHANGE PASSWORD TAB -->
                                 <!-- PRIVACY SETTINGS TAB -->
+                                <!--
                                 <div class="tab-pane" id="tab_1_4">
                                     <form action="#">
                                         <div class="form-group">
@@ -148,14 +157,15 @@ $user = $usermanager->get($username);
                                             <input type="text" maxlength="4" value="<?php echo $taille; ?>" placeholder="Mètre" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Poids (kg)</label>
-                                            <input type="text" maxlength="3" value="<?php echo $poids; ?>" placeholder="Kilos" class="form-control"> </div>
+                                            <input type="text" maxlength="3" value="<?php echo $poids; ?>" placeholder="Kilos" class="form-control"> </div> -->
                                         <!--end profile-settings-->
+                                        <!--
                                         <div class="margin-top-10">
                                             <a href="javascript:;" class="btn dark"> Valider </a>
                                             <a href="javascript:;" class="btn default"> Annuler </a>
                                         </div>
                                     </form>
-                                </div>
+                                </div>-->
                                 <!-- END PRIVACY SETTINGS TAB -->
                             </div>
                         </div>
