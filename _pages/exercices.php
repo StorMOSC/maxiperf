@@ -55,7 +55,7 @@ $exercicemanager = $exercicemanager->getList();
                             </div>
                         </div>
                         <div class="form-group col-md-12">
-                            <div id="ligneSerie1" class="serie">
+                            <div id="ligneSerie1" class="ligneSerie">
                                 <label id="serie1" name="serie[1]" class="control-label col-md-3">Série 1</label>
                                 <div class="col-md-8">
                                     <div class="input-icon">
