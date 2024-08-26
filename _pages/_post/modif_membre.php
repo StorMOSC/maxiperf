@@ -35,7 +35,7 @@ if(isset($_POST['valider'])) {
     echo "OK";
     $usermanager = new UsersManager($bdd);
     echo "OK2 / ".$oldusername;
-    $test = $usermanager->update($user, $_POST["societe"],$oldusername);
+    $test = $usermanager->update($user, $oldusername);
     
 
 }
