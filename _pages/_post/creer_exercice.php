@@ -15,15 +15,15 @@ if(isset($_POST['creer'])) {
     //echo "OK";
     $exercicemanager = new ExerciceManager($bdd);
     //echo "OK2 / ".$oldusername;
-    $test = $exercicemanager->update($exercice);
+    $test = $exercicemanager->add($exercice);
     
 
 }
-/*
+
 if(is_null($test)){
     header('Location: '.URLHOST."parcours/errormodif");
 }else{
     header('Location: '.URLHOST."parcours/successmodif");
-}*/
+}
 
 ?>
