@@ -67,7 +67,7 @@ $exercicemanager = $exercicemanager->getList();
                                             <option value="3">-</option>
                                         </select>
                                         <button type="button" id="ajout_serie" title="Ajouter une série" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
-                                        <button type="button" title="Supprimer la ligne" id="supprSerie1" class="btn red" onclick="supprSerie(1);"><i class="fas fa-minus-square"></i></button>
+                                        <button type="button" title="Supprimer la ligne" id="supprSerie1" class="btn red" onclick="supprSerie(1);" style="background-color: transparent; border-color: transparent; color: #e7505a;"><i class="fas fa-minus-square"></i></button>
                                     </div>
                                 </div>
                                 <!--<div id="divsupprSerie1" style="text-align: right;" class="col-md-1">
