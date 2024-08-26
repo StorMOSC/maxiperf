@@ -4,7 +4,7 @@ include("../../_cfg/cfg.php");
 
 if(isset($_POST['creer'])) {
     $name = $_POST['nom_exercice'];
-    
+    echo $name;
     $array = array(
         'name' => $name,
         'isActive' => 1,
@@ -19,10 +19,11 @@ if(isset($_POST['creer'])) {
     
 
 }
+/*
 if(is_null($test)){
     header('Location: '.URLHOST."parcours/errormodif");
 }else{
     header('Location: '.URLHOST."parcours/successmodif");
-}
+}*/
 
 ?>
