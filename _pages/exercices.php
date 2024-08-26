@@ -41,7 +41,7 @@ $exercicemanager = $exercicemanager->getList();
             <div class="portlet-body">
                 <div class="row">
                 <!-- BEGIN FORM-->
-                <form action="index.html" class="form-horizontal form-inline form-row-seperated">
+                <form action="" class="form-horizontal form-inline form-row-seperated">
                     <div class="form-body">
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Choix de l'exercice</label>
@@ -66,7 +66,7 @@ $exercicemanager = $exercicemanager->getList();
                                             <option value="2">Minutes</option>
                                             <option value="3">-</option>
                                         </select>
-                                        <button id="ajout_serie" title="Ajouter une série" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
+                                        <button type="button" id="ajout_serie" title="Ajouter une série" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
                                     </div>
                                 </div>
                                 <div id="divsupprSerie1" style="text-align: right;" class="col-md-1">
