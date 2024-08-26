@@ -136,7 +136,7 @@
         if($_GET['cat']!="connexion"){
           if($_GET['cat']=="parcours"){
     ?>
-            tbody > .svg-inline--fa {
+            tbody > tr > td > .svg-inline--fa {
                 font-size: 16px !important;
             }
     <?php
