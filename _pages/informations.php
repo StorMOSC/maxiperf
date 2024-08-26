@@ -99,6 +99,7 @@ $user = $usermanager->get($username);
                                             <label class="control-label">Confirmer le nouveau mot de passe</label>
                                             <input type="password" id="rpassword" name="rpassword" class="form-control"> </div>
                                         <div class="margiv-top-10">
+                                            <input type="hidden" name="oldUsername" value="<?php echo $user->getUsername(); ?>" />
                                             <button type="submit" name="valider" class="btn dark"> Valider </button>
                                             <button type="submit" class="btn default"> Annuler </button>
                                         </div>
