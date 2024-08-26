@@ -154,10 +154,10 @@ $user = $usermanager->get($username);
                                     <form action="#">
                                         <div class="form-group">
                                             <label class="control-label">Taille (m)</label>
-                                            <input type="text" maxlength="4" value="<?php echo $taille; ?>" placeholder="Mètre" class="form-control"> </div>
+                                            <input type="text" maxlength="4" value="<?php //echo $taille; ?>" placeholder="Mètre" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Poids (kg)</label>
-                                            <input type="text" maxlength="3" value="<?php echo $poids; ?>" placeholder="Kilos" class="form-control"> </div> -->
+                                            <input type="text" maxlength="3" value="<?php //echo $poids; ?>" placeholder="Kilos" class="form-control"> </div> -->
                                         <!--end profile-settings-->
                                         <!--
                                         <div class="margin-top-10">
