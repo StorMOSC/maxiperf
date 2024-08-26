@@ -42,9 +42,9 @@ if(isset($_POST['valider'])) {
     
 
 }
-/*if(is_null($test)){
+if(is_null($test)){
     header('Location: '.URLHOST."informations/errormodif");
 }else{
     header('Location: '.URLHOST."informations/successmodif");
-}*/
+}
 ?>
