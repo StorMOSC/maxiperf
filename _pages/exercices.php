@@ -51,9 +51,6 @@ $exercicemanager = $exercicemanager->getList();
                                     foreach($exercicemanager as $exercice) {
                                 ?>
                                     <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
-                                    <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
-                                    <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
-                                    <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
                                 <?php
                                     }
                                 ?>
