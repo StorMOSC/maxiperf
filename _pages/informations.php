@@ -87,14 +87,11 @@ $user = $usermanager->get($username);
                                             <label class="control-label">Téléphone</label>
                                             <input type="text" value="<?php echo $user->getPhoneNumber(); ?>" placeholder="Téléphone" class="form-control"> </div>
                                         <div class="form-group">
-                                            <label class="control-label">Mot de passe actuel</label>
-                                            <input type="password" class="form-control"> </div>
-                                        <div class="form-group">
                                             <label class="control-label">Nouveau mot de passe</label>
-                                            <input type="password" class="form-control"> </div>
+                                            <input type="password" id="password" name="password" class="form-control"> </div>
                                         <div class="form-group">
                                             <label class="control-label">Confirmer le nouveau mot de passe</label>
-                                            <input type="password" class="form-control"> </div>
+                                            <input type="password" id="password_confirm" class="form-control"> </div>
                                         <div class="margiv-top-10">
                                             <a href="javascript:;" class="btn dark"> Valider </a>
                                             <a href="javascript:;" class="btn default"> Annuler </a>

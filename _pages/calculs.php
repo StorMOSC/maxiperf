@@ -229,8 +229,8 @@ $(document).ready((function() {
 	                <td>` + Math.round(maxRep * persetange / 100) + `</td>
 	                <td>` + repet_n + ` rép</td>
 	            </tr>`;
-            persetange -= 5;
-            if (repet_n == 1) { repet_n = 2 } else { repet_n += 2; }
+            persetange -= 2;
+            if (repet_n == 1) { repet_n = 2 } else { repet_n += 1; }
 
         }
         html_table += `</table></div>`;

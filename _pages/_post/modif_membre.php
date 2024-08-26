@@ -25,6 +25,7 @@ if(isset($_POST['valider'])) {
             'name' => $name,
             'firstname' => $firstname,
             'emailAddress' => $email,
+            'password' => $password,
             'phoneNumber' => $phone,
         );
     }else{
