@@ -230,7 +230,7 @@ $(document).ready((function() {
 	                <td>` + repet_n + ` rép</td>
 	            </tr>`;
             persetange -= 5;
-            if (repet_n == 1) { repet_n = 2 } else { repet_n += 1; }
+            if (repet_n == 1) { repet_n = 2 } else { repet_n += 2; }
 
         }
         html_table += `</table></div>`;
