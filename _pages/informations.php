@@ -99,8 +99,8 @@ $user = $usermanager->get($username);
                                             <label class="control-label">Confirmer le nouveau mot de passe</label>
                                             <input type="password" id="rpassword" name="rpassword" class="form-control"> </div>
                                         <div class="margiv-top-10">
-                                            <a href="javascript:;" class="btn dark"> Valider </a>
-                                            <a href="javascript:;" class="btn default"> Annuler </a>
+                                            <button type="submit" class="btn dark"> Valider </button>
+                                            <button type="submit" class="btn default"> Annuler </button>
                                         </div>
                                     </form>
                                 </div>
