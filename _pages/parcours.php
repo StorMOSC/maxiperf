@@ -55,7 +55,7 @@ $exercicemanager = $exercicemanager->getList();
                     <table class="table table-striped table-bordered table-hover dt-responsive sample_3" width="100%" cellspacing="0" width="100%">
                         <thead>
                             <tr>
-                                <th class="all">Actif</th>
+                                <th class="all">Ajouter</th>
                                 <th class="all">Nom</th>
                                 <th class="min-tablet">Modifier</th>
                                 <th class="min-phone-l">Supprimer / Réactiver</th>
@@ -67,7 +67,7 @@ $exercicemanager = $exercicemanager->getList();
                             foreach($exercicemanager as $exercice) {
                         ?>
                             <tr>
-                                <td><?php if($exercice->getIsActive() == 1 ){ echo "Oui"; }else{ echo "Non"; } ?></td>
+                                <td><button id="ajout_<?php echo $exercie->getIdExercice(); ?>" title="Ajouter l'exercice" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button></td>
                                 <td><?php echo $exercice->getName(); ?></td>
                                 <td><a class="btn blue-steel" href="<?php echo URLHOST.'modifier_exercice/'.$exercice->getIdExercice(); ?>"><i class="fas fa-edit" alt="Editer"></i> Modifier</a></td>
                                 <?php
