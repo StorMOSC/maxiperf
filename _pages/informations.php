@@ -76,7 +76,7 @@ $user = $usermanager->get($username);
                             <div class="tab-content">
                                 <!-- PERSONAL INFO TAB -->
                                 <div class="tab-pane active" id="tab_1_1">
-                                    <form role="form" action="#" id="modif_user">
+                                    <form role="form" action="<?php echo URLHOST."_pages/_post/modif_membre.php"; ?>" id="modif_user">
                                         <div class="form-group">
                                             <label class="control-label">Nom</label>
                                             <input type="text" value="<?php echo $user->getName(); ?>" placeholder="Nom" class="form-control" id="name" name="name"> </div>
