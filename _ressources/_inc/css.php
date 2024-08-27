@@ -133,7 +133,7 @@
     }
 
     <?php 
-        if($_GET['cat']=="parcours"){
+        if($_GET['cat']=="parcours" || $_GET['cat']=="exercices"){
           ?>
             .btn .svg-inline--fa {
                 font-size: 16px !important;
