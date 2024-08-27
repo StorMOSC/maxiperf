@@ -183,8 +183,21 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             var jsonParcours = {
                 "nom":nom_parcours,
-                "date":date_parcours
+                "date":date_parcours,
+                "exercices":[]
             };
+
+            var jsonExercices = {
+                "nom":nom_exercice,
+                "series":[]
+            }
+
+            var jsonSeries = {
+                "num":num,
+                "repet":repet,
+                "poids":poids,
+                "type:type"
+            }
 
             console.log(jsonParcours);
 
