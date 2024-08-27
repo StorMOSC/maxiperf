@@ -6,7 +6,7 @@ if(isset($_POST['ajouter'])) {
     $name = $_POST['exercice'];
     $date = date("Y-m-d"); 
 
-    echo $date;
+    echo "name :".$name." - ".$date;
 
     $array = array(
         'name' => $name,
