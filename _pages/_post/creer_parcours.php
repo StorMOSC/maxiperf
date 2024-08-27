@@ -19,12 +19,13 @@ if(isset($_POST['ajouter'])) {
     $test = $parcoursmanager->add($parcours);
     
 }
+echo $date;
 
-
+/*
 if(is_null($test)){
     header('Location: '.URLHOST."exercices/errormodif");
 }else{
     header('Location: '.URLHOST."exercices/successmodif");
-}
+}*/
 
 ?>
