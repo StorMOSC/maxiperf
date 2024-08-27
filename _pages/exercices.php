@@ -175,6 +175,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
         $('#ajouter').click(function(){
 
+            alert("OK");
+
             let nom_parcours_input = document.getElementById("nom");
             let nom_parcours = nom_parcours_input.value;
 
