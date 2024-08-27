@@ -52,13 +52,13 @@
        */
       public function getDate()
       {
-          return $this->isActive;
+          return $this->date;
       }
 
       /**
        * @param mixed $date
        */
-      public function setDate($isActive)
+      public function setDate($date)
       {
           $this->date = $date;
       }

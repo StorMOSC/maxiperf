@@ -40,11 +40,30 @@ class ParcoursManager extends Features
      * @param Parcours $parcours
      * Insertion exercice in the DB
      */
-    public function add(Parcours $parcours)
+    /*public function add(Parcours $parcours)
     {
         try{
             $q = $this->_db->prepare('INSERT INTO parcours (name,date) VALUES (:name, :date)');
             $q->bindValue(':name', $parcours->getName(), PDO::PARAM_STR);
+            $q->bindValue(':date', $parcours->getDate(), PDO::PARAM_STR);
+    
+            $q->execute();
+            
+            return "ok";
+        }
+        catch(Exception $e){
+            return null;
+        }
+    }*/
+
+    /**
+     * @param Parcours $parcours
+     * Insertion exercice in the DB
+     */
+    public function add(Parcours $parcours)
+    {
+        try{
+            $q = $this->_db->prepare('INSERT INTO parcours (date) VALUES (:date)');
             $q->bindValue(':date', $parcours->getDate(), PDO::PARAM_STR);
     
             $q->execute();
