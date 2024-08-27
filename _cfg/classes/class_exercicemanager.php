@@ -63,7 +63,7 @@ class ExerciceManager extends Features
     public function delete(Exercice $exercice)
     {
         try{
-            $q = $this->_db->prepare('UPDATE exercices SET isActive = \'0\' WHERE idExercice = '.$exercice->getIdExercice());
+            $q = $this->_db->prepare('UPDATE exercices SET isActive = \'0\' WHERE idExercice = '.$exercice->getIdExercices());
     
             $q->execute();
             
@@ -146,7 +146,7 @@ class ExerciceManager extends Features
     {
         try{
             $q = $this->_db->prepare('UPDATE exercices SET name = :name, isActive = :isActive  WHERE idExercice = :idExercice');
-            $q->bindValue(':idExercice', $exercices->getIdExercice(), PDO::PARAM_INT);
+            $q->bindValue(':idExercice', $exercices->getIdExercices(), PDO::PARAM_INT);
             $q->bindValue(':name', $exercices->getName(), PDO::PARAM_STR);
             $q->bindValue(':isActive', $exercices->getIsActive(), PDO::PARAM_INT);
     
@@ -167,7 +167,7 @@ class ExerciceManager extends Features
     {
         try{
             $q = $this->_db->prepare('UPDATE exercices SET isActive = \'1\' WHERE idcompany = :idcompany');
-            $q->bindValue(':idcompany', $exercices->getIdExercice(), PDO::PARAM_INT);
+            $q->bindValue(':idcompany', $exercices->getIdExercices(), PDO::PARAM_INT);
             $q->execute();
             return "ok";
         }
