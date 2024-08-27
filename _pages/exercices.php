@@ -185,8 +185,18 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             let nom_exercice = nom_exercice_input.value;
 
             var jsonParcours = {
-                
-            };
+                    "nom":null,
+                    "date":null,
+                    "exercices":[{
+                        "nom_exo":null,
+                        "series":[{
+                            "num":null,
+                            "repet":null,
+                            "poids":null,
+                            "type":null
+                        }]
+                    }]
+                };
 
             if(jsonParcours.hasOwnProperty('nom')){
                 
@@ -199,7 +209,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             }else{
 
-                var jsonParcours = {
+                jsonParcours = {
                     "nom":nom_parcours,
                     "date":date_parcours,
                     "exercices":[{
