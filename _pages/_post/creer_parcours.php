@@ -13,7 +13,7 @@ if(isset($_POST['ajouter'])) {
         'date' => $date
     );
 
-
+    echo "avant OK";
     $parcours = new Parcours($array);
     echo "OK";
     $parcoursmanager = new ParcoursManager($bdd);
