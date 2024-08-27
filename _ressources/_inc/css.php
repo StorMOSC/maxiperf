@@ -135,8 +135,11 @@
     <?php 
         if($_GET['cat']=="parcours" || $_GET['cat']=="exercices"){
           ?>
-            .btn .svg-inline--fa {
+            .btn .default .svg-inline--fa {
                 font-size: 16px !important;
+            }
+            .btn .svg-inline--fa {
+                font-size: 24px !important;
             }
     <?php
         }
