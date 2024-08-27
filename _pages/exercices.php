@@ -175,13 +175,13 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
         $('#ajouter').click(function(){
 
-            alert("OK");
-
             let nom_parcours_input = document.getElementById("nom");
             let nom_parcours = nom_parcours_input.value;
 
             let date_parcours_input = document.getElementById("date");
             let date_parcours = date_parcours_input.value;
+
+            alert("OK nom :"+nom_parcours+" - "+date_parcours);
 
             var jsonParcours = {
                 "nom": nom_parcours,
