@@ -4,11 +4,12 @@ include("../../_cfg/cfg.php");
 
 if(isset($_POST['ajouter'])) {
     $name = $_POST['exercice'];
+    $date = date("Y-m-d"); 
 
-    /*$array = array(
+    $array = array(
         'name' => $name,
-        'isActive' => $is_active
-    );*/
+        'date' => $date
+    );
 
 
     $parcours = new Parcours($array);
