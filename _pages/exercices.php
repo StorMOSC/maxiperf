@@ -41,12 +41,12 @@ $exercicemanager = $exercicemanager->getList();
             <div class="portlet-body">
                 <div class="row">
                 <!-- BEGIN FORM-->
-                <form action="" class="form-horizontal form-inline form-row-seperated">
+                <form action="<?php echo URLHOST."_pages/_post/creer_parcours.php"; ?>" class="form-horizontal form-inline form-row-seperated">
                     <div class="form-body">
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Choix de l'exercice</label>
                             <div class="col-md-4">
-                                <select id="exo_1" class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
+                                <select id="exercice" name="exercice" class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
                                 <?php
                                     foreach($exercicemanager as $exercice) {
                                 ?>
@@ -83,7 +83,7 @@ $exercicemanager = $exercicemanager->getList();
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3"></label>
                             <div class="col-md-4">
-                                <button type="submit" class="btn green">Ajouter</button>
+                                <button id="ajouter" name="ajouter" type="submit" class="btn green">Ajouter</button>
                             </div>
                         </div>
                     </div>

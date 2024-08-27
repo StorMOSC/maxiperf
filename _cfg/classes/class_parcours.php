@@ -1,9 +1,9 @@
 <?php
 
-  class Exercice extends Features{
-    private $idExercice;
+  class Parcours extends Features{
+    private $idParcours;
     private $name;
-    private $isActive;
+    private $date;
 
       /**
        * Exercices constructor.
@@ -18,17 +18,17 @@
       /**
        * @return mixed
        */
-      public function getIdExercice()
+      public function getIdParcours()
       {
-          return $this->idExercice;
+          return $this->idParcours;
       }
 
       /**
-       * @param mixed $idExercice
+       * @param mixed $idParcours
        */
-      public function setIdExercice($idExercice)
+      public function setIdParcours($idParcours)
       {
-          $this->idExercice = $idExercice;
+          $this->idParcours = $idParcours;
       }
 
       /**
@@ -50,17 +50,17 @@
       /**
        * @return mixed
        */
-      public function getIsActive()
+      public function getDate()
       {
           return $this->isActive;
       }
 
       /**
-       * @param mixed $isActive
+       * @param mixed $date
        */
-      public function setIsActive($isActive)
+      public function setDate($isActive)
       {
-          $this->isActive = $isActive;
+          $this->date = $date;
       }
 
     }

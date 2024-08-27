@@ -95,7 +95,7 @@ class ExerciceManager extends Features
      */
     public function getByName($exerciceDataName)
     {
-        $companyNameData = (string) $exerciceDataName;
+        $exerciceDataName = (string) $exerciceDataName;
         $q = $this->_db->query('SELECT * FROM `exercices` WHERE `name` ="'.$exerciceDataName.'"');
         $donnees = $q->fetch(PDO::FETCH_ASSOC);
 
@@ -146,7 +146,7 @@ class ExerciceManager extends Features
     {
         try{
             $q = $this->_db->prepare('UPDATE exercices SET name = :name, isActive = :isActive  WHERE idExercice = :idExercice');
-            $q->bindValue(':idcompany', $exercices->getIdExercice(), PDO::PARAM_INT);
+            $q->bindValue(':idExercice', $exercices->getIdExercice(), PDO::PARAM_INT);
             $q->bindValue(':name', $exercices->getName(), PDO::PARAM_STR);
             $q->bindValue(':isActive', $exercices->getIsActive(), PDO::PARAM_INT);
     
