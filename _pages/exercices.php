@@ -129,7 +129,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     <!-- BEGIN FORM-->
                     <form action="<?php echo URLHOST."_pages/_post/creer_parcours.php"; ?>" class="form-horizontal form-inline form-row-seperated">
                         <div class="form-body">
-                            <div class="form-group col-md-12">
+                            <div class="form-group col-md-12" id="json_result">
                                 
                             </div>
                         </div>
@@ -228,6 +228,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 "poids":poids,
                 "type:type"
             };*/
+
+            document.getElementById("json_result").innerHTML = jsonParcours;
 
             console.log(jsonParcours);
             console.log(jsonParcours["exercices"]);
