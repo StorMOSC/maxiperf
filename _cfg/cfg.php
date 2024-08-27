@@ -14,6 +14,8 @@ include 'classes/class_contact.php';
 include 'classes/class_contactmanager.php';
 include 'classes/class_exercice.php';
 include 'classes/class_exercicemanager.php';
+include 'classes/class_parcours.php';
+include 'classes/class_parcoursmanager.php';
 include 'classes/class_suppliers.php';
 include 'classes/class_suppliersmanager.php';
 include 'classes/class_users.php';
