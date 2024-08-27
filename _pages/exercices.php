@@ -43,6 +43,21 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 <!-- BEGIN FORM-->
                 <form method="post" action="<?php echo URLHOST."_pages/_post/creer_parcours.php"; ?>" class="form-horizontal form-inline form-row-seperated">
                     <div class="form-body">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Date de la séance</label>
+                            <div class="col-md-3">
+                                <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-lang="FR-fr">
+                                    <input type="text" class="form-control" readonly>
+                                    <span class="input-group-btn">
+                                        <button class="btn default" type="button">
+                                            <i class="fa fa-calendar"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                                <!-- /input-group -->
+                                <span class="help-block"> Choississez la date </span>
+                            </div>
+                        </div>
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Choix de l'exercice</label>
                             <div class="col-md-4">
