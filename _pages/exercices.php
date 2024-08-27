@@ -56,7 +56,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                             <label class="control-label col-md-3">Date de la séance</label>
                             <div class="col-md-3">
                                 <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-lang="FR-fr">
-                                    <input name="date" id="date" type="text" class="form-control" readonly>
+                                    <input name="date" id="date" type="text" class="form-control" readonly value="<?php echo date("d-m-Y"); ?>">
                                     <span class="input-group-btn">
                                         <button class="btn default" type="button">
                                             <i class="fa fa-calendar"></i>
