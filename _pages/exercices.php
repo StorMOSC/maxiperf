@@ -65,9 +65,9 @@ $exercicemanager = $exercicemanager->getList();
                                         <input type="number" class="form-control" id="repet1" name="repet[1]" placeholder="Répétition">
                                         <input type="number" class="form-control" id="poids1" name="poids[1]" placeholder="Poids">
                                         <select id="type1" name="type[1]" class="form-control input-xsmall" style="padding-left: 0px !important;">
-                                            <option value="1">Kg</option>
-                                            <option value="2">Minutes</option>
-                                            <option value="3">-</option>
+                                            <option value="Kg">Kg</option>
+                                            <option value="Minutes">Minutes</option>
+                                            <option value="-">-</option>
                                         </select>
                                         <button type="button" id="ajout_serie" title="Ajouter une série" class="btn green" style="background-color: transparent; border-color: transparent; color: #32c5d2;"><i class="fas fa-plus-circle"></i></button>
                                         <button type="button" title="Supprimer la ligne" id="supprSerie1" class="btn red" onclick="supprSerie(1);" style="background-color: transparent; border-color: transparent; color: #e7505a;"><i class="fas fa-minus-square"></i></button>
