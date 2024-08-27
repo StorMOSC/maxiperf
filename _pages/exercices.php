@@ -12,7 +12,6 @@ $parcoursmanager = new CompaniesManager($bdd);
 /*récupération des objets en base*/
 $exercicemanager = $exercicemanager->getListAllExercices();
 
-print_r($exercicemanager);
 ?>
 <div class="row">
     <div class="col-md-12">
