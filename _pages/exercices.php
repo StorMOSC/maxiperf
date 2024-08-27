@@ -230,6 +230,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             };*/
 
             console.log(jsonParcours);
+            console.log(jsonParcours["exercices"]);
 
         });
     });
