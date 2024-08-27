@@ -14,6 +14,7 @@ if(isset($_POST['ajouter'])) {
     );
 
     echo "avant OK";
+    print_r($array);
     $parcours = new Parcours($array);
     echo "OK";
     $parcoursmanager = new ParcoursManager($bdd);
