@@ -41,7 +41,7 @@ $exercicemanager = $exercicemanager->getList();
             <div class="portlet-body">
                 <div class="row">
                 <!-- BEGIN FORM-->
-                <form action="<?php echo URLHOST."_pages/_post/creer_parcours.php"; ?>" class="form-horizontal form-inline form-row-seperated">
+                <form method="post" action="<?php echo URLHOST."_pages/_post/creer_parcours.php"; ?>" class="form-horizontal form-inline form-row-seperated">
                     <div class="form-body">
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Choix de l'exercice</label>
