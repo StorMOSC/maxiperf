@@ -16,6 +16,8 @@ include 'classes/class_exercice.php';
 include 'classes/class_exercicemanager.php';
 include 'classes/class_parcours.php';
 include 'classes/class_parcoursmanager.php';
+include 'classes/class_series.php';
+include 'classes/class_seriesmanager.php';
 include 'classes/class_suppliers.php';
 include 'classes/class_suppliersmanager.php';
 include 'classes/class_users.php';
