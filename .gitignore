@@ -1,2 +1,6 @@
 _cfg/classes/class_db.php
 .htpasswd
+bdd_maxiperf.mwb
+bdd_maxiperf.mwb.bak
+bdd_sql_maxiperf.sql
+bdd_sql_maxiperf2.sql

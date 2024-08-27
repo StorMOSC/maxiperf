@@ -1,7 +1,7 @@
 <?php
 
   class Exercice extends Features{
-    private $idExercices;
+    private $idExercice;
     private $name;
     private $isActive;
 
@@ -18,17 +18,17 @@
       /**
        * @return mixed
        */
-      public function getIdExercices()
+      public function getIdExercice()
       {
-          return $this->idExercices;
+          return $this->idExercice;
       }
 
       /**
-       * @param mixed $idExercices
+       * @param mixed $idExercice
        */
-      public function setIdExercice($idExercices)
+      public function setIdExercice($idExercice)
       {
-          $this->idExercices = $idExercices;
+          $this->idExercice = $idExercice;
       }
 
       /**
