@@ -229,9 +229,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 "type:type"
             };*/
 
-            document.getElementById("json_result").innerHTML = jsonParcours;
+            document.getElementById("json_result").innerHTML = JSON.stringify(jsonParcours);
 
-            console.log(jsonParcours);
+            console.log(JSON.stringify(jsonParcours));
             console.log(jsonParcours["exercices"]);
 
         });
