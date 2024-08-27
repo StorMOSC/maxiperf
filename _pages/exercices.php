@@ -186,7 +186,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 "date": date_parcours
             }
 
-            console.log(table_str);
+            console.log(jsonParcours);
 
         });
     });
