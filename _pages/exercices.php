@@ -181,23 +181,41 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             let date_parcours_input = document.getElementById("date");
             let date_parcours = date_parcours_input.value;
 
+            let nom_exercice_input = document.getElementById("exercice");
+            let nom_exercice = nom_exercice_input.value;
+
             var jsonParcours = {
-                "nom":nom_parcours,
-                "date":date_parcours,
-                "exercices":[]
+                
             };
 
-            var jsonExercices = {
-                "nom":nom_exercice,
-                "series":[]
+            if(jsonParcours.hasOwnProperty('nom')){
+                
+                var jsonExercices = {
+                    "nom_exo":nom_exercice,
+                    "series":[]
+                };
+
+                jsonParcours["exercices"] = jsonExercices;
+
+            }else{
+
+                var jsonParcours = {
+                    "nom":nom_parcours,
+                    "date":date_parcours,
+                    "exercices":[{
+                        "nom_exo":nom_exercice,
+                        "series":[]
+                    }]
+                };
+
             }
 
-            var jsonSeries = {
+            /*var jsonSeries = {
                 "num":num,
                 "repet":repet,
                 "poids":poids,
                 "type:type"
-            }
+            };*/
 
             console.log(jsonParcours);
 
