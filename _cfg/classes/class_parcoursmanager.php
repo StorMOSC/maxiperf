@@ -62,12 +62,13 @@ class ParcoursManager extends Features
      */
     public function add(Parcours $parcours)
     {
+        echo "avant TRY";
         try{
             $q = $this->_db->prepare('INSERT INTO parcours (date) VALUES (:date)');
             $q->bindValue(':date', $parcours->getDate(), PDO::PARAM_STR);
     
             $q->execute();
-            
+            echo "ici c'est ok";
             return "ok";
         }
         catch(Exception $e){

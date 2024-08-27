@@ -15,9 +15,9 @@ if(isset($_POST['ajouter'])) {
 
 
     $parcours = new Parcours($array);
-    //echo "OK";
+    echo "OK";
     $parcoursmanager = new ParcoursManager($bdd);
-    //echo "OK2 / ".$oldusername;
+    echo "OK2";
     $test = $parcoursmanager->add($parcours);
     
 }
