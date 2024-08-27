@@ -49,9 +49,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                                 <select id="exercice" name="exercice" class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
                                 <?php
                                     foreach($exercicemanager as $exercice) {
-                                        echo $exercice->getIdExercices();
+                                        echo $exercice->getIdExercice();
                                 ?>
-                                    <option value="<?php echo $exercice->getIdExercices(); ?>"><?php echo $exercice->getName(); ?></option>
+                                    <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
                                 <?php
                                     }
                                 ?>
