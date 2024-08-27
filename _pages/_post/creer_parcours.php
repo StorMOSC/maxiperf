@@ -3,13 +3,13 @@
 include("../../_cfg/cfg.php");
 
 if(isset($_POST['ajouter'])) {
-    $name = $_POST['exercice'];
+    //$name = $_POST['exercice'];
     $date = date("Y-m-d"); 
 
     echo "name :".$name." - ".$date;
 
     $array = array(
-        'name' => $name,
+        //'name' => $name,
         'date' => $date
     );
 
