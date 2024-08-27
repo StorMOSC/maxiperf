@@ -12,6 +12,7 @@ $parcoursmanager = new CompaniesManager($bdd);
 /*récupération des objets en base*/
 $exercicemanager = $exercicemanager->getList();
 
+print_r($exercicemanager);
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -49,6 +50,7 @@ $exercicemanager = $exercicemanager->getList();
                                 <select id="exercice" name="exercice" class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
                                 <?php
                                     foreach($exercicemanager as $exercice) {
+                                        echo $exercice->getIdExercices();
                                 ?>
                                     <option value="<?php echo $exercice->getIdExercices(); ?>"><?php echo $exercice->getName(); ?></option>
                                 <?php
