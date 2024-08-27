@@ -187,7 +187,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             alert("Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice);
 
             var jsonParcours = {
-                    "nom":null,
+                    /*"nom":null,
                     "date":null,
                     "exercices":[{
                         "nom_exo":null,
@@ -197,7 +197,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                             "poids":null,
                             "type":null
                         }]
-                    }]
+                    }]*/
                 };
 
             if(jsonParcours.hasOwnProperty('nom')){
