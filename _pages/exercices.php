@@ -184,6 +184,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             let nom_exercice_input = document.getElementById("exercice");
             let nom_exercice = nom_exercice_input.value;
 
+            alert("Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice);
+
             var jsonParcours = {
                     "nom":null,
                     "date":null,
