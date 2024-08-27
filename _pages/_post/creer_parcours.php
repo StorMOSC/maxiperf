@@ -4,7 +4,7 @@ include("../../_cfg/cfg.php");
 
 if(isset($_POST['ajouter'])) {
     //$name = $_POST['exercice'];
-    $date = date("Y-m-d"); 
+    $date = $_POST['date']; 
 
 
     $array = array(
