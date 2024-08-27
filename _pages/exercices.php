@@ -10,7 +10,7 @@ $parcours = new Company($array);
 $parcoursmanager = new CompaniesManager($bdd);
 
 /*récupération des objets en base*/
-$exercicemanager = $exercicemanager->getList();
+$exercicemanager = $exercicemanager->getListAllExercices();
 
 print_r($exercicemanager);
 ?>

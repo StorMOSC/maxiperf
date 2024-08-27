@@ -145,7 +145,7 @@ class ExerciceManager extends Features
     public function update(Exercice $exercices)
     {
         try{
-            $q = $this->_db->prepare('UPDATE exercices SET name = :name, isActive = :isActive  WHERE idExercice = :idExercice');
+            $q = $this->_db->prepare('UPDATE exercices SET name = :name, isActive = :isActive  WHERE idExercices = :idExercices');
             $q->bindValue(':idExercice', $exercices->getIdExercices(), PDO::PARAM_INT);
             $q->bindValue(':name', $exercices->getName(), PDO::PARAM_STR);
             $q->bindValue(':isActive', $exercices->getIsActive(), PDO::PARAM_INT);
