@@ -184,8 +184,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             alert("OK nom :"+nom_parcours+" - "+date_parcours);
 
             var jsonParcours = {
-                "nom": nom_parcours,
-                "date": date_parcours
+                "nom":nom_parcours,
+                "date":date_parcours
             };
 
             console.log(jsonParcours);
