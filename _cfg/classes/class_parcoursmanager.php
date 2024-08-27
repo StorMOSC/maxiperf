@@ -62,6 +62,9 @@ class ParcoursManager extends Features
      */
     public function add(Parcours $parcours)
     {
+
+        $parcours->setDate(date('Y-m-d',strtotime(str_replace('/','-',$parcours->getDate()))));
+
         echo "avant TRY";
         try{
             $q = $this->_db->prepare('INSERT INTO parcours (date) VALUES (:date)');
