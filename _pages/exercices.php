@@ -26,22 +26,11 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 <i class="fas fa-dumbbell font-dark"></i>
                     <span class="caption-subject font-dark bold uppercase">Sélection des exercices</span>
                 </div>
-                <div class="actions">
-                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                        <i class="icon-cloud-upload"></i>
-                    </a>
-                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                        <i class="icon-wrench"></i>
-                    </a>
-                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                        <i class="icon-trash"></i>
-                    </a>
-                </div>
             </div>
             <div class="portlet-body">
                 <div class="row">
                 <!-- BEGIN FORM-->
-                <form method="post" action="<?php echo URLHOST."_pages/_post/creer_parcours.php"; ?>" class="form-horizontal form-inline form-row-seperated">
+                <form method="post" action="" class="form-horizontal form-inline form-row-seperated">
                     <div class="form-body">
                         <div class="form-group col-md-12" style="margin-bottom: 3px;">
                             <label class="control-label col-md-3">Nom du parcours</label>
@@ -138,7 +127,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             <div class="portlet-body">
                 <div class="row">
                     <!-- BEGIN FORM-->
-                    <form action="index.html" class="form-horizontal form-inline form-row-seperated">
+                    <form action="<?php echo URLHOST."_pages/_post/creer_parcours.php"; ?>" class="form-horizontal form-inline form-row-seperated">
                         <div class="form-body">
                             <div class="form-group col-md-12">
                                 
@@ -181,6 +170,23 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     required: true
                 });
             });
+
+        });
+
+        $('#ajouter').click(function(){
+
+            let nom_parcours_input = document.getElementById("nom")
+            let nom_parcours = nom_parcours_input.value
+
+            let date_parcours_input = document.getElementById("date")
+            let date_parcours = date_parcours_input.value
+
+            var jsonParcours = {
+                "nom": nom_parcours,
+                "date": date_parcours
+            }
+
+            console.log(table_str);
 
         });
     });
