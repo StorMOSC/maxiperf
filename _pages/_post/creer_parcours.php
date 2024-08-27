@@ -6,6 +6,8 @@ if(isset($_POST['ajouter'])) {
     $name = $_POST['exercice'];
     $date = date("Y-m-d"); 
 
+    echo $date;
+
     $array = array(
         'name' => $name,
         'date' => $date
@@ -19,7 +21,7 @@ if(isset($_POST['ajouter'])) {
     $test = $parcoursmanager->add($parcours);
     
 }
-echo $date;
+
 
 /*
 if(is_null($test)){
