@@ -212,6 +212,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             if(jsonParcours.hasOwnProperty('nom')){
                 
+                alert("Présent !");
                 jsonExercices = {
                     "nom_exo":nom_exercice,
                     "series":[]
@@ -220,6 +221,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 jsonParcours["exercices"] = jsonExercices;
 
             }else{
+
+                alert("Pas Présent !");
 
                 jsonParcours = {
                     "nom":nom_parcours,
