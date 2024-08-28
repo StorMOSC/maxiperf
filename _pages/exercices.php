@@ -265,7 +265,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 "type:type"
             };*/
 
-            document.getElementById("json_result").innerHTML = " - jsonParcours"JSON.stringify(jsonParcours);
+            document.getElementById("json_result").innerHTML = " - jsonParcours "+JSON.stringify(jsonParcours);
 
             console.log(JSON.stringify(jsonParcours));
             
