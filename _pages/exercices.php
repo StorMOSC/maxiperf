@@ -75,9 +75,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                                 <label id="serie1" name="serie[1]" class="control-label col-md-3">Série 1</label>
                                 <div class="col-md-8">
                                     <div class="input-icon">
-                                        <input type="number" class="form-control" id="repet1" name="repet[1]" placeholder="Répétition">
-                                        <input type="number" class="form-control" id="poids1" name="poids[1]" placeholder="Poids">
-                                        <select id="type1" name="type[1]" class="form-control input-xsmall" style="padding-left: 0px !important;">
+                                        <input class="serie" type="number" class="form-control" id="repet1" name="repet[1]" placeholder="Répétition">
+                                        <input class="serie" type="number" class="form-control" id="poids1" name="poids[1]" placeholder="Poids">
+                                        <select class="serie" id="type1" name="type[1]" class="form-control input-xsmall" style="padding-left: 0px !important;">
                                             <option value="Kg">Kg</option>
                                             <option value="Minutes">Minutes</option>
                                             <option value="-">-</option>
@@ -175,6 +175,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
         $('#ajouter').click(function(){
 
+            var class_serie = document.getElementsByClassName("serie");
+            var nb_serie = class_serie.length;
+
             let nom_parcours_input = document.getElementById("nom");
             let nom_parcours = nom_parcours_input.value;
 
@@ -184,7 +187,18 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             let nom_exercice_input = document.getElementById("exercice");
             let nom_exercice = nom_exercice_input.value;
 
-            alert("Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice);
+            let num = 1;
+            
+            let repet_input = document.getElementById("repet[1]");
+            let repet = repet_input.value;
+            
+            let poids_input = document.getElementById("poids[1]");
+            let poids = poids_input.value;
+            
+            let type_input = document.getElementById("type[1]");
+            let type = type_input.value;
+
+            alert("Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
 
             var jsonParcours = {
                     /*"nom":null,
@@ -216,7 +230,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "date":date_parcours,
                     "exercices":[{
                         "nom_exo":nom_exercice,
-                        "series":[]
+                        "series":[{
+                            "num":num,
+                            "repet":repet,
+                            "poids":poids,
+                            "type":type
+                        }]
                     }]
                 };
 
@@ -232,7 +251,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             document.getElementById("json_result").innerHTML = JSON.stringify(jsonParcours);
 
             console.log(JSON.stringify(jsonParcours));
-            console.log(jsonParcours["exercices"]);
+            
 
         });
     });
