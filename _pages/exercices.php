@@ -75,9 +75,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                                 <label id="serie1" name="serie[1]" class="control-label col-md-3">Série 1</label>
                                 <div class="col-md-8">
                                     <div class="input-icon">
-                                        <input class="serie" type="number" class="form-control" id="repet1" name="repet[1]" placeholder="Répétition">
-                                        <input class="serie" type="number" class="form-control" id="poids1" name="poids[1]" placeholder="Poids">
-                                        <select class="serie" id="type1" name="type[1]" class="form-control input-xsmall" style="padding-left: 0px !important;">
+                                        <input class="serie_exo" type="number" class="form-control" id="repet1" name="repet[1]" placeholder="Répétition">
+                                        <input class="serie_exo" type="number" class="form-control" id="poids1" name="poids[1]" placeholder="Poids">
+                                        <select class="serie_exo" id="type1" name="type[1]" class="form-control input-xsmall" style="padding-left: 0px !important;">
                                             <option value="Kg">Kg</option>
                                             <option value="Minutes">Minutes</option>
                                             <option value="-">-</option>
@@ -175,7 +175,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
         $('#ajouter').click(function(){
 
-            var class_serie = document.getElementsByClassName("serie");
+            var class_serie = document.getElementsByClassName("serie_exo");
             var nb_serie = class_serie.length;
 
             let nom_parcours_input = document.getElementById("nom");
