@@ -237,16 +237,19 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 };
 
                 alert(" Num : "+num+" / nb_serie : "+nb_serie);
-                while(num < nb_serie){
+                while(num <= nb_serie){
 
                     repet_input = document.getElementsByName("repet["+num+"]");
                     repet = repet_input[num_input].value;
+                    alert("1");
                     
                     poids_input = document.getElementsByName("poids["+num+"]");
                     poids = poids_input[num_input].value;
+                    alert("2");
                     
                     type_input = document.getElementsByName("type["+num+"]");
                     type = type_input[num_input].value;
+                    alert("3");
 
                     jsonSerie = {
                         "num":num,
