@@ -146,7 +146,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
         $('#fromExercice').submit(function (evt) {
             evt.preventDefault();
-            window.history.back();
         });
 
         $('#ajout_serie').click(function(){
