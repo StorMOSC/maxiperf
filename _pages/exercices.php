@@ -178,7 +178,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
         });
 
-        $('#ajouter').click(function(){
 
             var class_serie = document.getElementsByClassName("ligneSerie");
             var nb_serie = class_serie.length;
@@ -203,6 +202,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             
             var type_input;
             var type;
+
+        $('#ajouter').click(function(){
 
             //alert("Nombre : "+nb_serie+" Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
 
