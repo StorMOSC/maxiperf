@@ -251,9 +251,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                         "type":type
                     };
 
-                    document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonSerie);
-
                     jsonParcours["exercices"]["series"] = jsonSerie;
+                    document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonParcours);
 
                     num_input++;
                     num++;
