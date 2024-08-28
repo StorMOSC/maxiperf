@@ -246,7 +246,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                         "repet":repet,
                         "poids":poids,
                         "type":type
-                    }
+                    };
 
                     document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonSerie);
 
