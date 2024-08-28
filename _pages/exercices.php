@@ -203,6 +203,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             var type_input;
             var type;
 
+            var jsonSerie_aff;
+
         $('#ajouter').click(function(){
 
             //alert("Nombre : "+nb_serie+" Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
@@ -253,7 +255,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     };
 
                     jsonParcours["exercices"]["series"] = jsonSerie;
-                    document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonParcours);
+                    jsonSerie_aff = jsonSerie_aff+"jsonSerie : "+JSON.stringify(jsonParcours)+" - ";
+                    //document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonParcours);
 
                     num_input++;
                     num++;
@@ -268,9 +271,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 "type:type"
             };*/
 
-            document.getElementById("json_result").innerHTML = " - jsonParcours "+JSON.stringify(jsonParcours);
+            jsonSerie_aff = jsonSerie_aff+" - jsonParcours "+JSON.stringify(jsonParcours);
+            document.getElementById("json_result").innerHTML = jsonSerie_aff;
 
-            console.log(JSON.stringify(jsonParcours));
+            console.log(JSON.stringify(jsonSerie_aff));
             
 
         });
