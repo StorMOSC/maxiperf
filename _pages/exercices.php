@@ -234,7 +234,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     }]
                 };
 
-                while(num <= nb_serie){
+                while(num < nb_serie){
 
                     repet_input = document.getElementsByName("repet["+num+"]");
                     repet = repet_input[num_input].value;
