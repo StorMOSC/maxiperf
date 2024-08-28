@@ -30,7 +30,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             <div class="portlet-body">
                 <div class="row">
                 <!-- BEGIN FORM-->
-                <form method="post" action="" class="form-horizontal form-inline form-row-seperated">
+                <form method="post" id="fromExercice" action="" class="form-horizontal form-inline form-row-seperated">
                     <div class="form-body">
                         <div class="form-group col-md-12" style="margin-bottom: 3px;">
                             <label class="control-label col-md-3">Nom du parcours</label>
@@ -143,6 +143,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 </div>
 <script>
     $(document).ready(function() {
+
+        $('#fromExercice').submit(function (evt) {
+            evt.preventDefault();
+            window.history.back();
+        });
+
         $('#ajout_serie').click(function(){
 
             // get the last DIV which ID starts with ^= "klon"
