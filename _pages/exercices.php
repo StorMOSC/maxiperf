@@ -189,13 +189,13 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             let num = 1;
             
-            let repet_input = document.getElementsByName("repet[1]");
+            let repet_input[] = document.getElementsByName("repet[1]");
             let repet = repet_input[0].value;
             
-            let poids_input = document.getElementsByName("poids[1]");
+            let poids_input[] = document.getElementsByName("poids[1]");
             let poids = poids_input[0].value;
             
-            let type_input = document.getElementsByName("type[1]");
+            let type_input[] = document.getElementsByName("type[1]");
             let type = type_input[0].value;
 
             alert("Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
