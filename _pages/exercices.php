@@ -193,15 +193,16 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             let nom_exercice = nom_exercice_input.value;
 
             var num = 1;
+            var num_input = 0;
             
-            var repet_input = document.getElementsByName("repet[1]");
-            var repet = repet_input[0].value;
+            var repet_input;
+            var repet;
             
-            var poids_input = document.getElementsByName("poids[1]");
-            var poids = poids_input[0].value;
+            var poids_input;
+            var poids;
             
-            var type_input = document.getElementsByName("type[1]");
-            var type = type_input[0].value;
+            var type_input;
+            var type;
 
             //alert("Nombre : "+nb_serie+" Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
 
@@ -230,13 +231,28 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 };
 
                 while(num <= nb_serie){
+
+                    repet_input = document.getElementsByName("repet["+num+"]");
+                    repet = repet_input[num_input].value;
+                    
+                    poids_input = document.getElementsByName("poids["+num+"]");
+                    poids = poids_input[num_input].value;
+                    
+                    type_input = document.getElementsByName("type["+num+"]");
+                    type = type_input[num_input].value;
+
                     jsonSerie = {
                         "num":num,
                         "repet":repet,
                         "poids":poids,
                         "type":type
                     }
+
+                    document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonParcours);
+
                     jsonParcours["exercices"]["series"] = jsonSerie;
+
+                    num_input++;
                     num++;
                 }
 
@@ -249,7 +265,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 "type:type"
             };*/
 
-            document.getElementById("json_result").innerHTML = JSON.stringify(jsonParcours);
+            document.getElementById("json_result").innerHTML = " - jsonParcours"JSON.stringify(jsonParcours);
 
             console.log(JSON.stringify(jsonParcours));
             
