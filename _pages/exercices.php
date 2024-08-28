@@ -175,8 +175,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
         $('#ajouter').click(function(){
 
-            var class_serie = document.getElementsByClassName("serie_exo");
-            var nb_serie = class_serie.length;
+            /*var class_serie = document.getElementsByClassName("serie_exo");
+            var nb_serie = class_serie.length;*/
 
             let nom_parcours_input = document.getElementById("nom");
             let nom_parcours = nom_parcours_input.value;
