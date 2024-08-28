@@ -236,6 +236,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     }]
                 };
 
+                alert(" Num : "+num+" / nb_serie : "+nb_serie);
                 while(num < nb_serie){
 
                     repet_input = document.getElementsByName("repet["+num+"]");
