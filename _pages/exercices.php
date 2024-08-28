@@ -260,6 +260,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     alert("4");
 
+                    jsonParcours = JSON.parse(jsonParcours);
                     jsonParcours["exercices"]["series"] = jsonSerie;
                     jsonSerie_aff = jsonSerie_aff+"jsonSerie : "+JSON.stringify(jsonParcours)+" - ";
                     alert("5");
