@@ -204,7 +204,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             var type_input;
             var type;
 
-            //alert("Nombre : "+nb_serie+" Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
+            alert("Nombre : "+nb_serie+" Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
 
             var jsonParcours = {};
             var jsonSerie = {};
