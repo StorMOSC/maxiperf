@@ -203,25 +203,15 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             var type_input = document.getElementsByName("type[1]");
             var type = type_input[0].value;
 
-            alert("Nombre : "+nb_serie+" Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
+            //alert("Nombre : "+nb_serie+" Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
 
-            var jsonParcours = {
-                    /*"nom":null,
-                    "date":null,
-                    "exercices":[{
-                        "nom_exo":null,
-                        "series":[{
-                            "num":null,
-                            "repet":null,
-                            "poids":null,
-                            "type":null
-                        }]
-                    }]*/
-                };
+            var jsonParcours = {};
+            var jsonSerie = {};
+            var jsonExercices = {};
 
             if(jsonParcours.hasOwnProperty('nom')){
                 
-                var jsonExercices = {
+                jsonExercices = {
                     "nom_exo":nom_exercice,
                     "series":[]
                 };
@@ -235,14 +225,20 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "date":date_parcours,
                     "exercices":[{
                         "nom_exo":nom_exercice,
-                        "series":[{
-                            "num":num,
-                            "repet":repet,
-                            "poids":poids,
-                            "type":type
-                        }]
+                        "series":[]
                     }]
                 };
+
+                while(num <= nb_serie){
+                    jsonSerie = {
+                        "num":num,
+                        "repet":repet,
+                        "poids":poids,
+                        "type":type
+                    }
+                    jsonParcours["exercices"]["series"] = jsonSerie;
+                    num++;
+                }
 
             }
 
