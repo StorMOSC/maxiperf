@@ -203,7 +203,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             var type_input;
             var type;
 
-            var jsonSerie_aff;
+            var jsonSerie_aff = "";
 
         $('#ajouter').click(function(){
 
