@@ -265,9 +265,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     jsonSerie_aff = jsonSerie_aff+" jsonSerie : "+JSON.stringify(jsonSerie)+" - ";
                     //alert("5");
                     //document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonParcours);
+                    console.log("num_input : "+num_input+" num : "+num);
 
                     num_input++;
                     num++;
+
+                    console.log(" - num_input 2 : "+num_input+" num 2 : "+num);
                 }
 
             }
