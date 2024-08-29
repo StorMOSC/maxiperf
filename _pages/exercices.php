@@ -60,15 +60,17 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                             <div class="col-md-4">
                                 <select id="exercice" name="exercice" class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
                                 <?php
+                                    $listExercices = array();
                                     foreach($exercicemanager as $exercice) {
-                                        $listExercices = array("id" => $exercice->getIdExercice(), "nom" => $exercice->getName());
-                                        $jsonListExercice = json_encode($listExercices);
+                                        $listExercices[$exercice->getIdExercice()] =  $exercice->getName();
+                                        
                                         echo $exercice->getIdExercice();
                                 ?>
                                     <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
                                 <?php
                                     }
                                     $listExercices = array_map('utf8_encode', $listExercices);
+                                    $jsonListExercice = json_encode($listExercices);
                                 ?>
                                 </select>
                             </div>
