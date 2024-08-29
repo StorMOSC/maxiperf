@@ -234,7 +234,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "nom_exo":nom_exercice,
                     "series":[]
                 };
-
+                alert("ok");
                 //console.log("av nb_serie : "+nb_serie+" av num : "+num);
                 while(num <= nb_serie){
 
