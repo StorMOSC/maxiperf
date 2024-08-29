@@ -241,13 +241,14 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 console.log("av nb_serie : "+nb_serie+" av num : "+num);
                 while(num <= nb_serie){
 
+                    alert("repet"+num);
                     //repet_input = document.getElementsByName("repet["+num+"]");
                     repet = document.getElementById("repet"+num).value;
                     alert("Repet : "+repet);
                     
                     poids = document.getElementById("poids"+num).value;
                     //poids = poids_input.value;
-                   alert("Poids : "+poids);
+                    alert("Poids : "+poids);
                     
                     type = document.getElementById("type"+num).value;
                     //type = type_input.value;
