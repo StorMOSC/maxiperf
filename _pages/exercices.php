@@ -235,7 +235,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "date":date_parcours,
                     "exercices":[{
                         "nom_exo":nom_exercice,
-                        "series":[]
+                        /*"series":[{
+                            "num":"",
+                            "repet":"",
+                            "poids":"",
+                            "type":""
+                        }]*/
                     }]
                 };
 
@@ -255,12 +260,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     //type = type_input.value;
                     //alert("Type : "+type);
 
-                    jsonSerie = {
+                    jsonSerie = [{
                         "num":num,
                         "repet":repet,
                         "poids":poids,
                         "type":type
-                    };
+                    }];
 
                     //alert("4");
 
