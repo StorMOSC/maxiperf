@@ -198,13 +198,13 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             var num = 1;
             var num_input = 0;
             
-            var repet_input;
+            var repet_input[];
             var repet;
             
-            var poids_input;
+            var poids_input[];
             var poids;
             
-            var type_input;
+            var type_input[];
             var type;
 
             var jsonSerie_aff = "";
