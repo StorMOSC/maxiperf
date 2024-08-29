@@ -235,12 +235,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "date":date_parcours,
                     "exercices":[{
                         "nom_exo":nom_exercice,
-                        /*"series":[{
-                            "num":"",
+                        "series":[
+                            /*"num":"",
                             "repet":"",
                             "poids":"",
-                            "type":""
-                        }]*/
+                            "type":""*/
+                        ]
                     }]
                 };
 
@@ -260,17 +260,17 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     //type = type_input.value;
                     //alert("Type : "+type);
 
-                    jsonSerie = [{
+                    jsonSerie = {
                         "num":num,
                         "repet":repet,
                         "poids":poids,
                         "type":type
-                    }];
+                    };
 
                     //alert("4");
 
                     //jsonParcours = JSON.parse(jsonParcours);
-                    jsonParcours["exercices"].push({"series":jsonSerie});
+                    jsonParcours["exercices"].["series"].push({jsonSerie});
                     jsonSerie_aff = jsonSerie_aff+" jsonSerie : "+JSON.stringify(jsonSerie)+" - ";
                     //alert("5");
                     //document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonParcours);
@@ -284,15 +284,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             }
 
-            /*var jsonSeries = {
-                "num":num,
-                "repet":repet,
-                "poids":poids,
-                "type:type"
-            };*/
-
             //jsonSerie_aff = jsonSerie_aff+" - jsonParcours "+JSON.stringify(jsonParcours);
             document.getElementById("json_result").innerHTML = JSON.stringify(jsonParcours);
+
 
             console.log(JSON.stringify(jsonParcours));
             
