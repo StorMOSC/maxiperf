@@ -235,12 +235,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "date":date_parcours,
                     "exercices":[{
                         "nom_exo":nom_exercice,
-                        /*"series":[{
-                            "num":"",
-                            "repet":"",
-                            "poids":"",
-                            "type":""
-                        }]*/
+                        "series":[]
                     }]
                 };
 
@@ -260,12 +255,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     //type = type_input.value;
                     //alert("Type : "+type);
 
-                    jsonSerie = [{
+                    jsonSerie = {
                         "num":num,
                         "repet":repet,
                         "poids":poids,
                         "type":type
-                    }];
+                    };
 
                     //alert("4");
 
@@ -284,7 +279,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             }
 
-
+            /*var jsonSeries = {
+                "num":num,
+                "repet":repet,
+                "poids":poids,
+                "type:type"
+            };*/
 
             //jsonSerie_aff = jsonSerie_aff+" - jsonParcours "+JSON.stringify(jsonParcours);
             document.getElementById("json_result").innerHTML = JSON.stringify(jsonParcours);
