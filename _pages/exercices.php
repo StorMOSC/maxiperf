@@ -230,7 +230,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                 alert("Pas Présent !");
 
-                
+                jsonExercices = {
+                    "nom_exo":nom_exercice,
+                    "series":[]
+                };
 
                 //console.log("av nb_serie : "+nb_serie+" av num : "+num);
                 while(num <= nb_serie){
@@ -258,7 +261,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     //alert("4");
 
                     //jsonParcours = JSON.parse(jsonParcours);
-                    jsonParcours["exercices"].push({"series":jsonSerie});
+                    //jsonParcours["exercices"].push({"series":jsonSerie});
+                    jsonExercices.push({"series":jsonSerie});
                     jsonSerie_aff = jsonSerie_aff+" jsonSerie : "+JSON.stringify(jsonSerie)+" - ";
                     //alert("5");
                     //document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonParcours);
@@ -269,13 +273,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     //console.log(" - num_input 2 : "+num_input+" num 2 : "+num);
                 }
-
-                jsonExercices = {
-                    "nom_exo":nom_exercice,
-                    "series":[]
-                };
-
-                jsonExercices.push({"series":jsonSerie});
 
                 jsonParcours = {
                     "nom":nom_parcours,
