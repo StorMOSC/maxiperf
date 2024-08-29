@@ -286,7 +286,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             };*/
 
             //jsonSerie_aff = jsonSerie_aff+" - jsonParcours "+JSON.stringify(jsonParcours);
-            document.getElementById("json_result").innerHTML = jsonParcours;
+            document.getElementById("json_result").innerHTML = JSON.stringify(jsonParcours);
 
             console.log(JSON.stringify(jsonParcours));
             
