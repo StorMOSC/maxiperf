@@ -236,7 +236,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     }]
                 };
 
-                console.log("av num_input : "+num_input+"av num : "+num);
+                console.log("av nb_serie : "+nb_serie+" av num : "+num);
                 while(num <= nb_serie){
 
                     repet_input = document.getElementsByName("repet["+num+"]");
