@@ -69,8 +69,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                                     <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
                                 <?php
                                     }
-                                    $listExercices = array_map('utf8_encode', $listExercices);
-                                    $jsonListExercice = json_encode($listExercices);
+                                    //$listExercices = array_map('utf8_encode', $listExercices);
+                                    $jsonListExercice = json_encode($listExercices, JSON_UNESCAPED_UNICODE);
                                 ?>
                                 </select>
                             </div>
