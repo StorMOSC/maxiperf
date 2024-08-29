@@ -143,6 +143,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
         <!-- END PORTLET-->
     </div>
 </div>
+<?php
+    echo "var jsonListExercice = ".$jsonListExercice;
+?>
 <script>
     $(document).ready(function() {
 
@@ -181,7 +184,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
         });
 
             <?php
-                echo "var jsonListExercice = ".$jsonListExercice;
+               // echo "var jsonListExercice = ".$jsonListExercice;
             ?>
 
             console.log(JSON.stringify(jsonListExercice));
