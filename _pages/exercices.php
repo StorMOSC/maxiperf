@@ -230,14 +230,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                 alert("Pas Présent !");
 
-                jsonParcours = {
-                    "nom":nom_parcours,
-                    "date":date_parcours,
-                    "exercices":[{
-                        "nom_exo":nom_exercice,
-                        "series":[]
-                    }]
-                };
+                
 
                 //console.log("av nb_serie : "+nb_serie+" av num : "+num);
                 while(num <= nb_serie){
@@ -276,6 +269,15 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     //console.log(" - num_input 2 : "+num_input+" num 2 : "+num);
                 }
+
+                jsonParcours = {
+                    "nom":nom_parcours,
+                    "date":date_parcours,
+                    "exercices":[{
+                        "nom_exo":nom_exercice,
+                        "series":[jsonSerie]
+                    }]
+                };
 
             }
 
