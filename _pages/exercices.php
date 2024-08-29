@@ -235,12 +235,11 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "date":date_parcours,
                     "exercices":[{
                         "nom_exo":nom_exercice,
-                        "series":[
+                        "series":[]
                             /*"num":"",
                             "repet":"",
                             "poids":"",
                             "type":""*/
-                        ]
                     }]
                 };
 
