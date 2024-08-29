@@ -199,13 +199,13 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             var num_input = 0;
             
             var repet_input = [];
-            var repet = [];
+            var repet;
             
             var poids_input = [];
-            var poids = [];
+            var poids;
             
             var type_input = [];
-            var type = [];
+            var type;
 
             var jsonSerie_aff = "";
 
@@ -242,14 +242,14 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 while(num <= nb_serie){
 
                     //repet_input = document.getElementsByName("repet["+num+"]");
-                    repet = document.getElementsById("repet"+num)[num_input].value;
+                    repet = document.getElementsById("repet"+num).value;
                     alert("Repet : "+repet);
                     
-                    poids = document.getElementsById("poids"+num)[num_input].value;
+                    poids = document.getElementsById("poids"+num).value;
                     //poids = poids_input.value;
                    alert("Poids : "+poids);
                     
-                    type = document.getElementsById("type"+num)[num_input].value;
+                    type = document.getElementsById("type"+num).value;
                     //type = type_input.value;
                     alert("Type : "+type);
 
