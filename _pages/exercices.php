@@ -179,8 +179,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
         });
 
 
-            var class_serie = document.getElementsByClassName("ligneSerie");
-            var nb_serie = class_serie.length;
+            var class_serie;
+            var nb_serie;
 
             let nom_parcours_input = document.getElementById("nom");
             let nom_parcours = nom_parcours_input.value;
@@ -190,6 +190,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             let nom_exercice_input = document.getElementById("exercice");
             let nom_exercice = nom_exercice_input.value;
+
+            var jsonParcours = {};
+            var jsonSerie = {};
+            var jsonExercices = {};
 
             var num = 1;
             var num_input = 0;
@@ -208,10 +212,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
         $('#ajouter').click(function(){
 
             //alert("Nombre : "+nb_serie+" Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
-
-            var jsonParcours = {};
-            var jsonSerie = {};
-            var jsonExercices = {};
+            class_serie = document.getElementsByClassName("ligneSerie");
+            nb_serie = class_serie.length;
 
             if(jsonParcours.hasOwnProperty('nom')){
                 
