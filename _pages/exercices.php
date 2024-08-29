@@ -230,10 +230,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                 alert("Pas Présent !");
 
-                jsonExercices = {
+              /*  jsonExercices = {
                     "nom_exo":nom_exercice,
                     "series":[]
-                };
+                };*/
                 alert("ok");
                 //console.log("av nb_serie : "+nb_serie+" av num : "+num);
                 while(num <= nb_serie){
