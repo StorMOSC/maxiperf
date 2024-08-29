@@ -61,6 +61,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                                 <select id="exercice" name="exercice" class="bs-select form-control bs-select-hidden" data-live-search="true" data-size="8">
                                 <?php
                                     foreach($exercicemanager as $exercice) {
+                                        $listExercices = array("id" => $exercice->getIdExercice(), "nom" => $exercice->getName());
+                                        $jsonListExercice = json_encode($listExercices);
                                         echo $exercice->getIdExercice();
                                 ?>
                                     <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
@@ -178,6 +180,11 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
         });
 
+            <?php
+                echo "var jsonListExercice = ".$jsonListExercice;
+            ?>
+
+            console.log(JSON.stringify(jsonListExercice));
 
             var class_serie;
             var nb_serie;
@@ -208,10 +215,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             var type;
 
             var jsonSerie_aff = "";
+            var tabParcours = "";
 
         $('#ajouter').click(function(){
 
-            //alert("Nombre : "+nb_serie+" Nom : "+nom_parcours+" - Date : "+date_parcours+" - Exercice : "+nom_exercice+" Repet : "+repet+" Poids : "+poids+" Type : "+type);
             class_serie = document.getElementsByClassName("ligneSerie");
             nb_serie = class_serie.length;
 
@@ -224,7 +231,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 };
 
                 jsonParcours.push({"exercices":jsonExercices});
-                //jsonParcours["exercices"] = jsonExercices;
 
             }else{
 
@@ -234,22 +240,14 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "nom_exo":nom_exercice,
                     "series":[]
                 };
-                alert("ok");
-                //console.log("av nb_serie : "+nb_serie+" av num : "+num);
+
                 while(num <= nb_serie){
 
-                    //alert("repet"+num);
-                    //repet_input = document.getElementsByName("repet["+num+"]");
                     repet = document.getElementById("repet"+num).value;
-                    //alert("Repet : "+repet);
                     
                     poids = document.getElementById("poids"+num).value;
-                    //poids = poids_input.value;
-                    //alert("Poids : "+poids);
                     
                     type = document.getElementById("type"+num).value;
-                    //type = type_input.value;
-                    //alert("Type : "+type);
 
                     jsonSerie = {
                         "num":num,
@@ -260,19 +258,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     //alert("4");
 
-                    //jsonParcours = JSON.parse(jsonParcours);
-                    //jsonParcours["exercices"].push({"series":jsonSerie});
-                    //jsonExercices = JSON.parse(jsonExercices);
                     jsonExercices["series"].push({jsonSerie});
                     jsonSerie_aff = jsonSerie_aff+" jsonSerie : "+JSON.stringify(jsonSerie)+" - ";
-                    //alert("5");
-                    //document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonParcours);
-                    //console.log("num_input : "+num_input+" num : "+num);
 
                     num_input++;
                     num++;
 
-                    //console.log(" - num_input 2 : "+num_input+" num 2 : "+num);
                 }
 
                 jsonParcours = {
@@ -281,23 +272,17 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "exercices":[]
                 };
 
-                //jsonParcours = JSON.parse(jsonParcours);
                 jsonParcours["exercices"].push({jsonExercices});
 
             }
 
-            /*var jsonSeries = {
-                "num":num,
-                "repet":repet,
-                "poids":poids,
-                "type:type"
-            };*/
+            tabParcours = "";
+            <div class="panel panel-default">
+                <div class="panel-heading"> Panel heading without title </div>
+                <div class="panel-body"> Panel content </div>
+            </div>
 
-            //jsonSerie_aff = jsonSerie_aff+" - jsonParcours "+JSON.stringify(jsonParcours);
             document.getElementById("json_result").innerHTML = JSON.stringify(jsonParcours);
-
-            console.log(JSON.stringify(jsonParcours));
-            
 
         });
     });
