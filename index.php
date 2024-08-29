@@ -29,6 +29,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <meta charset="utf-8" />
         <title>MaxiPerf - App</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="MaxiPerf - App " />
         <meta content="" name="MaxiPerf" />
