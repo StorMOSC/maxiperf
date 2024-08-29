@@ -187,7 +187,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                // echo "var jsonListExercice = ".$jsonListExercice;
             ?>
 
-            console.log(JSON.stringify(jsonListExercice));
+            //console.log(JSON.stringify(jsonListExercice));
 
             var class_serie;
             var nb_serie;
