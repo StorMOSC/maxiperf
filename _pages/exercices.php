@@ -242,15 +242,15 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 while(num <= nb_serie){
 
                     repet_input = document.getElementsByName("repet["+num+"]");
-                    repet = repet_input[num_input].value;
+                    repet = repet_input.value;
                     //alert("1");
                     
                     poids_input = document.getElementsByName("poids["+num+"]");
-                    poids = poids_input[num_input].value;
+                    poids = poids_input.value;
                    // alert("2");
                     
                     type_input = document.getElementsByName("type["+num+"]");
-                    type = type_input[num_input].value;
+                    type = type_input.value;
                     //alert("3");
 
                     jsonSerie = {
