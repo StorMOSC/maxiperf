@@ -270,14 +270,20 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     //console.log(" - num_input 2 : "+num_input+" num 2 : "+num);
                 }
 
+                jsonExercices = {
+                    "nom_exo":nom_exercice,
+                    "series":[]
+                };
+
+                jsonExercices.push({"series":jsonSerie});
+
                 jsonParcours = {
                     "nom":nom_parcours,
                     "date":date_parcours,
-                    "exercices":[{
-                        "nom_exo":nom_exercice,
-                        "series":[jsonSerie]
-                    }]
+                    "exercices":[]
                 };
+
+                jsonParcours.push({"exercices":jsonExercices});
 
             }
 
