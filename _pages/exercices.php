@@ -181,7 +181,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
         });
 
             <?php
-                echo "var jsonListExercice = ".$jsonListExercice;
+                echo "var jsonListExercice = ".json_decode($jsonListExercice);
             ?>
 
             console.log(JSON.stringify(jsonListExercice));
