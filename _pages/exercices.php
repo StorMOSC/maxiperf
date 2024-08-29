@@ -242,14 +242,14 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 while(num <= nb_serie){
 
                     //repet_input = document.getElementsByName("repet["+num+"]");
-                    repet = document.getElementsById("repet"+num).value;
+                    repet = document.getElementById("repet"+num).value;
                     alert("Repet : "+repet);
                     
-                    poids = document.getElementsById("poids"+num).value;
+                    poids = document.getElementById("poids"+num).value;
                     //poids = poids_input.value;
                    alert("Poids : "+poids);
                     
-                    type = document.getElementsById("type"+num).value;
+                    type = document.getElementById("type"+num).value;
                     //type = type_input.value;
                     alert("Type : "+type);
 
