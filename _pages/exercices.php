@@ -236,7 +236,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     }]
                 };
 
-                alert(" Num : "+num+" / nb_serie : "+nb_serie);
+                console.log("av num_input : "+num_input+"av num : "+num);
                 while(num <= nb_serie){
 
                     repet_input = document.getElementsByName("repet["+num+"]");
