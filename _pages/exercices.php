@@ -241,8 +241,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 console.log("av nb_serie : "+nb_serie+" av num : "+num);
                 while(num <= nb_serie){
 
-                    repet_input = document.getElementsByName("repet["+num+"]");
-                    repet = repet_input.value;
+                    //repet_input = document.getElementsByName("repet["+num+"]");
+                    repet = document.getElementsByName("repet["+num+"]")[num_input].value;
                     alert("Repet : "+repet);
                     
                     poids_input = document.getElementsByName("poids["+num+"]");
