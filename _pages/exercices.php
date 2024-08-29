@@ -68,6 +68,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                                     <option value="<?php echo $exercice->getIdExercice(); ?>"><?php echo $exercice->getName(); ?></option>
                                 <?php
                                     }
+                                    $listExercices = array_map('utf8_encode', $listExercices);
                                 ?>
                                 </select>
                             </div>
