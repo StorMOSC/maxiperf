@@ -238,21 +238,21 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     }]
                 };
 
-                console.log("av nb_serie : "+nb_serie+" av num : "+num);
+                //console.log("av nb_serie : "+nb_serie+" av num : "+num);
                 while(num <= nb_serie){
 
-                    alert("repet"+num);
+                    //alert("repet"+num);
                     //repet_input = document.getElementsByName("repet["+num+"]");
                     repet = document.getElementById("repet"+num).value;
-                    alert("Repet : "+repet);
+                    //alert("Repet : "+repet);
                     
                     poids = document.getElementById("poids"+num).value;
                     //poids = poids_input.value;
-                    alert("Poids : "+poids);
+                    //alert("Poids : "+poids);
                     
                     type = document.getElementById("type"+num).value;
                     //type = type_input.value;
-                    alert("Type : "+type);
+                    //alert("Type : "+type);
 
                     jsonSerie = {
                         "num":num,
@@ -268,12 +268,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     jsonSerie_aff = jsonSerie_aff+" jsonSerie : "+JSON.stringify(jsonSerie)+" - ";
                     //alert("5");
                     //document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonParcours);
-                    console.log("num_input : "+num_input+" num : "+num);
+                    //console.log("num_input : "+num_input+" num : "+num);
 
                     num_input++;
                     num++;
 
-                    console.log(" - num_input 2 : "+num_input+" num 2 : "+num);
+                    //console.log(" - num_input 2 : "+num_input+" num 2 : "+num);
                 }
 
             }
@@ -286,9 +286,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             };*/
 
             //jsonSerie_aff = jsonSerie_aff+" - jsonParcours "+JSON.stringify(jsonParcours);
-            document.getElementById("json_result").innerHTML = jsonSerie_aff;
+            document.getElementById("json_result").innerHTML = jsonParcours;
 
-            console.log(JSON.stringify(jsonSerie_aff));
+            console.log(JSON.stringify(jsonParcours));
             
 
         });
