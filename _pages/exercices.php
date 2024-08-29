@@ -241,15 +241,15 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     repet_input = document.getElementsByName("repet["+num+"]");
                     repet = repet_input[num_input].value;
-                    alert("1");
+                    //alert("1");
                     
                     poids_input = document.getElementsByName("poids["+num+"]");
                     poids = poids_input[num_input].value;
-                    alert("2");
+                   // alert("2");
                     
                     type_input = document.getElementsByName("type["+num+"]");
                     type = type_input[num_input].value;
-                    alert("3");
+                    //alert("3");
 
                     jsonSerie = {
                         "num":num,
@@ -258,12 +258,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                         "type":type
                     };
 
-                    alert("4");
+                    //alert("4");
 
                     //jsonParcours = JSON.parse(jsonParcours);
                     jsonParcours["exercices"]["series"] = jsonSerie;
                     jsonSerie_aff = jsonSerie_aff+" jsonSerie : "+JSON.stringify(jsonSerie)+" - ";
-                    alert("5");
+                    //alert("5");
                     //document.getElementById("json_result").innerHTML = "jsonSerie : "+JSON.stringify(jsonParcours);
 
                     num_input++;
@@ -279,7 +279,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 "type:type"
             };*/
 
-            jsonSerie_aff = jsonSerie_aff+" - jsonParcours "+JSON.stringify(jsonParcours);
+            //jsonSerie_aff = jsonSerie_aff+" - jsonParcours "+JSON.stringify(jsonParcours);
             document.getElementById("json_result").innerHTML = jsonSerie_aff;
 
             console.log(JSON.stringify(jsonSerie_aff));
