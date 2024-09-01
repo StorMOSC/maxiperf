@@ -232,7 +232,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                 nom_exercice_input = document.getElementById("exercice");
                 nom_exercice = nom_exercice_input.value;
-                alert(nom_exercice);
+
+                alert("Exo : "+nom_exercice);
                 
                 alert("Présent !");
 
