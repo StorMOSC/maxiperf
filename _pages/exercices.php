@@ -278,7 +278,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "exercices":[]
                 };
 
-                jsonParcours["exercices"].push({jsonExercices});
+                jsonParcours["exercices"].push({"nom":nom_parcours,"date":date_parcours,"exercices":[]});
 
             }
 
