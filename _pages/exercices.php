@@ -152,6 +152,29 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 <script>
     $(document).ready(function() {
 
+        {
+            "nom":"Parcours du 02-09-2024",
+            "date":"02-09-2024",
+            "exercices":[{
+                "nom_exo":"2",
+                "series":[
+                    {"num":1,"repet":"1","poids":"2","type":"Kg"},
+                    {"num":2,"repet":"3","poids":"4","type":"Kg"}
+                ]
+            },
+                {"jsonExercices":{
+                    "nom_exo":"1",
+                    "series":[
+                        {"num":2,"repet":"3","poids":"4","type":"Kg"}]}},
+                {"jsonExercices":{
+                    "nom_exo":"1",
+                    "series":[
+                        {"num":2,"repet":"3","poids":"4","type":"Kg"}
+                    ]
+                }}
+            ]
+        }
+
         $('#fromExercice').submit(function (evt) {
             evt.preventDefault();
         });
