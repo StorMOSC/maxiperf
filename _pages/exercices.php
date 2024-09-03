@@ -266,7 +266,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                         //"series":[jsonSerie]
                     };*/
 
-                jsonParcours["exercices"].push({"nom_exo":nom_exercice},"series":[jsonSerie]);
+                jsonParcours["exercices"].push({"nom_exo":nom_exercice,"series":[jsonSerie]});
 
                 while(num <= nb_serie){
 
