@@ -269,6 +269,13 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     type = document.getElementById("type"+num).value;
 
+                    /*jsonExercices = {
+                        "nom_exo":nom_exercice
+                        //"series":[jsonSerie]
+                    };*/
+
+                    jsonParcours["exercices"].push({"nom_exo":nom_exercice});
+
                     jsonSerie = {
                         "num":num,
                         "repet":repet,
@@ -286,12 +293,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                 }
 
-                jsonExercices = {
-                    "nom_exo":nom_exercice
-                    //"series":[jsonSerie]
-                };
-
-                jsonParcours["exercices"].push({jsonExercices});
 
             }else{
 
