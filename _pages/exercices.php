@@ -294,7 +294,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                 }
 
-                jsonParcours.push({"exercices":jsonExercices});
+                jsonParcours.push({"exercices":[jsonExercices]});
 
             }else{
 
