@@ -261,12 +261,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 alert("Présent !");
                 num = 1;
 
-                /*jsonExercices = {
-                        "nom_exo":nom_exercice
-                        //"series":[jsonSerie]
-                    };*/
+                jsonExercices = {
+                    "nom_exo":nom_exercice,
+                    "series":[]
+                }
                 
-                jsonParcours["exercices"].push({"nom_exo":nom_exercice,"series":[]});
+                //jsonParcours["exercices"].push({"nom_exo":nom_exercice,"series":[]});
 
                 while(num <= nb_serie){
 
@@ -294,6 +294,11 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                 }
 
+                jsonParcours = {
+                    "nom":nom_parcours,
+                    "date":date_parcours,
+                    "exercices":[jsonExercices]
+                };
 
             }else{
 
