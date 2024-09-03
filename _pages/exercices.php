@@ -227,7 +227,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             let nom_exercice_input = document.getElementById("exercice");
             let nom_exercice = nom_exercice_input.value;
 
-            var jsonParcours = [{}];
+            var jsonParcours = {};
             var jsonSerie = [{}];
             var jsonExercices = [{}];
 
