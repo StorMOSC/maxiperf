@@ -152,7 +152,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 <script>
     $(document).ready(function() {
 
-        {
+        /*{
             "nom":"Parcours du 02-09-2024",
             "date":"02-09-2024",
             "exercices":[{
@@ -173,7 +173,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     ]
                 }}
             ]
-        }
+        }*/
 
         $('#fromExercice').submit(function (evt) {
             evt.preventDefault();
