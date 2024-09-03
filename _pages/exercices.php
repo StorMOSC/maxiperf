@@ -265,8 +265,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                         "nom_exo":nom_exercice
                         //"series":[jsonSerie]
                     };*/
-
-                jsonParcours["exercices"].push({"nom_exo":nom_exercice,"series":[jsonSerie]});
+                
+                jsonParcours["exercices"].push({"nom_exo":nom_exercice,"series":[]});
 
                 while(num <= nb_serie){
 
@@ -284,6 +284,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     };
 
                     //alert("4");
+
 
                     jsonExercices["series"].push({"num":num,"repet":repet,"poids":poids,"type":type});
                     //jsonSerie_aff = jsonSerie_aff+" jsonSerie : "+JSON.stringify(jsonSerie)+" - ";
