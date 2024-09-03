@@ -251,11 +251,11 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             class_serie = document.getElementsByClassName("ligneSerie");
             nb_serie = class_serie.length;
 
-            jsonParcours = {
+            /*jsonParcours = {
                 "nom":nom_parcours,
                 "date":date_parcours,
                 "exercices":[]
-            };
+            };*/
 
             if(jsonParcours.hasOwnProperty('nom')){
 
