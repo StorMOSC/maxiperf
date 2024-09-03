@@ -261,6 +261,13 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 alert("Présent !");
                 num = 1;
 
+                /*jsonExercices = {
+                        "nom_exo":nom_exercice
+                        //"series":[jsonSerie]
+                    };*/
+
+                jsonParcours["exercices"].push({"nom_exo":nom_exercice});
+
                 while(num <= nb_serie){
 
                     repet = document.getElementById("repet"+num).value;
@@ -268,13 +275,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     poids = document.getElementById("poids"+num).value;
 
                     type = document.getElementById("type"+num).value;
-
-                    /*jsonExercices = {
-                        "nom_exo":nom_exercice
-                        //"series":[jsonSerie]
-                    };*/
-
-                    jsonParcours["exercices"].push({"nom_exo":nom_exercice});
 
                     jsonSerie = {
                         "num":num,
