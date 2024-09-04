@@ -320,8 +320,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "exercices":[jsonExercices]
                 };
 
-                Object.keys(jsonParcours).forEach(key => {
-                    tabParcours += '<div class=\"panel-heading\"> '+JSON.stringify(jsonParcours[key].exercices)+' </div>';
+                Object.keys(jsonParcours.exercices).forEach(key => {
+                    tabParcours += '<div class=\"panel-heading\"> '+JSON.stringify(jsonParcours.exercices[key])+' </div>';
                 });
 
                 /*for(var k in jsonParcours["exercices"]){
