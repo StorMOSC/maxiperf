@@ -335,7 +335,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             document.getElementById("titre_parcours").innerHTML = jsonParcours.nom;
             document.getElementById("date_parcours").innerHTML = jsonParcours.date;
-            document.getElementById("json_result").innerHTML = JSON.stringify(jsonParcours);
+            document.getElementById("json_result").innerHTML = tabParcours;
 
         });
     });
