@@ -334,7 +334,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 
 
             }
-            tabParcours .= '</div>';
+            tabParcours += '</div>';
 
             document.getElementById("parcours_div").style.visibility = "visible";
 
