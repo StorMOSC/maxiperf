@@ -329,8 +329,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 };
 
                 
-                tabParcours .= '<div class=\"panel-heading\"> Panel heading without title </div>';
-                tabParcours .= '<div class=\"panel-body\"> Panel content </div>';
+                tabParcours += '<div class=\"panel-heading\"> Panel heading without title </div>';
+                tabParcours += '<div class=\"panel-body\"> Panel content </div>';
                 
 
             }
