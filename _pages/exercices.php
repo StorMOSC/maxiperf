@@ -115,18 +115,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             <div class="portlet-title">
                 <div class="caption">
                 <i class="fas fa-running font-dark"></i>
-                    <span class="caption-subject font-dark bold uppercase">Le parcours</span>
+                    <span id="titre_parcours" class="caption-subject font-dark bold uppercase"></span>
                 </div>
                 <div class="actions">
-                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                        <i class="icon-cloud-upload"></i>
-                    </a>
-                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                        <i class="icon-wrench"></i>
-                    </a>
-                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                        <i class="icon-trash"></i>
-                    </a>
+                <span id="date_parcours" class="caption-subject font-dark bold uppercase"></span>
                 </div>
             </div>
             <div class="portlet-body">
@@ -338,6 +330,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             document.getElementById("parcours_div").style.visibility = "visible";
 
+            document.getElementById("titre_parcours").innerHTML = JSON.stringify(jsonParcours.nom);
+            document.getElementById("date_parcours").innerHTML = JSON.stringify(jsonParcours.date);
             document.getElementById("json_result").innerHTML = JSON.stringify(jsonParcours);
 
         });
