@@ -247,12 +247,12 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             if(jsonParcours.hasOwnProperty('nom')){
 
-                document.getElementById("json_result").innerHTML = '';
+                document.getElementById("json_result").innerHTML = "";
 
                 nom_exercice_input = document.getElementById("exercice");
                 nom_exercice = nom_exercice_input.value;
                 
-                alert("Présent !");
+                //alert("Présent !");
                 num = 1;
 
                 jsonExercices = {
@@ -314,7 +314,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             }else{
 
-                alert("Pas Présent !");
+                //alert("Pas Présent !");
 
                 jsonExercices = {
                     "nom_exo":nom_exercice,
