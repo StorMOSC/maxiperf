@@ -319,7 +319,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "exercices":[jsonExercices]
                 };
                 
-                var jsonListExercice = jQuery.parseJSON(<?php echo $jsonListExercice; ?>);
+                var jsonListExercice = JSON.parse(<?php echo $jsonListExercice; ?>);
 
                 Object.keys(jsonParcours.exercices).forEach(key => {
                     Object.keys(jsonListExercice).forEach(key_exo => {
