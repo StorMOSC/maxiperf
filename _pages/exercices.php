@@ -228,8 +228,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             let nom_exercice = nom_exercice_input.value;
 
             var jsonParcours = {};
-            var jsonSerie = [{}];
-            var jsonExercices = [{}];
+            var jsonSerie = {};
+            var jsonExercices = {};
 
             var num = 1;
             var num_input = 0;
