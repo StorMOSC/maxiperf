@@ -321,7 +321,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 };
 
                 Object.keys(jsonParcours.exercices).forEach(key => {
-                    tabParcours += '<div class=\"panel-heading\"> '+JSON.stringify(jsonParcours.exercices[key])+' </div>';
+                    tabParcours += '<div class=\"panel-heading\"> '+JSON.stringify(jsonParcours.exercices[key].nom_exo)+' </div>';
                 });
 
                 /*for(var k in jsonParcours["exercices"]){
