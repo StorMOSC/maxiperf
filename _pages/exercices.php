@@ -321,10 +321,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 };
 
                 for(var k in jsonParcours["exercices"]){
-                    tabParcours += '<div class=\"panel-heading\"> '+jsonParcours.exercices[k]+' </div>';
+                    tabParcours += '<div class=\"panel-heading\"> '+JSON.stringify(jsonParcours.exercices[k])+' </div>';
 
                     for(var j in jsonParcours["exercices"]["series"]){
-                        tabParcours += '<div class=\"panel-body\"> '+jsonParcours.exercices.series[j]+' </div>';
+                        tabParcours += '<div class=\"panel-body\"> '+JSON.stringify(jsonParcours.exercices.series[j])+' </div>';
                     }
                 }
 
