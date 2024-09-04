@@ -324,7 +324,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     tabParcours += '<div class=\"panel-heading\"> '+jsonParcours.exercices[key].nom_exo+' </div>';
 
                     Object.keys(jsonParcours.exercices.series).forEach(key_serie => {
-                        tabParcours += '<div class=\"panel-body\"> '+jsonParcours.exercices[key].series[key_serie]+' </div>';
+                        tabParcours += '<div class=\"panel-body\"> '+jsonParcours.exercices.series[key_serie]+' </div>';
                     });
                 });
 
