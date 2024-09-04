@@ -320,13 +320,17 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "exercices":[jsonExercices]
                 };
 
-                for(var k in jsonParcours["exercices"]){
-                    tabParcours += '<div class=\"panel-heading\"> '+JSON.stringify(jsonParcours["exercices"][k])+' </div>';
+                Object.keys(jsonParcours).forEach(key => {
+                    tabParcours += '<div class=\"panel-heading\"> '+JSON.stringify(jsonParcours[key].exercices)+' </div>';
+                });
+
+                /*for(var k in jsonParcours["exercices"]){
+                    
 
                     for(var j in jsonParcours["exercices"]["series"]){
                         tabParcours += '<div class=\"panel-body\"> '+JSON.stringify(jsonParcours["exercices"].series[j])+' </div>';
                     }
-                }
+                }*/
 
             }
             tabParcours += '</div>';
