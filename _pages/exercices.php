@@ -320,12 +320,15 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 };
                 
                 var jsonListExercice = <?php echo $jsonListExercice; ?>;
+                var nom_exercice_string;
 
                 Object.keys(jsonParcours.exercices).forEach(key => {
                     Object.keys(jsonListExercice).forEach(key_exo => {
         
+                        console.log("key_exo : "+key_exo+" - jsonParcours.exercices[key].nom_exo : "+jsonParcours.exercices[key].nom_exo);
+
                         if(jsonParcours.exercices[key].nom_exo == key_exo){
-                            var nom_exercice_string = jsonListExercice[key_exo];
+                            nom_exercice_string = jsonListExercice[key_exo];
                         }
 
                     });
