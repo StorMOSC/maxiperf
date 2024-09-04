@@ -111,7 +111,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             </div>
         </div>
         <!-- END PORTLET-->
-        <div class="portlet light parcours_div" style="visibility: hidden;">
+        <div class="portlet light " id="parcours_div" style="visibility: hidden;">
             <div class="portlet-title">
                 <div class="caption">
                 <i class="fas fa-running font-dark"></i>
