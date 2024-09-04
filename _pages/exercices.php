@@ -139,7 +139,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
     </div>
 </div>
 <?php
-    echo "var jsonListExercice = ".$jsonListExercice;
+    //echo "var jsonListExercice = ".$jsonListExercice;
 ?>
 <script>
     $(document).ready(function() {
@@ -281,6 +281,34 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 }
 
                 jsonParcours["exercices"].push(jsonExercices);
+
+                var jsonListExercice = <?php echo $jsonListExercice; ?>;
+                var nom_exercice_string;
+
+                Object.keys(jsonParcours.exercices).forEach(key => {
+                    Object.keys(jsonListExercice).forEach(key_exo => {
+        
+                        console.log("key_exo : "+key_exo+" - jsonParcours.exercices[key].nom_exo : "+jsonParcours.exercices[key].nom_exo);
+
+                        if(jsonParcours.exercices[key].nom_exo == key_exo){
+                            nom_exercice_string = jsonListExercice[key_exo];
+                        }
+
+                    });
+
+                    //jsonParcours.exercices[key].nom_exo
+                    tabParcours += '<div class=\"panel-heading\"> '+nom_exercice_string+' </div>';
+
+                    tabParcours += '<div class=\"panel-body\">';
+                    tabParcours += '<table class="table table-striped table-bordered table-hover dt-responsive" width="100%" cellspacing="0" role="grid" style="width: 100%;">';
+                    tabParcours += '<thead><tr role="row"><th style="text-align: center !important;">Série</th><th>Répétition</th><th>Type</th></thead>';
+
+                    Object.keys(jsonParcours.exercices[key].series).forEach(key_serie => {
+                        tabParcours += '<tr><td>'+jsonParcours.exercices[key].series[key_serie].num+'</td><td>'+jsonParcours.exercices[key].series[key_serie].repet+'</td><td>'+jsonParcours.exercices[key].series[key_serie].poids+' '+jsonParcours.exercices[key].series[key_serie].type+'</td></tr>';
+                    });
+
+                    tabParcours += '</table>';
+                });
 
             }else{
 
