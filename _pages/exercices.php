@@ -307,7 +307,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     };
 
                     jsonExercices["series"].push({"num":num,"repet":repet,"poids":poids,"type":type});
-                    jsonSerie_aff = jsonSerie_aff+" jsonSerie : "+JSON.stringify(jsonSerie)+" - ";
 
                     num_input++;
                     num++;
@@ -319,16 +318,25 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     "date":date_parcours,
                     "exercices":[jsonExercices]
                 };
-
+                
                 Object.keys(jsonParcours.exercices).forEach(key => {
-                    tabParcours += '<div class=\"panel-heading\"> '+jsonParcours.exercices[key].nom_exo+' </div>';
+                    Object.keys(jsonListExercice).forEach(key_exo => {
+        
+                        if(jsonParcours.exercices[key].nom_exo == key_exo){
+                            var nom_exercice_string = jsonListExercice[key_exo];
+                        }
+
+                    });
+
+                    //jsonParcours.exercices[key].nom_exo
+                    tabParcours += '<div class=\"panel-heading\"> '+nom_exercice_string+' </div>';
 
                     tabParcours += '<div class=\"panel-body\">';
                     tabParcours += '<table class="table table-striped table-bordered table-hover dt-responsive" width="100%" cellspacing="0" role="grid" style="width: 100%;">';
                     tabParcours += '<thead><tr role="row"><th style="text-align: center !important;">Série</th><th>Répétition</th><th>Type</th></thead>';
 
                     Object.keys(jsonParcours.exercices[key].series).forEach(key_serie => {
-                        tabParcours += '<tr><td>'+jsonParcours.exercices[key].series[key_serie].repet+'</td><td>'+jsonParcours.exercices[key].series[key_serie].poids+' '+jsonParcours.exercices[key].series[key_serie].type+'</td></tr>';
+                        tabParcours += '<tr><td>'+jsonParcours.exercices[key].series[key_serie].num+'</td><td>'+jsonParcours.exercices[key].series[key_serie].repet+'</td><td>'+jsonParcours.exercices[key].series[key_serie].poids+' '+jsonParcours.exercices[key].series[key_serie].type+'</td></tr>';
                     });
 
                     tabParcours += '</table>';
