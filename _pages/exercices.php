@@ -376,7 +376,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                         tabParcours += '<tr><td><input type="number" class="form-control" style="border : none;" id="parcours_repet'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_serie['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].num+'"></td>';
                         tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_repet'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_repet['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].repet+'"></td>';
                         tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_poids'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_poids['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].poids+'"> ';
-                        tabParcours += ' <input type="text" class="form-control" id="parcours_type'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_type['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].type+'"></td></tr>';
+                        tabParcours += ' <input type="text" style="border : none;" class="form-control" id="parcours_type'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_type['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].type+'"></td></tr>';
                     });
 
                     tabParcours += '</div></table></div>';
