@@ -373,7 +373,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     tabParcours += '<thead><tr role="row"><th style="text-align: center !important;">Série</th><th>Répétition</th><th>Type</th></thead>';
 
                     Object.keys(jsonParcours.exercices[key].series).forEach(key_serie => {
-                        tabParcours += '<tr><td>'+jsonParcours.exercices[key].series[key_serie].num+'</td><td>'+jsonParcours.exercices[key].series[key_serie].repet+'</td><td>'+jsonParcours.exercices[key].series[key_serie].poids+' '+jsonParcours.exercices[key].series[key_serie].type+'</td></tr>';
+                        tabParcours += '<tr><td>'+jsonParcours.exercices[key].series[key_serie].num+' <input type="number" class="form-control" id="parcours_repet'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_serie['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].num+'"></td>';
+                        tabParcours += '<td>'+jsonParcours.exercices[key].series[key_serie].repet+' <input type="number" class="form-control" id="parcours_repet'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_repet['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].repet+'"></td>';
+                        tabParcours += '<td>'+jsonParcours.exercices[key].series[key_serie].poids+' <input type="number" class="form-control" id="parcours_poids'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_poids['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].poids+'"> '+jsonParcours.exercices[key].series[key_serie].type+' <input type="number" class="form-control" id="parcours_type'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_type['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].type+'"></td></tr>';
                     });
 
                     tabParcours += '</div></table></div>';
