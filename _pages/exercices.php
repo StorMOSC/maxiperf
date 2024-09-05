@@ -257,6 +257,11 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 //alert("Présent !");
                 num = 1;
 
+                jsonParcours = {
+                    "nom":nom_parcours,
+                    "date":date_parcours
+                };
+
                 jsonExercices = {
                     "nom_exo":nom_exercice,
                     "series":[]
