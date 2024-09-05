@@ -391,7 +391,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             tabParcours += '</div>';
 
             document.getElementById("parcours_div").style.visibility = "visible";
-            alert(jsonParcours.nom);
+            //alert(jsonParcours.nom);
             document.getElementById("titre_parcours").innerHTML = jsonParcours.nom;
             document.getElementById("date_parcours").innerHTML = jsonParcours.date;
             document.getElementById("json_result").innerHTML = tabParcours;
