@@ -374,7 +374,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                         tabParcours += '<tr><td>'+jsonParcours.exercices[key].series[key_serie].num+'</td><td>'+jsonParcours.exercices[key].series[key_serie].repet+'</td><td>'+jsonParcours.exercices[key].series[key_serie].poids+' '+jsonParcours.exercices[key].series[key_serie].type+'</td></tr>';
                     });
 
-                    tabParcours += '</table></div>';
+                    tabParcours += '</div></table></div>';
                 });
 
                 /*for(var k in jsonParcours["exercices"]){
