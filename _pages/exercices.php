@@ -238,9 +238,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             var jsonSerie_aff = "";
             var tabParcours = "";
 
-            tabParcours = '<div class=\"panel panel-default\">';
-
         $('#ajouter').click(function(){
+
+            tabParcours = '<div class=\"panel panel-default\">';
 
             class_serie = document.getElementsByClassName("ligneSerie");
             nb_serie = class_serie.length;
