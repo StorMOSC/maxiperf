@@ -224,7 +224,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             var jsonExercices = {};
 
             var num = 1;
-            var num_input = 0;
+            var num_input = 1;
             
             var repet_input = [];
             var repet;
@@ -279,7 +279,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     jsonExercices["series"].push({"num":num,"repet":repet,"poids":poids,"type":type});
 
-                    num_input++;
                     num++;
 
                 }
@@ -308,13 +307,14 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     tabParcours += '<thead><tr role="row"><th style="text-align: center !important;">Série</th><th>Répétition</th><th>Type</th></thead>';
 
                     Object.keys(jsonParcours.exercices[key].series).forEach(key_serie => {
-                        tabParcours += '<tr><td><input type="number" class="form-control" style="border : none;" id="parcours_serie'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_serie['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].num+'"></td>';
-                        tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_repet'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_repet['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].repet+'"></td>';
-                        tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_poids'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_poids['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].poids+'">';
-                        tabParcours += ' <input type="text" style="border : none;" class="form-control" id="parcours_type'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_type['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].type+'"></td></tr>';
+                        tabParcours += '<tr><td><input type="number" class="form-control" style="border : none;" id="parcours_serie'+num_input+'" name="parcours_serie['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].num+'"></td>';
+                        tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_repet'+num_input+'" name="parcours_repet['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].repet+'"></td>';
+                        tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_poids'+num_input+'" name="parcours_poids['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].poids+'">';
+                        tabParcours += ' <input type="text" style="border : none;" class="form-control" id="parcours_type'+num_input+'" name="parcours_type['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].type+'"></td></tr>';
                     });
 
                     tabParcours += '</div></table></div>';
+                    num_input++;
                 });
 
             }else{
@@ -343,7 +343,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     jsonExercices["series"].push({"num":num,"repet":repet,"poids":poids,"type":type});
 
-                    num_input++;
                     num++;
 
                 }
@@ -376,13 +375,14 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     tabParcours += '<thead><tr role="row"><th style="text-align: center !important;">Série</th><th>Répétition</th><th>Type</th></thead>';
 
                     Object.keys(jsonParcours.exercices[key].series).forEach(key_serie => {
-                        tabParcours += '<tr><td><input type="number" class="form-control" style="border : none;" id="parcours_serie'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_serie['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].num+'"></td>';
-                        tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_repet'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_repet['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].repet+'"></td>';
-                        tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_poids'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_poids['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].poids+'"> ';
-                        tabParcours += ' <input type="text" style="border : none;" class="form-control" id="parcours_type'+jsonParcours.exercices[key].series[key_serie].num+'" name="parcours_type['+jsonParcours.exercices[key].series[key_serie].num+']" value="'+jsonParcours.exercices[key].series[key_serie].type+'"></td></tr>';
+                        tabParcours += '<tr><td><input type="number" class="form-control" style="border : none;" id="parcours_serie'+num_input+'" name="parcours_serie['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].num+'"></td>';
+                        tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_repet'+num_input+'" name="parcours_repet['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].repet+'"></td>';
+                        tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_poids'+num_input+'" name="parcours_poids['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].poids+'"> ';
+                        tabParcours += ' <input type="text" style="border : none;" class="form-control" id="parcours_type'+num_input+'" name="parcours_type['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].type+'"></td></tr>';
                     });
 
                     tabParcours += '</div></table></div>';
+                    num_input++;
                 });
 
                 /*for(var k in jsonParcours["exercices"]){
