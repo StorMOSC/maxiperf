@@ -311,10 +311,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                         tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_repet'+num_input+'" name="parcours_repet['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].repet+'"></td>';
                         tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_poids'+num_input+'" name="parcours_poids['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].poids+'">';
                         tabParcours += ' <input type="text" style="border : none;" class="form-control" id="parcours_type'+num_input+'" name="parcours_type['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].type+'"></td></tr>';
+                        num_input++;
                     });
 
                     tabParcours += '</div></table></div>';
-                    num_input++;
                 });
 
             }else{
@@ -379,10 +379,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                         tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_repet'+num_input+'" name="parcours_repet['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].repet+'"></td>';
                         tabParcours += '<td><input type="number" style="border : none;" class="form-control" id="parcours_poids'+num_input+'" name="parcours_poids['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].poids+'"> ';
                         tabParcours += ' <input type="text" style="border : none;" class="form-control" id="parcours_type'+num_input+'" name="parcours_type['+num_input+']" value="'+jsonParcours.exercices[key].series[key_serie].type+'"></td></tr>';
+                        num_input++;
                     });
 
                     tabParcours += '</div></table></div>';
-                    num_input++;
                 });
 
                 /*for(var k in jsonParcours["exercices"]){
