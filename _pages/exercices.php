@@ -247,6 +247,8 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             if(jsonParcours.hasOwnProperty('nom')){
 
+                num_input = 1;
+
                 var clean_div = document.getElementById("json_result");
                 clean_div.innerHTML = "";
                 //clean_div.appendChild(document.createTextNode("My new text!"));
