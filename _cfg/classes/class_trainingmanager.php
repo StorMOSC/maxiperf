@@ -3,7 +3,7 @@
  * 
  */
 
-class ParcoursManager extends Features
+class TrainingManager extends Features
 {
     /**
      * PDO Database instance PDO
@@ -33,42 +33,28 @@ class ParcoursManager extends Features
      */
     public function count()
     {
-        return $this->_db->query('SELECT COUNT(*) FROM exercices')->fetchColumn();
+        return $this->_db->query('SELECT COUNT(*) FROM link_training')->fetchColumn();
     }
 
     /**
-     * @param Parcours $parcours
+     * @param Training $parcours
      * Insertion exercice in the DB
      */
-    /*public function add(Parcours $parcours)
-    {
-        try{
-            $q = $this->_db->prepare('INSERT INTO parcours (name,date) VALUES (:name, :date)');
-            $q->bindValue(':name', $parcours->getName(), PDO::PARAM_STR);
-            $q->bindValue(':date', $parcours->getDate(), PDO::PARAM_STR);
-    
-            $q->execute();
-            
-            return "ok";
-        }
-        catch(Exception $e){
-            return null;
-        }
-    }*/
-
-    /**
-     * @param Parcours $parcours
-     * Insertion exercice in the DB
-     */
-    public function add(Parcours $parcours)
+    public function add(Training $training)
     {
 
         $parcours->setDate(date('Y-m-d',strtotime(str_replace('/','-',$parcours->getDate()))));
 
         try{
-            $q = $this->_db->prepare('INSERT INTO parcours (date, nom) VALUES (:date, :nom)');
-            $q->bindValue(':date', $parcours->getDate(), PDO::PARAM_STR);
-            $q->bindValue(':nom', $parcours->getName(), PDO::PARAM_STR);
+            $q = $this->_db->prepare('INSERT INTO link_training (idParcours, idExercice, username, numSerie, repet, poids, type, commentaire) VALUES (:idParcours, :idExercice, :username, :numSerie, :repet, :poids, :type, :commentaire)');
+            $q->bindValue(':idParcours', $parcours->getDate(), PDO::PARAM_INT);
+            $q->bindValue(':idExercice', $parcours->getName(), PDO::PARAM_INT);
+            $q->bindValue(':username', $parcours->getName(), PDO::PARAM_STR);
+            $q->bindValue(':numSerie', $parcours->getName(), PDO::PARAM_INT);
+            $q->bindValue(':repet', $parcours->getName(), PDO::PARAM_INT);
+            $q->bindValue(':poids', $parcours->getName(), PDO::PARAM_INT);
+            $q->bindValue(':type', $parcours->getName(), PDO::PARAM_STR);
+            $q->bindValue(':commentaire', $parcours->getName(), PDO::PARAM_STR);
     
             $q->execute();
 

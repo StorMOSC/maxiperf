@@ -12,6 +12,38 @@ if(isset($_POST['ajouter'])) {
         'date' => $date
     );
 
+    $i=1;
+while(($postDescription = current($_POST["descriptionDevis"])) !== FALSE ){
+
+    $j = key($_POST["descriptionDevis"]);
+    if(strlen(trim($postDescription))>0){
+        if(empty($_POST["remiseDevis"][$j])){
+            $remise = 0;
+        }else{
+            $remise = $_POST["remiseDevis"][$j];
+        }
+        if(empty($_POST["quantiteDevis"][$j])){
+            $qt = 1;
+        }else{
+            $qt = $_POST["quantiteDevis"][$j];
+        }
+        $price = $_POST["prixDevis"][$j];
+        $tax = $_POST["taxeDevis"][$j];
+        $dataDescription= array(
+            'description' => $postDescription,
+            'quantity' => $qt,
+            'discount' => $remise,
+            'price' => $price,
+            'tax' => $tax
+        );
+       
+        $description = new Description($dataDescription);
+        $descriptions[$i] = $description;
+    }
+    $i++;
+    next($_POST["descriptionDevis"]);
+}
+
     $parcours = new Parcours($array);
     echo "OK";
     $parcoursmanager = new ParcoursManager($bdd);
