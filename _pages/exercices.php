@@ -6,8 +6,8 @@ $retour = $_GET['souscat'];
 $array = array();
 $exercice = new Exercice($array);
 $exercicemanager = new ExerciceManager($bdd);
-$parcours = new Company($array);
-$parcoursmanager = new CompaniesManager($bdd);
+$parcours = new Parcours($array);
+$parcoursmanager = new ParcoursManager($bdd);
 
 /*récupération des objets en base*/
 $exercicemanager = $exercicemanager->getListAllExercices();
