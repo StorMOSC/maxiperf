@@ -7,7 +7,7 @@
 
       /**
        * Exercices constructor.
-       * Including array from exercices
+       * Including array from parcours
        */
 
       public function __construct(array $data)

@@ -12,7 +12,7 @@
 
       /**
        * Exercices constructor.
-       * Including array from exercices
+       * Including array from training
        */
 
       public function __construct(array $data)
