@@ -55,6 +55,13 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                                 <!-- /input-group -->
                             </div>
                         </div>
+                        <div class="form-group col-md-12" style="margin-bottom: 3px;">
+                            <label class="control-label col-md-3">Commentaire sur la séance</label>
+                            <div class="col-md-4">
+                                <textarea name="commentaire" id="commentaire" class="form-control" rows="3"></textarea>
+                                <!-- /input-group -->
+                            </div>
+                        </div>
                         <div class="form-group col-md-12">
                             <label class="control-label col-md-3">Choix de l'exercice</label>
                             <div class="col-md-4">
@@ -216,6 +223,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             let date_parcours_input = document.getElementById("date");
             let date_parcours = date_parcours_input.value;
 
+            let commentaire_parcours_input = document.getElementById("commentaire");
+            let commentaire_parcours = commentaire_parcours_input.value;
+
             let nom_exercice_input = document.getElementById("exercice");
             let nom_exercice = nom_exercice_input.value;
 
@@ -302,7 +312,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     });
 
                     //jsonParcours.exercices[key].nom_exo
-                    tabParcours += '<div class=\"panel-heading\"> '+nom_exercice_string+' </div>';
+                    tabParcours += '<div class=\"panel-heading\"><input type="text" style="visibility:none;" class="form-control" id="parcours_exercice_id'+num_input+'" name="parcours_exercice_id['+num_input+']" value="'+jsonParcours.exercices[key].nom_exo+'"> '+nom_exercice_string+' </div>';
 
                     tabParcours += '<div class=\"panel-body\">';
                     tabParcours += '<table class="table table-striped table-bordered table-hover dt-responsive" width="100%" cellspacing="0" role="grid" style="width: 100%;">';
@@ -352,6 +362,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 jsonParcours = {
                     "nom":nom_parcours,
                     "date":date_parcours,
+                    "commentaire":commentaire_parcours,
                     "exercices":[jsonExercices]
                 };
                 
@@ -370,7 +381,11 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     });
 
                     //jsonParcours.exercices[key].nom_exo
-                    tabParcours += '<div class=\"panel-heading\"> '+nom_exercice_string+' </div>';
+                    tabParcours += '<input type="text" class="form-control" style="visibility : none;" id="parcours_nom" name="parcours_nom" value="'+jsonParcours.nom+'">';
+                    tabParcours += '<input type="text" class="form-control" style="visibility : none;" id="parcours_date" name="parcours_date" value="'+jsonParcours.date+'">';
+                    tabParcours += '<input type="text" class="form-control" style="visibility : none;" id="parcours_commentaire" name="parcours_commentaire" value="'+jsonParcours.commentaire+'">';
+
+                    tabParcours += '<div class=\"panel-heading\"><input type="text" style="visibility:none;" class="form-control" id="parcours_exercice_id'+num_input+'" name="parcours_exercice_id['+num_input+']" value="'+jsonParcours.exercices[key].nom_exo+'"> '+nom_exercice_string+' </div>';
 
                     tabParcours += '<div class=\"panel-body\">';
                     tabParcours += '<table class="table table-striped table-bordered table-hover dt-responsive" width="100%" cellspacing="0" role="grid" style="width: 100%;">';
