@@ -132,6 +132,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     <!-- BEGIN FORM-->
                     <form action="<?php echo URLHOST."_pages/_post/creer_parcours.php"; ?>" class="form-horizontal form-inline form-row-seperated">
                         <div class="form-body">
+                            <div class="form-group col-md-12" id="json_input_hidden">
+                                
+                            </div>
                             <div class="form-group col-md-12" id="json_result">
                                 
                             </div>
@@ -247,6 +250,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             var jsonSerie_aff = "";
             var tabParcours = "";
+            var tabParcoursInput ="";
 
         $('#ajouter').click(function(){
 
@@ -402,10 +406,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     tabParcours += '</div></table></div>';
 
-                    tabParcours += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_nom" name="parcours_nom" value="'+jsonParcours.nom+'">';
-                    tabParcours += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_date" name="parcours_date" value="'+jsonParcours.date+'">';
-                    tabParcours += '<textarea class="form-control" style="visibility : hidden;" id="parcours_commentaire" name="parcours_commentaire">'+jsonParcours.commentaire+'</textarea>';
-                    tabParcours += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_exercice_id'+num_input+'" name="parcours_exercice_id['+num_input+']" value="'+jsonParcours.exercices[key].nom_exo+'">';
+                    tabParcoursInput += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_nom" name="parcours_nom" value="'+jsonParcours.nom+'">';
+                    tabParcoursInput += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_date" name="parcours_date" value="'+jsonParcours.date+'">';
+                    tabParcoursInput += '<textarea class="form-control" style="visibility : hidden;" id="parcours_commentaire" name="parcours_commentaire">'+jsonParcours.commentaire+'</textarea>';
+                    tabParcoursInput += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_exercice_id'+num_input+'" name="parcours_exercice_id['+num_input+']" value="'+jsonParcours.exercices[key].nom_exo+'">';
                 });
 
                 /*for(var k in jsonParcours["exercices"]){
@@ -419,8 +423,11 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             }
             tabParcours += '</div>';
 
+
             document.getElementById("parcours_div").style.visibility = "visible";
             //alert(jsonParcours.nom);
+
+            document.getElementById("json_input_hidden").innerHTML = tabParcoursInput;
             document.getElementById("titre_parcours").innerHTML = jsonParcours.nom;
             document.getElementById("date_parcours").innerHTML = jsonParcours.date;
             document.getElementById("json_result").innerHTML = tabParcours;
