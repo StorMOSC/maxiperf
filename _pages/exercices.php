@@ -311,7 +311,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     });
 
                     //jsonParcours.exercices[key].nom_exo
-                    tabParcours += '<div class=\"panel-heading\"><input type="text" style="visibility:none;" class="form-control" id="parcours_exercice_id'+num_input+'" name="parcours_exercice_id['+num_input+']" value="'+jsonParcours.exercices[key].nom_exo+'"> '+nom_exercice_string+' </div>';
+                    tabParcours += '<div class=\"panel-heading\"><input type="text" style="visibility:hidden;" class="form-control" id="parcours_exercice_id'+num_input+'" name="parcours_exercice_id['+num_input+']" value="'+jsonParcours.exercices[key].nom_exo+'"> '+nom_exercice_string+' </div>';
 
                     tabParcours += '<div class=\"panel-body\">';
                     tabParcours += '<table class="table table-striped table-bordered table-hover dt-responsive" width="100%" cellspacing="0" role="grid" style="width: 100%;">';
@@ -380,11 +380,11 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     });
 
                     //jsonParcours.exercices[key].nom_exo
-                    tabParcours += '<input type="text" class="form-control" style="visibility : none;" id="parcours_nom" name="parcours_nom" value="'+jsonParcours.nom+'">';
-                    tabParcours += '<input type="text" class="form-control" style="visibility : none;" id="parcours_date" name="parcours_date" value="'+jsonParcours.date+'">';
-                    tabParcours += '<input type="text" class="form-control" style="visibility : none;" id="parcours_commentaire" name="parcours_commentaire" value="'+jsonParcours.commentaire+'">';
+                    tabParcours += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_nom" name="parcours_nom" value="'+jsonParcours.nom+'">';
+                    tabParcours += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_date" name="parcours_date" value="'+jsonParcours.date+'">';
+                    tabParcours += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_commentaire" name="parcours_commentaire" value="'+jsonParcours.commentaire+'">';
 
-                    tabParcours += '<div class=\"panel-heading\"><input type="text" style="visibility:none;" class="form-control" id="parcours_exercice_id'+num_input+'" name="parcours_exercice_id['+num_input+']" value="'+jsonParcours.exercices[key].nom_exo+'"> '+nom_exercice_string+' </div>';
+                    tabParcours += '<div class=\"panel-heading\"><input type="text" style="visibility:hidden;" class="form-control" id="parcours_exercice_id'+num_input+'" name="parcours_exercice_id['+num_input+']" value="'+jsonParcours.exercices[key].nom_exo+'"> '+nom_exercice_string+' </div>';
 
                     tabParcours += '<div class=\"panel-body\">';
                     tabParcours += '<table class="table table-striped table-bordered table-hover dt-responsive" width="100%" cellspacing="0" role="grid" style="width: 100%;">';
