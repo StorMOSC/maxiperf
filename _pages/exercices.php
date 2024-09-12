@@ -254,7 +254,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
         $('#ajouter').click(function(){
 
-            alert('Test : '+commentaire_parcours);
+            console.log('Test : '+commentaire_parcours);
 
             tabParcours = '<div class=\"panel panel-default\">';
 
