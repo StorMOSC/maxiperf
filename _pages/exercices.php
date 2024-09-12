@@ -225,10 +225,9 @@ $exercicemanager = $exercicemanager->getListAllExercices();
             let date_parcours_input = document.getElementById("date");
             let date_parcours = date_parcours_input.value;
 
-            let commentaire_parcours_input = document.getElementById("commentaire");
-            let commentaire_parcours = commentaire_parcours_input.value;
+            var commentaire_parcours_input = document.getElementById("commentaire");
+            var commentaire_parcours = commentaire_parcours_input.value;
             
-
             let nom_exercice_input = document.getElementById("exercice");
             let nom_exercice = nom_exercice_input.value;
 
@@ -254,7 +253,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
         $('#ajouter').click(function(){
 
-            console.log('Test value : '+commentaire_parcours_input.value);
+            console.log('Test : '+commentaire_parcours);
 
             tabParcours = '<div class=\"panel panel-default\">';
 
