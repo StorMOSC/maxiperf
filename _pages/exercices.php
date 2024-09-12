@@ -224,6 +224,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
             let commentaire_parcours_input = document.getElementById("commentaire");
             let commentaire_parcours = commentaire_parcours_input.value;
+            alert(commentaire_parcours);
 
             let nom_exercice_input = document.getElementById("exercice");
             let nom_exercice = nom_exercice_input.value;
