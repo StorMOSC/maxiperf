@@ -132,7 +132,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     <!-- BEGIN FORM-->
                     <form action="<?php echo URLHOST."_pages/_post/creer_parcours.php"; ?>" class="form-horizontal form-inline form-row-seperated">
                         <div class="form-body">
-                            <div class="form-group col-md-12" id="json_input_hidden">
+                            <div class="form-group col-md-12" id="json_input_hidden" style="height:0px;">
                                 
                             </div>
                             <div class="form-group col-md-12" id="json_result">
