@@ -55,7 +55,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                                 <!-- /input-group -->
                             </div>
                         </div>
-                        <div class="form-group col-md-12">
+                        <div class="form-group col-md-12" style="margin-bottom: 3px;">
                             <label class="control-label col-md-3">Commentaire sur la séance</label>
                             <div class="col-md-4">
                                 <textarea style="width: 100% !important;" name="commentaire" id="commentaire" class="form-control" rows="3"></textarea>
