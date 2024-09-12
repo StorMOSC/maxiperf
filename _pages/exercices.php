@@ -369,7 +369,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                 jsonParcours = {
                     "nom":nom_parcours,
                     "date":date_parcours,
-                    "commentaire":commentaire_parcours,
+                    "commentaire":commentaire_parcours_input.value,
                     "exercices":[jsonExercices]
                 };
                 
