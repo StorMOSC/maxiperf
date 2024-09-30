@@ -136,6 +136,11 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                                 
                             </div>
                             <div class="form-group col-md-12" id="json_result">
+                                <div class="form-group col-md-12">
+                                    <div class="col-md-4">
+                                        <button id="enregistrer" name="enregistrer" type="submit" class="btn green">Enregistrer</button>
+                                    </div>
+                                </div>';
                                 
                             </div>
                         </div>
@@ -388,7 +393,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     });
 
                     //jsonParcours.exercices[key].nom_exo
-                    tabParcours += '<div class="form-group col-md-12"><div class="col-md-4"><button id="enregistrer" name="enregistrer" type="submit" class="btn green">Enregistrer</button></div></div>';
+                    
                     tabParcours += '<div class=\"panel-heading\">'+nom_exercice_string+'</div>';
 
                     tabParcours += '<div class=\"panel-body\">';
