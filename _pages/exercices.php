@@ -392,6 +392,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     tabParcours += '<div class=\"panel-heading\">'+nom_exercice_string+'</div>';
 
                     tabParcours += '<div class=\"panel-body\">';
+                    tabParcours += '<div class="form-group col-md-12"><div class="col-md-4"><button id="enregistrer" name="enregistrer" type="submit" class="btn green">Enregistrer</button></div></div>';
                     tabParcours += '<table class="table table-striped table-bordered table-hover dt-responsive" width="100%" cellspacing="0" role="grid" style="width: 100%;">';
                     tabParcours += '<thead><tr role="row"><th style="text-align: center !important;">Série</th><th>Répétition</th><th>Type</th></thead>';
 
@@ -405,7 +406,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     tabParcours += '</div></table></div>';
 
-                    tabParcoursInput += '<button id="enregistrer" name="enregistrer" type="submit" class="btn green">Enregistrer</button>';
                     tabParcoursInput += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_nom" name="parcours_nom" value="'+jsonParcours.nom+'">';
                     tabParcoursInput += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_date" name="parcours_date" value="'+jsonParcours.date+'">';
                     tabParcoursInput += '<textarea class="form-control" style="visibility : hidden;" id="parcours_commentaire" name="parcours_commentaire">'+jsonParcours.commentaire+'</textarea>';
