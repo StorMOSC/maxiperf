@@ -388,11 +388,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     });
 
                     //jsonParcours.exercices[key].nom_exo
-
+                    tabParcours += '<div class="form-group col-md-12"><div class="col-md-4"><button id="enregistrer" name="enregistrer" type="submit" class="btn green">Enregistrer</button></div></div>';
                     tabParcours += '<div class=\"panel-heading\">'+nom_exercice_string+'</div>';
 
                     tabParcours += '<div class=\"panel-body\">';
-                    tabParcours += '<div class="form-group col-md-12"><div class="col-md-4"><button id="enregistrer" name="enregistrer" type="submit" class="btn green">Enregistrer</button></div></div>';
                     tabParcours += '<table class="table table-striped table-bordered table-hover dt-responsive" width="100%" cellspacing="0" role="grid" style="width: 100%;">';
                     tabParcours += '<thead><tr role="row"><th style="text-align: center !important;">Série</th><th>Répétition</th><th>Type</th></thead>';
 
