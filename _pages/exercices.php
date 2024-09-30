@@ -132,8 +132,10 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                     <!-- BEGIN FORM-->
                     <form action="<?php echo URLHOST."_pages/_post/creer_parcours.php"; ?>" class="form-horizontal form-inline form-row-seperated">
                         <div class="form-body">
-                            <div class="col-md-4">
-                                <button id="enregistrer" name="enregistrer" type="submit" class="btn green">Enregistrer</button>
+                            <div class="form-group col-md-12">
+                                <div class="col-md-4">
+                                    <button id="enregistrer" name="enregistrer" type="submit" class="btn green">Enregistrer</button>
+                                </div>
                             </div>
                             <div class="form-group col-md-12" id="json_input_hidden" style="height:0px;">
                                 
