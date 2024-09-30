@@ -405,6 +405,7 @@ $exercicemanager = $exercicemanager->getListAllExercices();
 
                     tabParcours += '</div></table></div>';
 
+                    tabParcoursInput += '<button id="enregistrer" name="enregistrer" type="submit" class="btn green">Enregistrer</button>';
                     tabParcoursInput += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_nom" name="parcours_nom" value="'+jsonParcours.nom+'">';
                     tabParcoursInput += '<input type="text" class="form-control" style="visibility : hidden;" id="parcours_date" name="parcours_date" value="'+jsonParcours.date+'">';
                     tabParcoursInput += '<textarea class="form-control" style="visibility : hidden;" id="parcours_commentaire" name="parcours_commentaire">'+jsonParcours.commentaire+'</textarea>';

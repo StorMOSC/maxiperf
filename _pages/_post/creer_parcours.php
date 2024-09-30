@@ -2,7 +2,7 @@
 
 include("../../_cfg/cfg.php");
 
-if(isset($_POST['ajouter'])) {
+if(isset($_POST['Enregistrer'])) {
 
     $parcours_date = $_POST['parcours_date'];
     $parcours_nom = $_POST['parcours_nom'];
