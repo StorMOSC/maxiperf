@@ -141,7 +141,6 @@ $exercicemanager = $exercicemanager->getListAllExercices();
                                         <button id="enregistrer" name="enregistrer" type="submit" class="btn green">Enregistrer</button>
                                     </div>
                                 </div>';
-                                
                             </div>
                         </div>
                     </form>
